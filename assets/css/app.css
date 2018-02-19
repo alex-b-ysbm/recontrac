@@ -57,8 +57,140 @@ body {
   font-size: 1.125rem;
   line-height: 1em; }
 
+@media only screen and (max-width: 480px) {
+  header nav.menu {
+    display: none; }
+  header nav.mobile-menu {
+    float: left;
+    display: block;
+    min-width: 10%;
+    position: relative; }
+  header .logo {
+    width: 60%;
+    margin: 10px 15px; }
+    header .logo img {
+      width: 100%; }
+  header nav.right {
+    width: auto; }
+    header nav.right .search {
+      display: none; }
+
+  .step_title:before {
+    display: none; }
+
+  .info_box {
+    padding: 10px 15px; }
+    .info_box ul li {
+      width: 39%;
+      float: left !important;
+      margin-right: 10% !important;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+
+  .step_section {
+    margin: 0; }
+    .step_section .step {
+      width: 20%;
+      font-size: 12px;
+      line-height: 15px;
+      padding: 5px 25px; }
+      .step_section .step.selected {
+        width: 50%;
+        margin-right: 10%; }
+      .step_section .step.selected.item_2:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -21px;
+        border: 21px solid #63b111;
+        z-index: 1;
+        border-left-color: transparent; }
+      .step_section .step.selected.item_2:after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: -42px;
+        border: 21px solid #ffffff;
+        z-index: 1;
+        border-left-color: #63b111;
+        border-right-color: #ffffff; }
+      .step_section .step .step_icon {
+        float: left;
+        margin-right: 20px; }
+
+  .main_content .col_2 {
+    width: 50%;
+    float: left;
+    padding: 18px 10px;
+    font-size: 14px;
+    line-height: 15px !important; }
+    .main_content .col_2 span {
+      width: 100% !important; }
+  .main_content .col_7 {
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 15px !important; }
+    .main_content .col_7 span {
+      width: 100% !important; }
+
+  .hide-xs {
+    display: none; } }
+@media only screen and (min-width: 1200px) {
+  header .logo {
+    width: 70%; }
+  header nav.mobile-menu {
+    display: none; }
+  header nav.right {
+    width: 20%; }
+
+  .info_box {
+    padding: 20px 25px; }
+
+  .step_section {
+    margin-top: 60px;
+    height: 60px; }
+    .step_section .step {
+      width: 27%;
+      font-size: 15px;
+      padding: 5px 25px; }
+      .step_section .step.selected {
+        width: 25%;
+        margin-right: 2%; }
+      .step_section .step.selected.item_2:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -21px;
+        border: 21px solid #63b111;
+        z-index: 1;
+        border-left-color: transparent; }
+      .step_section .step.selected.item_2:after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: -42px;
+        border: 21px solid #ffffff;
+        z-index: 1;
+        border-left-color: #63b111;
+        border-right-color: #ffffff; }
+      .step_section .step .step_icon {
+        float: left;
+        margin-right: 20px; }
+      .step_section .step .step_title {
+        padding-top: 5px; }
+
+  .main_content .col_2 {
+    width: 25%;
+    float: left;
+    padding: 20px 10px; }
+  .main_content .col_7 {
+    width: 18%;
+    float: left;
+    padding: 20px 10px; } }
 header {
-  display: block;
   width: 100%;
   background: #696969;
   color: #ffffff;
@@ -66,7 +198,6 @@ header {
   height: 85px; }
   header nav.menu {
     float: left;
-    display: block;
     width: 10%;
     position: relative; }
   header .btn-menu {
@@ -97,17 +228,12 @@ header {
         border: none; }
   header .logo {
     float: left;
-    display: block;
-    width: 70%;
     text-align: center; }
   header nav.right {
     float: left;
-    display: block;
-    width: 20%;
     position: relative; }
     header nav.right .search {
       float: left;
-      display: block;
       width: 80%;
       height: 45px;
       padding-right: 15px; }
@@ -120,7 +246,6 @@ header {
         color: #808080;
         width: 85%;
         float: left;
-        display: block;
         height: 45px; }
         header nav.right .search input::-webkit-input-placeholder {
           /* Chrome/Opera/Safari */
@@ -150,7 +275,6 @@ header {
             font-size: 16px; }
       header nav.right .search button {
         cursor: pointer;
-        display: block;
         float: left;
         padding: 0;
         background: transparent;
@@ -159,7 +283,6 @@ header {
         height: 45px; }
     header nav.right .user_acc {
       float: left;
-      display: block;
       cursor: pointer;
       width: 45px;
       height: 45px;
@@ -212,38 +335,51 @@ header {
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
-    padding: 25px 15px; } }
-@media only screen and (min-width: 767px) {
+    padding: 0; }
+
+  .row {
+    width: 100%;
+    clear: both; } }
+@media only screen and (min-width: 767px) and (max-width: 992px) {
   .container {
     max-width: 750px;
     width: 100%;
     margin: 0 auto;
-    padding: 25px 15px; } }
-@media only screen and (min-width: 992px) {
+    padding: 0; }
+
+  .row {
+    width: 100%;
+    clear: both; } }
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
   .container {
     max-width: 970px;
     width: 100%;
     margin: 0 auto;
-    padding: 25px 15px; } }
+    padding: 25px 15px; }
+
+  .row {
+    width: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+    clear: both; } }
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
-    padding: 25px 15px; } }
-.row {
-  width: 100%;
-  margin-left: -15px;
-  margin-right: -15px;
-  clear: both; }
+    padding: 25px 15px; }
 
+  .row {
+    width: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+    clear: both; } }
 .info_section {
   background: #304f7c;
   padding: 20px 25px;
   position: relative; }
   .info_section .info_box {
     background: linear-gradient(to top, #2d5e91, #497dab);
-    padding: 20px 25px;
     border-bottom: 5px solid #273f63; }
     .info_section .info_box:hover {
       background: linear-gradient(to top, #3974a8, #5692be);
@@ -311,106 +447,56 @@ header {
         .info_section .subsection .buttons .update img {
           margin-right: 5px; }
 
-.step_section {
-  margin-top: 60px;
-  height: 60px; }
-  .step_section .step {
-    display: block;
-    float: left;
-    width: 27%;
-    background: #ffffff;
-    font-size: 15px;
-    padding: 5px 25px;
-    position: relative;
-    text-transform: uppercase;
-    font-weight: bold; }
-    .step_section .step.selected {
-      background: #63b111;
-      width: 25%;
-      margin-right: 2%; }
-      .step_section .step.selected .step_title:before {
-        content: "";
-        background: url(../images/car.png) no-repeat;
-        width: 89px;
-        height: 27px;
-        position: absolute;
-        top: -65%;
-        left: 33%; }
-    .step_section .step.selected.item_2:before {
+.step_section .step {
+  float: left;
+  background: #ffffff;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .step_section .step.selected {
+    background: #63b111; }
+    .step_section .step.selected .step_title:before {
       content: "";
+      background: url(../images/car.png) no-repeat;
+      width: 89px;
+      height: 27px;
       position: absolute;
-      display: block;
-      bottom: 0;
-      left: -21px;
-      border: 21px solid #63b111;
-      z-index: 1;
-      border-left-color: transparent; }
-    .step_section .step.selected.item_2:after {
-      content: "";
-      position: absolute;
-      display: block;
-      bottom: 0px;
-      right: -42px;
-      border: 21px solid #ffffff;
-      z-index: 1;
-      border-left-color: #63b111;
-      border-right-color: #ffffff; }
-    .step_section .step .step_icon {
-      display: block;
-      float: left;
-      margin-right: 20px; }
-    .step_section .step .step_title {
-      padding-top: 5px; }
-  .step_section .send_wrapper {
-    display: block;
-    float: left;
-    width: 19%;
-    background: linear-gradient(to top, #d46700, #e19800);
-    font-size: 15px;
-    padding: 5px 25px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold; }
-    .step_section .send_wrapper a {
-      line-height: 32px;
-      text-decoration: none;
-      color: #ffffff; }
+      top: -65%;
+      left: 33%; }
+.step_section .send_wrapper {
+  float: left;
+  width: 19%;
+  background: linear-gradient(to top, #d46700, #e19800);
+  font-size: 15px;
+  padding: 5px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .step_section .send_wrapper a {
+    line-height: 32px;
+    text-decoration: none;
+    color: #ffffff; }
 
 .main_content {
   position: relative; }
   .main_content .col_1 {
     width: 7%;
-    display: block;
-    float: left;
-    padding: 22px 10px; }
-  .main_content .col_2 {
-    width: 25%;
-    display: block;
     float: left;
     padding: 20px 10px; }
   .main_content .col_3 {
     width: 12%;
-    display: block;
     float: left;
     padding: 20px 10px; }
   .main_content .col_4 {
     width: 15%;
-    display: block;
     float: left;
     padding: 20px 10px; }
   .main_content .col_5 {
     width: 15%;
-    display: block;
     float: left;
     padding: 20px 10px; }
   .main_content .col_6 {
     width: 8%;
-    display: block;
-    float: left;
-    padding: 20px 10px; }
-  .main_content .col_7 {
-    width: 18%;
-    display: block;
     float: left;
     padding: 20px 10px; }
   .main_content .sidebar_popup .action {
@@ -641,9 +727,17 @@ header {
     color: #000000;
     width: 100%;
     z-index: 10; }
-    .main_content .sidebar_popup .inspection .close_button {
+    .main_content .sidebar_popup .inspection .close {
       float: right;
-      cursor: pointer; }
+      cursor: pointer;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      background: linear-gradient(to top, #00a213, #65de2e); }
+      .main_content .sidebar_popup .inspection .close img {
+        width: 15px;
+        height: 15px;
+        margin: 10px; }
     .main_content .sidebar_popup .inspection .inspection_header {
       background: #438300;
       color: #ffffff;
@@ -790,7 +884,6 @@ header {
       .main_content .detail_section.open .mech_title .items-left,
       .main_content .detail_section.open .bshop_title .items-left,
       .main_content .detail_section.open .detail_title .items-left {
-        display: block;
         float: left;
         color: #ffffff; }
         .main_content .mechanical_section_wrapper .mech_title .items-left img,
@@ -802,7 +895,6 @@ header {
         .main_content .detail_section.open .mech_title .items-left img,
         .main_content .detail_section.open .bshop_title .items-left img,
         .main_content .detail_section.open .detail_title .items-left img {
-          display: block;
           float: left;
           padding: 13px 0; }
         .main_content .mechanical_section_wrapper .mech_title .items-left .title,
@@ -814,7 +906,6 @@ header {
         .main_content .detail_section.open .mech_title .items-left .title,
         .main_content .detail_section.open .bshop_title .items-left .title,
         .main_content .detail_section.open .detail_title .items-left .title {
-          display: block;
           float: left;
           margin-left: 10px;
           padding: 8px 0;
@@ -830,7 +921,6 @@ header {
         .main_content .detail_section.open .bshop_title .items-left .btn-addServices,
         .main_content .detail_section.open .detail_title .items-left .btn-addServices {
           background: linear-gradient(to top, #00a213, #65de2e);
-          display: block;
           float: left;
           margin-left: 50px;
           padding: 8px 15px;
@@ -846,7 +936,6 @@ header {
       .main_content .detail_section.open .mech_title .items-right,
       .main_content .detail_section.open .bshop_title .items-right,
       .main_content .detail_section.open .detail_title .items-right {
-        display: block;
         float: right; }
         .main_content .mechanical_section_wrapper .mech_title .items-right a,
         .main_content .mechanical_section_wrapper .bshop_title .items-right a,
@@ -897,7 +986,6 @@ header {
         font-weight: bold;
         font-size: 14px;
         color: #ffffff;
-        display: block;
         float: left;
         border-right: 1px solid #2470a3; }
         .main_content .mechanical_section_wrapper .mech_table .table_title .title:last-child,
@@ -972,7 +1060,6 @@ header {
         .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] > span,
         .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] > span,
         .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] > span {
-          display: block;
           float: left;
           width: 50%; }
         .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] div,
@@ -993,7 +1080,6 @@ header {
         .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] img,
         .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] div,
         .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] img {
-          display: block;
           float: right;
           padding: 0; }
         .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox,
@@ -1271,7 +1357,6 @@ header {
       .main_content .detail_section.open .detail_table .total .col12 {
         width: 32%;
         float: left;
-        display: block;
         padding: 20px 5px; }
       .main_content .mechanical_section_wrapper .mech_table .total .col_6,
       .main_content .mechanical_section_wrapper .bshop_table .total .col_6,
@@ -1298,13 +1383,11 @@ header {
 
 .bshop_section .inner_wrapper img,
 .bshop_section .inner_wrapper .section_title {
-  display: block;
   float: left;
   padding-right: 10px; }
 
 .detail_section .inner_wrapper img,
 .detail_section .inner_wrapper .section_title {
-  display: block;
   float: left;
   padding-right: 10px; }
 
@@ -1322,7 +1405,6 @@ header {
     margin: 0 1px 0 2px; }
     .total_section .inner_wrapper > div {
       padding: 20px 5px;
-      display: block;
       float: left;
       border-right: 1px solid #cccccc; }
       .total_section .inner_wrapper > div:last-child {
@@ -1333,7 +1415,6 @@ header {
     .total_section .inner_wrapper .col12 {
       width: 32%;
       float: left;
-      display: block;
       padding: 29px 15px; }
     .total_section .inner_wrapper .col_6 {
       background: #a6a6a6;

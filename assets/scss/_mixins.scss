@@ -6,11 +6,18 @@
     }
 }
 
+@mixin media-between($media-min, $media-max) {
+    @media only screen and (min-width: $media-min) and (max-width: $media-max) {
+        @content;
+    }
+}
+
 @mixin media-from($media) {
     @media only screen and (min-width: $media) {
         @content;
     }
 }
+
 
 @mixin placeholder($size:14px, $color:rgba(85,85,85,0.64)) {
 	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
