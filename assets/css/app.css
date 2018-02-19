@@ -655,12 +655,15 @@ header {
     .main_content .sidebar_popup .inspection .inspection_body {
       padding: 15px; }
       .main_content .sidebar_popup .inspection .inspection_body .lists {
-        background: #304f7c;
         padding: 5px;
         color: #ffffff;
         margin-bottom: 5px; }
-        .main_content .sidebar_popup .inspection .inspection_body .lists img {
-          margin-right: 10px; }
+        .main_content .sidebar_popup .inspection .inspection_body .lists .header {
+          background: #386da0;
+          padding: 5px;
+          cursor: pointer; }
+          .main_content .sidebar_popup .inspection .inspection_body .lists .header img {
+            margin-right: 10px; }
         .main_content .sidebar_popup .inspection .inspection_body .lists.closed .body {
           display: none; }
         .main_content .sidebar_popup .inspection .inspection_body .lists .body {

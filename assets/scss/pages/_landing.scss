@@ -702,12 +702,16 @@ header{
       .inspection_body{
         padding: 15px;
         .lists{
-          background: $bg_table_title;
           padding: 5px;
           color: $white_color;
           margin-bottom: 5px;
-          img{
-            margin-right: 10px;
+          .header{
+            background: $bg_section_title;
+            padding: 5px;
+            cursor: pointer;
+            img{
+              margin-right: 10px;
+            }
           }
           &.closed{
             .body{
