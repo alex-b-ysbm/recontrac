@@ -1,5 +1,180 @@
+@include media-to($x-small-screen){
+  header{
+    nav.menu {
+      display: none;
+    }
+    nav.mobile-menu{
+      float: left;
+      display: block;
+      min-width: 10%;
+      position: relative;
+    }
+    .logo{
+      width: 60%;
+      margin: 10px 15px;
+      img{
+        width: 100%;
+      }
+    }
+    nav.right{
+      width: auto;
+      .search{
+        display: none;
+      }
+    }
+  }
+  .step_title{
+    &:before{
+      display: none;
+    }
+  }
+  .info_box{
+    padding: 10px 15px;
+    ul{
+      li{
+        width: 39%;
+        float: left !important;
+        margin-right: 10% !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  .step_section{
+    margin: 0;
+    .step{
+      width: 20%;
+      font-size: 12px;
+      line-height: 15px;
+      padding: 5px 25px;
+      &.selected{
+        width: 50%;
+        margin-right: 10%;
+
+      }
+      &.selected.item_2:before{
+        content: "";
+         position: absolute;
+         bottom: 0;
+         left: -21px;
+         border: 21px solid $bg_green;
+         z-index: 1;
+         border-left-color: transparent;
+      }
+      &.selected.item_2:after{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: -42px;
+        border: 21px solid $white_color;
+        z-index: 1;
+        border-left-color: $bg_green;
+        border-right-color: $white_color;
+      }
+      .step_icon{
+        float: left;
+        margin-right: 20px;
+      }
+    }
+  }
+  .main_content{
+  .col_2{
+      width: 50%;
+      float: left;
+      padding: 18px 10px;
+      font-size: 14px;
+      line-height: 15px !important;
+      span{
+        width: 100% !important
+      }
+    }
+  .col_7{
+      width: 50%;
+      float: left;
+      padding: 0 10px;
+      font-size: 14px;
+      line-height: 15px !important;
+      span{
+        width: 100% !important
+      }
+    }
+  }
+  .hide-xs{
+    display: none;
+  }
+}
+
+@include media-from($large-screen){
+  header{
+    .logo{
+      width: 70%;
+    }
+    nav.mobile-menu{
+      display: none;
+    }
+    nav.right{
+      width: 20%;
+    }
+  }
+  .info_box{
+    padding: 20px 25px;
+  }
+  .step_section{
+    margin-top: 60px;
+    height: 60px;
+    .step{
+      width:27%;
+      font-size: 15px;
+      padding: 5px 25px;
+      &.selected{
+        width: 25%;
+        margin-right: 2%;
+
+      }
+      &.selected.item_2:before{
+        content: "";
+         position: absolute;
+         bottom: 0;
+         left: -21px;
+         border: 21px solid $bg_green;
+         z-index: 1;
+         border-left-color: transparent;
+      }
+      &.selected.item_2:after{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: -42px;
+        border: 21px solid $white_color;
+        z-index: 1;
+        border-left-color: $bg_green;
+        border-right-color: $white_color;
+      }
+      .step_icon{
+        float: left;
+        margin-right: 20px;
+      }
+      .step_title{
+        padding-top: 5px;
+      }
+    }
+  }
+  .main_content{
+  .col_2{
+      width: 25%;
+      float: left;
+      padding: 20px 10px;
+    }
+  .col_7{
+      width: 18%;
+      float: left;
+      padding: 20px 10px;
+    }
+  }
+}
+
 header{
-  display: block;
   width: 100%;
   background: $header_bg;
   color: $white_color;
@@ -7,7 +182,6 @@ header{
   height: 85px;
   nav.menu{
     float: left;
-    display: block;
     width: 10%;
     position: relative;
   }
@@ -44,18 +218,13 @@ header{
   }
   .logo{
     float: left;
-    display: block;
-    width: 70%;
     text-align: center;
   }
   nav.right{
     float: left;
-    display: block;
-    width: 20%;
     position: relative;
     .search{
       float: left;
-      display: block;
       width: 80%;
       height: 45px;
       padding-right: 15px;
@@ -69,7 +238,6 @@ header{
         color: $button_light;
         width: 85%;
         float: left;
-        display: block;
         height: 45px;
 
       @include placeholder(16px, $button_light){}
@@ -80,7 +248,6 @@ header{
       }
       button{
         cursor: pointer;
-        display: block;
         float: left;
         padding: 0;
         background: transparent;
@@ -91,7 +258,6 @@ header{
     }
     .user_acc{
       float: left;
-      display: block;
       cursor: pointer;
       width: 45px;
       height: 45px;
@@ -159,23 +325,37 @@ header{
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
-    padding: 25px 15px;
+    padding: 0;
+  }
+  .row{
+    width: 100%;
+    clear: both;
   }
 };
-@include media-from($small-screen){
+@include media-between($small-screen, $medium-screen){
   .container{
     max-width: 750px;
     width: 100%;
     margin: 0 auto;
-    padding: 25px 15px;
+    padding: 0;
+  }
+  .row{
+    width: 100%;
+    clear: both;
   }
 };
-@include media-from($medium-screen){
+@include media-between($medium-screen, $large-screen){
   .container{
     max-width: 970px;
     width: 100%;
     margin: 0 auto;
     padding: 25px 15px;
+  }
+  .row{
+    width: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+    clear: both;
   }
 };
 @include media-from($large-screen){
@@ -185,27 +365,27 @@ header{
     margin: 0 auto;
     padding: 25px 15px;
   }
+  .row{
+    width: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+    clear: both;
+  }
 }
 
-.row{
-  width: 100%;
-  margin-left: -15px;
-  margin-right: -15px;
-  clear: both;
-}
 
 .info_section{
   background: $bg_blue;
   padding: 20px 25px;
   position: relative;
   .info_box{
-    background: $bg_light_blue;
-    padding: 20px 25px;
+    background: $light_blue_gradient;
+    border-bottom: 5px solid $border_dark_blue_color;
     &:hover{
       background: $info_hover;
       cursor: pointer;
-      border-bottom: 5px solid $bg_light_blue;
-      padding-bottom: 15px;
+      border-bottom: 5px solid $border_dark_blue_color;
+      // padding-bottom: 25px;
     }
     >ul{
       list-style-type: none;
@@ -291,22 +471,14 @@ header{
 }
 
 .step_section{
-  margin-top: 60px;
-  height: 60px;
   .step{
-    display: block;
     float: left;
-    width:27%;
     background: $white_color;
-    font-size: 15px;
-    padding: 5px 25px;
     position: relative;
     text-transform: uppercase;
     font-weight: bold;
     &.selected{
       background: $bg_green;
-      width: 25%;
-      margin-right: 2%;
       .step_title:before{
         content: "";
         background: url(../images/car.png) no-repeat;
@@ -317,41 +489,11 @@ header{
         left: 33%;
       }
     }
-    &.selected.item_2:before{
-      content: "";
-       position: absolute;
-       display: block;
-       bottom: 0;
-       left: -21px;
-       border: 21px solid $bg_green;
-       z-index: 1;
-       border-left-color: transparent;
-    }
-    &.selected.item_2:after{
-      content: "";
-      position: absolute;
-      display: block;
-      bottom: 0px;
-      right: -42px;
-      border: 21px solid $white_color;
-      z-index: 1;
-      border-left-color: $bg_green;
-      border-right-color: $white_color;
-    }
-    .step_icon{
-      display: block;
-      float: left;
-      margin-right: 20px;
-    }
-    .step_title{
-      padding-top: 5px;
-    }
   }
   .send_wrapper{
-    display: block;
     float: left;
     width:19%;
-    background: $bg_orange;
+    background: $orange_gradient;
     font-size: 15px;
     padding: 5px 25px;
     text-align: center;
@@ -369,43 +511,26 @@ header{
   position: relative;
   .col_1{
     width: 7%;
-    display: block;
-    float: left;
-    padding: 22px 10px;
-  }
-  .col_2{
-    width: 25%;
-    display: block;
     float: left;
     padding: 20px 10px;
   }
   .col_3{
     width: 12%;
-    display: block;
     float: left;
     padding: 20px 10px;
   }
   .col_4{
     width: 15%;
-    display: block;
     float: left;
     padding: 20px 10px;
   }
   .col_5{
     width: 15%;
-    display: block;
     float: left;
     padding: 20px 10px;
   }
   .col_6{
     width: 8%;
-    display: block;
-    float: left;
-    padding: 20px 10px;
-  }
-  .col_7{
-    width: 18%;
-    display: block;
     float: left;
     padding: 20px 10px;
   }
@@ -684,9 +809,18 @@ header{
       color: $text_color;
       width: 100%;
       z-index: 10;
-      .close_button{
+      .close{
         float: right;
         cursor: pointer;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        background: $green_gradient;
+        img{
+          width: 15px;
+          height: 15px;
+          margin: 10px;
+        }
       }
       .inspection_header{
         background: $bg_dark_green;
@@ -858,16 +992,13 @@ header{
       padding: 15px 20px;
       min-height: 65px;
       .items-left{
-        display: block;
         float: left;
         color: $white_color;
         img{
-          display: block;
           float: left;
           padding: 13px 0;
         }
         .title{
-          display: block;
           float: left;
           margin-left: 10px;
           padding: 8px 0;
@@ -876,7 +1007,6 @@ header{
         }
         .btn-addServices{
           background: $green_gradient;
-          display: block;
           float: left;
           margin-left: 50px;
           padding: 8px 15px;
@@ -886,7 +1016,6 @@ header{
         }
       }
       .items-right{
-        display: block;
         float: right;
         a{
           color: $white_color;
@@ -913,7 +1042,6 @@ header{
           font-weight: bold;
           font-size: 14px;
           color: $white_color;
-          display: block;
           float: left;
           border-right: 1px solid $bg_light_blue;
           &:last-child{
@@ -941,13 +1069,11 @@ header{
           div[class^="col_"]{
             border-right: 1px solid $gray_color;
             >span{
-              display: block;
               float: left;
               width: 50%;
             }
             div,
             img{
-              display: block;
               float: right;
               padding: 0;
             }
@@ -1010,7 +1136,7 @@ header{
             }
             .action_btn{
               float: left;
-              width: 33%;
+              width: 35%;
               div{
                 float: left;
                 width: 49%;
@@ -1021,13 +1147,12 @@ header{
                 img{
                   cursor: pointer;
                   float: none;
-                  padding: 6px;
                   width: 100%;
                 }
               }
             }
             .status{
-              width: 66%;
+              width: 64%;
               margin-left: 1%;
               background: $orange_gradient;
               border-bottom: 2px solid $border_red_color;
@@ -1069,7 +1194,6 @@ header{
         .col12{
           width: 32%;
           float: left;
-          display: block;
           padding: 20px 5px;
         }
         .col_6{
@@ -1089,7 +1213,6 @@ header{
   .inner_wrapper{
     img,
     .section_title{
-      display: block;
       float: left;
       padding-right: 10px;
     }
@@ -1099,7 +1222,6 @@ header{
   .inner_wrapper{
     img,
     .section_title{
-      display: block;
       float: left;
       padding-right: 10px;
     }
@@ -1119,7 +1241,6 @@ header{
     margin: 0 1px 0 2px;
     >div{
       padding: 20px 5px;
-      display: block;
       float: left;
       border-right: 1px solid $gray_color;
       &:last-child{
@@ -1133,7 +1254,6 @@ header{
     .col12{
       width: 32%;
       float: left;
-      display: block;
       padding: 29px 15px;
     }
     .col_6{
@@ -1144,7 +1264,24 @@ header{
   }
   .confirm{
     background: $blue_gradient;
-    padding: 10px;
+    height: 33px;
+    text-transform: uppercase;
+    border-bottom: 2px solid $border_blue_color;
+    .icon{
+      width: 50px;
+      border-right: 1px solid $bg_blue;
+      padding: 9px 18px;
+      height: 100%;
+      display: inline-block;
+    }
+    .text{
+      width: calc(100% - 55px);
+      display: inline-block;
+      margin: 0;
+      padding: 0 10px;
+      font-weight: bold;
+      color: $white_color;
+    }
   }
 }
 
