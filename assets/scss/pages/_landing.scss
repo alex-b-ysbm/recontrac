@@ -702,9 +702,7 @@ header{
       .inspection_body{
         padding: 15px;
         .lists{
-          padding: 5px;
           color: $white_color;
-          margin-bottom: 5px;
           .header{
             background: $bg_section_title;
             padding: 5px;
@@ -721,6 +719,69 @@ header{
           .body{
             background: $white_color;
             width: 100%;
+            .row_items{
+              padding: 0 5px;
+              width: 100%;
+              border-bottom: 1px solid $grey_color;
+              color: $text_color;
+              &:last-child{
+                border: none;
+              }
+              .info_area,
+              .title_area,
+              .status_area,
+              .removing_area{
+                float: left;
+                padding: 5px;
+                height: 50px;
+              }
+              .info_area,
+              .title_area,
+              .status_area{
+                border-right: 1px solid $grey_color;
+              }
+              .info_area{
+                width: 17%;
+                .comm{
+                  float: right;
+                  font-size: 12px;
+                  font-weight: bold;
+                  padding: 8px;
+                }
+              }
+              .title_area{
+                width: 40%;
+              }
+              .status_area{
+                width: 39%;
+                padding: 0;
+                .stat{
+                  margin: 10px 2.8px;
+                  width: 30px;
+                  height: 30px;
+                  float: left;
+                  padding: 4px 0;
+                  text-align: center;
+                  span{
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: $white_color
+                  }
+                }
+                .red{
+                  background: $red;
+                }
+                .yellow{
+                  background: $yellow;
+                }
+                .green{
+                  background: $green;
+                }
+              }
+              .removing_area{
+                width: 4%;
+              }
+            }
           }
         }
       }

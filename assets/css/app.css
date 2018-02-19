@@ -655,9 +655,7 @@ header {
     .main_content .sidebar_popup .inspection .inspection_body {
       padding: 15px; }
       .main_content .sidebar_popup .inspection .inspection_body .lists {
-        padding: 5px;
-        color: #ffffff;
-        margin-bottom: 5px; }
+        color: #ffffff; }
         .main_content .sidebar_popup .inspection .inspection_body .lists .header {
           background: #386da0;
           padding: 5px;
@@ -669,6 +667,55 @@ header {
         .main_content .sidebar_popup .inspection .inspection_body .lists .body {
           background: #ffffff;
           width: 100%; }
+          .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items {
+            padding: 0 5px;
+            width: 100%;
+            border-bottom: 1px solid #cccccc;
+            color: #000000; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items:last-child {
+              border: none; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area,
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area,
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area,
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .removing_area {
+              float: left;
+              padding: 5px;
+              height: 50px; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area,
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area,
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area {
+              border-right: 1px solid #cccccc; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area {
+              width: 17%; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area .comm {
+                float: right;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 8px; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area {
+              width: 40%; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area {
+              width: 39%;
+              padding: 0; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .stat {
+                margin: 10px 2.8px;
+                width: 30px;
+                height: 30px;
+                float: left;
+                padding: 4px 0;
+                text-align: center; }
+                .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .stat span {
+                  font-size: 12px;
+                  font-weight: bold;
+                  color: #ffffff; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .red {
+                background: #dd4545; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .yellow {
+                background: #c5be00; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .green {
+                background: #519c00; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .removing_area {
+              width: 4%; }
     .main_content .sidebar_popup .inspection .inspection_footer {
       padding: 15px; }
       .main_content .sidebar_popup .inspection .inspection_footer .legend {
