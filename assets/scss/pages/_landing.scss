@@ -136,7 +136,7 @@ header{
     }
     .settings{
       padding: 25px 20px;
-      background: $grey_color;
+      background: $gray_color;
       span{
         margin-left: 10px;
         font-size: 14px;
@@ -232,7 +232,7 @@ header{
     width: 100%;
     height: auto;
     z-index: 10;
-    background: $light_grey_color;
+    background: $light_gray_color;
     padding: 30px   0px;
 
     label{
@@ -268,7 +268,7 @@ header{
       text-align: center;
       margin-top: 30px;
       .cancel{
-        background: $grey_color;
+        background: $gray_color;
         color: $text_color;
         padding: 15px;
         border: none;
@@ -414,13 +414,13 @@ header{
       position: absolute;
       top: 0px;
       left: 0px;
-      background: $light_grey_color;
+      background: $light_gray_color;
       color: $text_color;
       width: 300px;
       z-index: 10;
       li{
         cursor: pointer;
-        border-bottom: 1px solid $bg_dark_grey;
+        border-bottom: 1px solid $bg_dark_gray;
         padding: 15px;
 
         &:hover{
@@ -452,7 +452,7 @@ header{
       position: absolute;
       top: 0px;
       left: 0px;
-      background: $light_grey_color;
+      background: $light_gray_color;
       color: $text_color;
       width: 500px;
       z-index: 10;
@@ -570,7 +570,7 @@ header{
       position: absolute;
       top: 0px;
       left: 0px;
-      background: $light_grey_color;
+      background: $light_gray_color;
       color: $text_color;
       width: 500px;
       z-index: 10;
@@ -649,7 +649,7 @@ header{
             text-align: center;
             li{
               border-radius: 50%;
-              background: $grey_color;
+              background: $gray_color;
               width: 10px;
               height: 10px;
               display: inline-block;
@@ -680,7 +680,7 @@ header{
       position: absolute;
       top: 0px;
       left: 0px;
-      background: $light_grey_color;
+      background: $light_gray_color;
       color: $text_color;
       width: 100%;
       z-index: 10;
@@ -702,9 +702,7 @@ header{
       .inspection_body{
         padding: 15px;
         .lists{
-          padding: 5px;
           color: $white_color;
-          margin-bottom: 5px;
           .header{
             background: $bg_section_title;
             padding: 5px;
@@ -721,6 +719,69 @@ header{
           .body{
             background: $white_color;
             width: 100%;
+            .row_items{
+              padding: 0 5px;
+              width: 100%;
+              border-bottom: 1px solid $gray_color;
+              color: $text_color;
+              &:last-child{
+                border: none;
+              }
+              .info_area,
+              .title_area,
+              .status_area,
+              .removing_area{
+                float: left;
+                padding: 5px;
+                height: 50px;
+              }
+              .info_area,
+              .title_area,
+              .status_area{
+                border-right: 1px solid $gray_color;
+              }
+              .info_area{
+                width: 17%;
+                .comm{
+                  float: right;
+                  font-size: 12px;
+                  font-weight: bold;
+                  padding: 8px;
+                }
+              }
+              .title_area{
+                width: 40%;
+              }
+              .status_area{
+                width: 39%;
+                padding: 0;
+                .stat{
+                  margin: 10px 2.8px;
+                  width: 30px;
+                  height: 30px;
+                  float: left;
+                  padding: 4px 0;
+                  text-align: center;
+                  span{
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: $white_color
+                  }
+                }
+                .red{
+                  background: $red;
+                }
+                .yellow{
+                  background: $yellow;
+                }
+                .green{
+                  background: $green;
+                }
+              }
+              .removing_area{
+                width: 4%;
+              }
+            }
           }
         }
       }
@@ -814,7 +875,7 @@ header{
           font-weight: bold;
         }
         .btn-addServices{
-          background: $bg_green;
+          background: $green_gradient;
           display: block;
           float: left;
           margin-left: 50px;
@@ -862,19 +923,23 @@ header{
       }
       .table_content{
         >div{
-          border-left: 1px solid $grey_color;
-          border-bottom: 1px solid $grey_color;
+          border-left: 1px solid $gray_color;
+          border-bottom: 1px solid $gray_color;
           &:last-child{
             border-bottom: 2px solid $text_color;
+          }
+          &.down{
+            background-color: $bg_selected_row;
           }
           .col_1{
             img{
               float: none !important;
               margin: 0 auto;
+              cursor: pointer;
             }
           }
           div[class^="col_"]{
-            border-right: 1px solid $grey_color;
+            border-right: 1px solid $gray_color;
             >span{
               display: block;
               float: left;
@@ -895,9 +960,7 @@ header{
               -moz-user-select: none;
               -ms-user-select: none;
               user-select: none;
-              border: 2px solid $bg_green;
               margin-right: 5px;
-
               input{
                 position: absolute;
                 opacity: 0;
@@ -910,10 +973,10 @@ header{
 
                 &:checked{
                   ~.checkmark{
-                     background-color: $bg_green;
+                    border-color: $bg_green;
                      &:after {
                          display: block;
-                         border-color: $bg_dark_green;
+                         border-color: $bg_green;
                      }
                   }
                 }
@@ -923,14 +986,15 @@ header{
                 position: absolute;
                 top: 0;
                 left: 0;
-                height: 26px;
-                width: 26px;
+                height: 30px;
+                width: 30px;
                 background-color: $white_color;
+                border: 2px solid $gray_color;
 
                 &:after {
                     content: "";
                     position: absolute;
-                    // display: none;
+                    display: none;
 
                     left: 10px;
                     top: 6px;
@@ -951,13 +1015,13 @@ header{
                 float: left;
                 width: 49%;
                 height: 30px;
-                background: $bg_dark_grey;
                 &:first-child{
                   margin-right: 2%;
                 }
                 img{
+                  cursor: pointer;
                   float: none;
-                  padding: 9px;
+                  padding: 6px;
                   width: 100%;
                 }
               }
@@ -965,13 +1029,15 @@ header{
             .status{
               width: 66%;
               margin-left: 1%;
-              background: $bg_orange;
+              background: $orange_gradient;
+              border-bottom: 2px solid $border_red_color;
               padding: 0;
               font-size: 14px;
               font-weight: bold;
               color: $white_color;
               height: 30px;
               text-align: center;
+              cursor: pointer;
               &.hidden{
                 display: none;
               }
@@ -993,6 +1059,7 @@ header{
             background: $total_bg;
             color: $white_color;
           }
+
         }
 
       }
@@ -1011,7 +1078,7 @@ header{
           text-align: center;
         }
         div{
-          border-right: 1px solid $grey_color;
+          border-right: 1px solid $gray_color;
         }
       }
     }
@@ -1054,7 +1121,7 @@ header{
       padding: 20px 5px;
       display: block;
       float: left;
-      border-right: 1px solid $grey_color;
+      border-right: 1px solid $gray_color;
       &:last-child{
         border-right: none;
       }
@@ -1074,6 +1141,10 @@ header{
       color: $white_color;
       text-align: center;
     }
+  }
+  .confirm{
+    background: $blue_gradient;
+    padding: 10px;
   }
 }
 
@@ -1236,12 +1307,21 @@ header{
   left: calc(50% - 900px / 2);  ;
   height: 600px;
   width: 900px;
-  background: $light_grey_color;
+  background: $light_gray_color;
   z-index: 1001;
 
   .close{
     float: right;
     cursor: pointer;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: $green_gradient;
+    img{
+      width: 15px;
+      height: 15px;
+      margin: 10px;
+    }
   }
   .modal_header{
     background: $bg_green;
@@ -1271,8 +1351,10 @@ header{
     .add_service{
       float: left;
       text-align: center;
-      width: 40%;
+      width: 25%;
+      margin-left: 50px;
       padding: 8px;
+      background: $green_gradient;
       img{
         margin-right: 10px;
       }
@@ -1330,16 +1412,16 @@ header{
         margin-bottom: 10px;
         tr{
           width: 100%;
-          border-bottom: 1px solid $light_grey_color;
+          border-bottom: 1px solid $light_gray_color;
           background:  $white_color;
           &:last-child{
             border: none;
           }
           &.checked{
-            background: $light_grey_color;
+            background: $light_gray_color;
           }
           td:first-child{
-            border-right: 1px solid $grey_color;
+            border-right: 1px solid $gray_color;
           }
         }
         th{
@@ -1352,11 +1434,12 @@ header{
         td{
           padding: 7px;
           font-size: 12px;
+          vertical-align: middle;
           input{
-            width: 50px;
+            width: 65px;
             padding: 5px;
-            background: $grey_color;
-            border: none;
+            background: transparent;
+            border: 1px solid $gray_color;
             text-align: center;
             &:focus{
               outline-width: 0;
@@ -1387,7 +1470,7 @@ header{
 
             &:checked{
               ~.checkmark{
-                 background-color: $text_color;
+                 border-color: $bg_dark_green;
                  &:after {
                      display: block;
                      background: $bg_dark_green;
@@ -1402,7 +1485,7 @@ header{
             left: 0;
             height: 20px;
             width: 20px;
-            background-color: $grey_color;
+            border: 2px solid $gray_color;
 
             &:after {
                 content: "";

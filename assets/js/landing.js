@@ -122,4 +122,13 @@ $(document).ready(function(){
   $('.modal_service .title').click(function(){
     $(this).closest('.row').toggleClass('selected');
   })
+  $(".rate").click(function(){
+    if ($(this)[0].src.indexOf('up') > 0){
+      $(this)[0].src = $(this)[0].src.replace('up', 'down');
+    } else{
+      $(this)[0].src = $(this)[0].src.replace('down', 'up')
+    }
+    $(this).closest('.clearfix').toggleClass('down');
+    // $(".rate")[0].src = $(".rate")[0].src.replace('hand_up', 'hand_down')
+  })
 })

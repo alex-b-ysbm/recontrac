@@ -655,9 +655,7 @@ header {
     .main_content .sidebar_popup .inspection .inspection_body {
       padding: 15px; }
       .main_content .sidebar_popup .inspection .inspection_body .lists {
-        padding: 5px;
-        color: #ffffff;
-        margin-bottom: 5px; }
+        color: #ffffff; }
         .main_content .sidebar_popup .inspection .inspection_body .lists .header {
           background: #386da0;
           padding: 5px;
@@ -669,6 +667,55 @@ header {
         .main_content .sidebar_popup .inspection .inspection_body .lists .body {
           background: #ffffff;
           width: 100%; }
+          .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items {
+            padding: 0 5px;
+            width: 100%;
+            border-bottom: 1px solid #cccccc;
+            color: #000000; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items:last-child {
+              border: none; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area,
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area,
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area,
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .removing_area {
+              float: left;
+              padding: 5px;
+              height: 50px; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area,
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area,
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area {
+              border-right: 1px solid #cccccc; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area {
+              width: 17%; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area .comm {
+                float: right;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 8px; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area {
+              width: 40%; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area {
+              width: 39%;
+              padding: 0; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .stat {
+                margin: 10px 2.8px;
+                width: 30px;
+                height: 30px;
+                float: left;
+                padding: 4px 0;
+                text-align: center; }
+                .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .stat span {
+                  font-size: 12px;
+                  font-weight: bold;
+                  color: #ffffff; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .red {
+                background: #dd4545; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .yellow {
+                background: #c5be00; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .green {
+                background: #519c00; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .removing_area {
+              width: 4%; }
     .main_content .sidebar_popup .inspection .inspection_footer {
       padding: 15px; }
       .main_content .sidebar_popup .inspection .inspection_footer .legend {
@@ -782,7 +829,7 @@ header {
         .main_content .detail_section.open .mech_title .items-left .btn-addServices,
         .main_content .detail_section.open .bshop_title .items-left .btn-addServices,
         .main_content .detail_section.open .detail_title .items-left .btn-addServices {
-          background: #63b111;
+          background: linear-gradient(to top, #00a213, #65de2e);
           display: block;
           float: left;
           margin-left: 50px;
@@ -884,6 +931,16 @@ header {
       .main_content .detail_section.open .bshop_table .table_content > div:last-child,
       .main_content .detail_section.open .detail_table .table_content > div:last-child {
         border-bottom: 2px solid #000000; }
+      .main_content .mechanical_section_wrapper .mech_table .table_content > div.down,
+      .main_content .mechanical_section_wrapper .bshop_table .table_content > div.down,
+      .main_content .mechanical_section_wrapper .detail_table .table_content > div.down,
+      .main_content .bshop_section.open .mech_table .table_content > div.down,
+      .main_content .bshop_section.open .bshop_table .table_content > div.down,
+      .main_content .bshop_section.open .detail_table .table_content > div.down,
+      .main_content .detail_section.open .mech_table .table_content > div.down,
+      .main_content .detail_section.open .bshop_table .table_content > div.down,
+      .main_content .detail_section.open .detail_table .table_content > div.down {
+        background-color: #ececec; }
       .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_1 img,
       .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_1 img,
       .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_1 img,
@@ -894,7 +951,8 @@ header {
       .main_content .detail_section.open .bshop_table .table_content > div .col_1 img,
       .main_content .detail_section.open .detail_table .table_content > div .col_1 img {
         float: none !important;
-        margin: 0 auto; }
+        margin: 0 auto;
+        cursor: pointer; }
       .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"],
       .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"],
       .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"],
@@ -955,7 +1013,6 @@ header {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
-          border: 2px solid #63b111;
           margin-right: 5px; }
           .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox input,
           .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input,
@@ -983,7 +1040,7 @@ header {
             .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
             .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
             .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark {
-              background-color: #63b111; }
+              border-color: #63b111; }
               .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
               .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
               .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
@@ -994,7 +1051,7 @@ header {
               .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
               .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after {
                 display: block;
-                border-color: #438300; }
+                border-color: #63b111; }
           .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
           .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
           .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
@@ -1007,9 +1064,10 @@ header {
             position: absolute;
             top: 0;
             left: 0;
-            height: 26px;
-            width: 26px;
-            background-color: #ffffff; }
+            height: 30px;
+            width: 30px;
+            background-color: #ffffff;
+            border: 2px solid #cccccc; }
             .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
             .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
             .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
@@ -1021,6 +1079,7 @@ header {
             .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after {
               content: "";
               position: absolute;
+              display: none;
               left: 10px;
               top: 6px;
               width: 5px;
@@ -1052,8 +1111,7 @@ header {
           .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div {
             float: left;
             width: 49%;
-            height: 30px;
-            background: #888890; }
+            height: 30px; }
             .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn div:first-child,
             .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn div:first-child,
             .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn div:first-child,
@@ -1073,8 +1131,9 @@ header {
             .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div img,
             .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div img,
             .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div img {
+              cursor: pointer;
               float: none;
-              padding: 9px;
+              padding: 6px;
               width: 100%; }
         .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .status,
         .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .status,
@@ -1087,13 +1146,15 @@ header {
         .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .status {
           width: 66%;
           margin-left: 1%;
-          background: #d77f17;
+          background: linear-gradient(to top, #d46700, #e19800);
+          border-bottom: 2px solid #a81000;
           padding: 0;
           font-size: 14px;
           font-weight: bold;
           color: #ffffff;
           height: 30px;
-          text-align: center; }
+          text-align: center;
+          cursor: pointer; }
           .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .status.hidden,
           .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .status.hidden,
           .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .status.hidden,
@@ -1279,6 +1340,9 @@ header {
       background: #a6a6a6;
       color: #ffffff;
       text-align: center; }
+  .total_section .confirm {
+    background: linear-gradient(to top, #245596, #3274af);
+    padding: 10px; }
 
 .bshop_section.close .bshop_title,
 .bshop_section.close .bshop_table,
@@ -1430,7 +1494,15 @@ header {
   z-index: 1001; }
   .modal_service .close {
     float: right;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(to top, #00a213, #65de2e); }
+    .modal_service .close img {
+      width: 15px;
+      height: 15px;
+      margin: 10px; }
   .modal_service .modal_header {
     background: #63b111;
     width: 100%;
@@ -1477,8 +1549,10 @@ header {
     .modal_service .modal_header .add_service {
       float: left;
       text-align: center;
-      width: 40%;
-      padding: 8px; }
+      width: 25%;
+      margin-left: 50px;
+      padding: 8px;
+      background: linear-gradient(to top, #00a213, #65de2e); }
       .modal_service .modal_header .add_service img {
         margin-right: 10px; }
       .modal_service .modal_header .add_service span {
@@ -1537,12 +1611,13 @@ header {
         text-align: left; }
       .modal_service .modal_content .selected table td {
         padding: 7px;
-        font-size: 12px; }
+        font-size: 12px;
+        vertical-align: middle; }
         .modal_service .modal_content .selected table td input {
-          width: 50px;
+          width: 65px;
           padding: 5px;
-          background: #cccccc;
-          border: none;
+          background: transparent;
+          border: 1px solid #cccccc;
           text-align: center; }
           .modal_service .modal_content .selected table td input:focus {
             outline-width: 0;
@@ -1578,7 +1653,7 @@ header {
           width: 100%;
           height: 100%; }
           .modal_service .modal_content .selected table .custom_checkbox input:checked ~ .checkmark {
-            background-color: #000000; }
+            border-color: #438300; }
             .modal_service .modal_content .selected table .custom_checkbox input:checked ~ .checkmark:after {
               display: block;
               background: #438300; }
@@ -1588,7 +1663,7 @@ header {
           left: 0;
           height: 20px;
           width: 20px;
-          background-color: #cccccc; }
+          border: 2px solid #cccccc; }
           .modal_service .modal_content .selected table .custom_checkbox .checkmark:after {
             content: "";
             position: absolute;
