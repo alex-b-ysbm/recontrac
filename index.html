@@ -1,0 +1,1447 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="author" content="">
+
+  <title>ReconTrac landing page</title>
+
+  <link href="assets/css/app.css" rel="stylesheet">
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="assets/js/global.js" charset="utf-8"></script>
+  <script src="assets/js/landing.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+      <div class="btn-menu">
+        <img src="assets/images/close.png" alt="">
+        <span>Menu</span>
+      </div>
+      <div class="submenu hidden">
+        <ul>
+          <li>My dashboard</li>
+          <li>Create new job</li>
+          <li>See upcoming job</li>
+          <li>Reports</li>
+          <li>Dept quick links</li>
+          <li>System settings</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="logo">
+      <a href="/"><img src="assets/images/logo.png" alt=""></a>
+    </div>
+    <nav class="right">
+      <div class="search">
+        <form class="search_form" action="" method="get">
+          <input type="text" name="s" value="" placeholder="Search">
+          <button type="submit"><img src="assets/images/search-btn.png" alt=""></button>
+        </form>
+      </div>
+      <div class="user_acc">
+        <div class="">
+          <img src="assets/images/user_acc.png" alt="">
+        </div>
+      </div>
+      <div class="submenu hidden">
+        <div class="user_info clearfix">
+          <div class="user_image">
+            <img src="assets/images/user_img.png" alt="">
+          </div>
+          <div class="username">
+            <h2>Jonh Doe</h2>
+            <div class="user_desc">
+              1 Eric Demo Site - w/feed
+            </div>
+          </div>
+        </div>
+        <div class="settings">
+          <img src="assets/images/settings.png" alt="">
+          <span>User settings</span>
+        </div>
+        <div class="logout">
+          <img src="assets/images/logout.png" alt="">
+          <span>Logout</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="info_section">
+        <div class="info_box">
+          <ul>
+            <li>Inv# ERI12345</li>
+            <li>Inspection Type</li>
+            <li>Stock# 12345</li>
+            <li>2018 Jeep Grand Cherokee</li>
+            <li>VIN 12345678965482400</li>
+            <li>RO# 789456</li>
+            <li>Time in Recon: 4.7 days</li>
+          </ul>
+        </div>
+        <div class="subsection hidden clearfix">
+          <div class="col-3">
+            <div class="row clearfix">
+              <div class="col-1">
+                <label>Stock#:</label>
+                <input type="text" name="" value="N/A">
+              </div>
+            </div>
+            <div class="row clearfix">
+              <div class="col-1">
+                <label>Model:</label>
+                <input type="text" name="" value="C-Class">
+              </div>
+            </div>
+            <div class="row clearfix">
+              <div class="col-1">
+                <label>Mileage:</label>
+                <input type="text" name="" value="">
+              </div>
+            </div>
+            <div class="row clearfix">
+              <div class="col-1">
+                <label>Inventory date:</label>
+                <input type="text" name="" value="11/28/2017">
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row clearfix">
+              <div class="col-1">
+                <label>VIN#:</label>
+                <input type="text" name="" value="55SWF4KB6FU020809">
+              </div>
+            </div>
+            <div class="row clearfix">
+              <div class="col-1">
+                <label>Year:</label>
+                <input type="text" name="" value="2015">
+              </div>
+            </div>
+            <div class="row clearfix">
+              <div class="col-1">
+                <label>RO:</label>
+                <input type="text" name="" value="">
+              </div>
+            </div>
+            <div class="row clearfix">
+              <div class="col-1">
+                <label>Tag:</label>
+                <select class="" name="">
+                  <option value="">Vince</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row clearfix">
+              <div class="col-1">
+                <label>Make:</label>
+                <input type="text" name="" value="Mercedes-Benz">
+              </div>
+            </div>
+            <div class="row clearfix">
+              <div class="col-1">
+                <label>Color:</label>
+                <input type="text" name="" value="N/A">
+              </div>
+            </div>
+            <div class="row clearfix">
+              <div class="col-1">
+                <label>HAT:</label>
+                <input type="text" name="" value="">
+              </div>
+            </div>
+          </div>
+          <hr class="col-1">
+          <div class="col-1 buttons">
+            <button type="button" name="button" class="cancel"><img src="assets/images/arrow_up.png" alt=""> Cancel</button>
+            <button type="button" name="button" class="update"><img src="assets/images/save.png" alt=""> Update Vehicle</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="step_section">
+        <div class="step item_1">
+          <div class="step_icon">
+            <img src="assets/images/eye.png" alt="">
+          </div>
+          <div class="step_title">
+            Inspection dept
+          </div>
+        </div>
+        <div class="step item_2 selected">
+          <div class="step_icon">
+            <img src="assets/images/mech.png" alt="">
+          </div>
+          <div class="step_title">
+            Mechanical dept
+          </div>
+        </div>
+        <div class="step item_3">
+          <div class="step_icon">
+            <img src="assets/images/key.png" alt="">
+          </div>
+          <div class="step_title">
+            Detail dept
+          </div>
+        </div>
+        <div class="send_wrapper">
+          <a href="#" class="send_button">Send for approval</a>
+        </div>
+      </div>
+    </div>
+    <div class="row main_content">
+      <div class="sidebar_popup">
+        <!-- Action begin -->
+        <div class="action hidden">
+          <ul>
+            <li class="has-child-menu">
+              <span>Send to another dept</span>
+              <div class="align-right">
+                >
+              </div>
+              <ul class="subsubmenu hidden">
+                <li>Inspection</li>
+                <li>Parts pricing</li>
+                <li>Mechanical</li>
+                <li>Preferred packege</li>
+                <li>Interior repair</li>
+                <li>PDR</li>
+                <li>Body shop</li>
+              </ul>
+            </li>
+            <li><span>Recall lookup</span></li>
+            <li><span>View activity</span></li>
+            <li><span>View stats</span></li>
+            <li><span>&nbsp;</span></li>
+            <li><span>Put on hold</span></li>
+            <li><span>Delete this job</span></li>
+          </ul>
+        </div>
+        <!-- Action end -->
+        <!-- Note begin -->
+        <div class="note hidden">
+          <div class="chat">
+            <div class="close clearfix">
+              <img src="assets/images/close_button.png" alt="" class="close_button">
+            </div>
+            <div class="chat_section">
+              <div class="message item_1 question">
+                <div class="bulb item_right">
+                  <span>Test</span>
+                </div>
+                <div class="info">
+                  <strong>Al Fard</strong> at 01/02/208 10:55AM
+                </div>
+              </div>
+              <div class="message item_2 answer">
+                <div class="bulb item_left">
+                  <span>What's the deal here?</span>
+                </div>
+                <div class="info">
+                  <strong>Eric Moen Green</strong> at 01/02/208 10:55AM
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="question_section clearfix">
+              <form class="question_form" action="" method="post">
+                <textarea name="question" placeholder="Write your notes here"></textarea>
+                <button type="button" name="button" class="btn-print">Print notes</button>
+                <button type="button" name="button" class="btn-add">Add note</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Note end -->
+        <!-- Photo begin -->
+        <div class="photo hidden">
+          <div class="gallery">
+            <div class="close clearfix">
+              <img src="assets/images/close_button.png" alt="" class="close_button">
+            </div>
+            <div class="photo_section clearfix">
+              <div class="photos item_1">
+                <div class="notes">
+                  <input type="text" name="" value="" class="hidden" placeholder="Leave note here">
+                  <img src="assets/images/car_1.png" alt="" class="car_images">
+                  <img src="assets/images/bulb.png" class="bulb">
+                  <img src="assets/images/close_black.png" class="bulb hidden">
+                </div>
+                <div class="zoom hidden">
+                  <img src="assets/images/zoom.png" alt="">
+                </div>
+              </div>
+              <div class="photos item_2">
+                <div class="notes">
+                  <input type="text" name="" value="" class="hidden" placeholder="Leave note here">
+                  <img src="assets/images/car_2.png" alt="" class="car_images">
+                  <img src="assets/images/bulb.png" class="bulb">
+                  <img src="assets/images/close_black.png" class="bulb hidden">
+                </div>
+                <div class="zoom hidden">
+                  <img src="assets/images/zoom.png" alt="">
+                </div>
+              </div>
+              <div class="photos item_3">
+                <div class="notes">
+                  <input type="text" name="" value="" class="hidden" placeholder="Leave note here">
+                  <img src="assets/images/car_3.png" alt="" class="car_images">
+                  <img src="assets/images/bulb.png" class="bulb">
+                  <img src="assets/images/close_black.png" class="bulb hidden">
+                </div>
+                <div class="zoom hidden">
+                  <img src="assets/images/zoom.png" alt="">
+                </div>
+              </div>
+              <div class="photos item_4">
+                <div class="notes">
+                  <input type="text" name="" value="" class="hidden" placeholder="Leave note here">
+                  <img src="assets/images/car_4.png" alt="" class="car_images">
+                  <img src="assets/images/bulb.png" class="bulb">
+                  <img src="assets/images/close_black.png" class="bulb hidden">
+                </div>
+                <div class="zoom hidden">
+                  <img src="assets/images/zoom.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="pagination clearfix">
+              <div class="prev">
+                <img src="assets/images/prev.png" alt="">
+              </div>
+              <div class="next">
+                <img src="assets/images/next.png" alt="">
+              </div>
+              <div class="pages">
+                <ul>
+                  <li class="current"></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <div class="button_section">
+              <button type="button" name="addPhoto">+ Add Photo</button>
+            </div>
+          </div>
+        </div>
+        <!-- Photo end  -->
+        <!-- Inspection begin -->
+        <div class="inspection hidden">
+          <div class="inspection_content">
+            <div class="inspection_header clearfix">
+              <div class="close">
+                <img src="assets/images/close_button.png" alt="" class="close_button">
+              </div>
+              <div class="col-4">
+                <div class="row">
+                  <span class="col-2">Created:</span>
+                  <span>11/29/2017 3:23PM</span>
+                </div>
+                <div class="row">
+                  <span class="col-2">Inspected at:</span>
+                  <span>01/12/2018 3:23PM</span>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="row">
+                  <span class="col-3">Advisior Name:</span>
+                  <span>Eric Moen Green Cloud Admin</span>
+                </div>
+                <div class="row">
+                  <span class="col-3">Technician Name:</span>
+                  <span>Al Frad</span>
+                </div>
+              </div>
+            </div>
+            <div class="inspection_body">
+              <div class="lists item_1 opened">
+                <div class="header">
+                  <img src="assets/images/arrow_open.png" alt="">
+                  <span>Battery Performance</span>
+                </div>
+                <div class="body">
+                  <div class="info_area">
+
+                  </div>
+                  <div class="title_area"></div>
+                  <div class="status_area"></div>
+                </div>
+              </div>
+              <div class="lists item_2 opened">
+                <div class="header">
+                  <img src="assets/images/arrow_open.png" alt="">
+                  <span>Tread Depth</span>
+                </div>
+                <div class="body">
+
+                </div>
+              </div>
+              <div class="lists item_3 closed">
+                <div class="header">
+                  <img src="assets/images/arrow_close.png" alt="">
+                  <span>Check Brake Linings</span>
+                </div>
+                <div class="body">
+
+                </div>
+              </div>
+            </div>
+            <div class="inspection_footer clearfix">
+              <div class="legend">
+                <div class="col-3">
+                  <img src="assets/images/excl_red.png" alt="">
+                  <div> &mdash; Checked and Okay at this Time</div>
+                </div>
+                <div class="col-3">
+                  <img src="assets/images/question_yellow.png" alt="">
+                  <div> &mdash; May Required Future Attension</div>
+                </div>
+                <div class="col-3">
+                  <img src="assets/images/check_green.png" alt="">
+                  <div> &mdash; Requires Immediate Attension</div>
+                </div>
+              </div>
+              <div class="button_area">
+                <div class="button">
+                  <img src="assets/images/refresh.png" alt="">
+                  update inspection
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Inspection end -->
+      </div>
+      <div class="sidebar">
+
+        <div class="btn">
+          <div class="btn-insp">inspection</div>
+        </div>
+        <div class="btn">
+          <div class="btn-photo">photos</div>
+        </div>
+        <div class="btn">
+          <div class="btn-note">Notes</div>
+        </div>
+        <div class="btn">
+          <div class="btn-action">Actions</div>
+
+        </div>
+      </div>
+      <div class="mechanical_section_wrapper">
+        <div class="mechanical_section">
+          <div class="mech_title">
+            <div class="items-left close_section">
+              <img src="assets/images/arrow_open.png" alt="arrow_open">
+              <div class="title">
+                Mechanical
+              </div>
+              <div class="btn-addServices">
+                Add service
+              </div>
+            </div>
+            <div class="items-right">
+              <a href="#">Print <img src="assets/images/print.png" alt=""></a>
+            </div>
+          </div>
+          <div class="mech_table">
+            <div class="table_title clearfix">
+              <div class="title col_1">
+                Accept
+              </div>
+              <div class="title col_2">
+                Services
+              </div>
+              <div class="title col_3">
+                Labor hours
+              </div>
+              <div class="title col_4">
+                Labor
+              </div>
+              <div class="title col_5">
+                Parts
+              </div>
+              <div class="title col_6">
+                Total
+              </div>
+              <div class="title col_7">
+                &nbsp;
+              </div>
+            </div>
+            <div class="table_content ">
+              <div class="row_1 clearfix">
+                <div class="col_1">
+                  <img src="assets/images/hand_up.png" alt="">
+                </div>
+                <div class="col_2">
+                  <span>Rear Brakes</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_3">
+                  <span>1.5</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_4">
+                  <span>$100.00</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_5">
+                  <span>$0.00</span>
+                  <img src="assets/images/part_grey.png">
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_6">$100.00</div>
+                <div class="col_7">
+                  <div class="action_btn">
+                    <div class="comment">
+                      <img src="assets/images/bulb.png" alt="">
+                    </div>
+                    <div class="trash">
+                      <img src="assets/images/trash.png" alt="">
+                    </div>
+                  </div>
+                  <div class="status">
+                    <span>Not completed</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row_2 clearfix">
+                <div class="col_1"><img src="assets/images/hand_up.png" alt=""></div>
+                <div class="col_2">
+                  <span>Front Brakes</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_3">
+                  <span>1.0</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_4">
+                  <span>$100.00</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_5">
+                  <span>$0.00</span>
+                  <img src="assets/images/part_grey.png">
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_6">$100.00</div>
+                <div class="col_7">
+                  <div class="action_btn">
+                    <div class="comment">
+                      <img src="assets/images/bulb.png" alt="">
+                    </div>
+                    <div class="trash">
+                      <img src="assets/images/trash.png" alt="">
+                    </div>
+                  </div>
+                  <div class="status">
+                    <span>Not completed</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row_3 clearfix">
+                <div class="col_1"><img src="assets/images/hand_down.png" alt=""></div>
+                <div class="col_2">
+                  <span>A/C Service</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_3">
+                  <span>1.0</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_4">
+                  <span>$100.00</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_5">
+                  <span>$0.00</span>
+                  <img src="assets/images/part_red.png">
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_6">&nbsp;</div>
+                <div class="col_7">
+                  <div class="action_btn">
+                    <div class="comment">
+                      <img src="assets/images/bulb.png" alt="">
+                    </div>
+                    <div class="trash">
+                      <img src="assets/images/trash.png" alt="">
+                    </div>
+                  </div>
+                  <div class="status hidden">
+                    <span>Not completed</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row_4 clearfix">
+                <div class="col_1"><img src="assets/images/hand_up.png" alt=""></div>
+                <div class="col_2">
+                  <span>Aligment</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_3">
+                  <span>0.75</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_4">
+                  <span>$56.25</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_5">
+                  <span>$0.00</span>
+                  <img src="assets/images/part_grey.png">
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_6">$56.25</div>
+                <div class="col_7">
+                  <div class="action_btn">
+                    <div class="comment">
+                      <img src="assets/images/bulb.png" alt="">
+                    </div>
+                    <div class="trash">
+                      <img src="assets/images/trash.png" alt="">
+                    </div>
+                  </div>
+                  <div class="status">
+                    <span>Not completed</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row_5 clearfix">
+                <div class="col_1"><img src="assets/images/hand_down.png" alt=""></div>
+                <div class="col_2">
+                  <span>LOFR</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_3">
+                  <span>0.25</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_4">
+                  <span>$18.78</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_5">
+                  <span>$20.00</span>
+                  <img src="assets/images/part_grey.png">
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_6">$38.75</div>
+                <div class="col_7">
+                  <div class="action_btn">
+                    <div class="comment">
+                      <img src="assets/images/bulb.png" alt="">
+                    </div>
+                    <div class="trash">
+                      <img src="assets/images/trash.png" alt="">
+                    </div>
+                  </div>
+                  <div class="status hidden">
+                    <span>Not completed</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row_6 clearfix">
+                <div class="col_1"><img src="assets/images/hand_up.png" alt=""></div>
+                <div class="col_2">
+                  <span>Radiator Flush</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_3">
+                  <span>1.0</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_4">
+                  <span>$100.00</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_5">
+                  <span>$0.00</span>
+                  <img src="assets/images/part_grey.png">
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_6">$100.00</div>
+                <div class="col_7">
+                  <div class="action_btn">
+                    <div class="comment">
+                      <img src="assets/images/bulb.png" alt="">
+                    </div>
+                    <div class="trash">
+                      <img src="assets/images/trash.png" alt="">
+                    </div>
+                  </div>
+                  <div class="status">
+                    <span>Not completed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="total clearfix">
+              <div class="col12">
+                Mechanical total
+              </div>
+              <div class="col_3">7.0</div>
+              <div class="col_4">$640.00</div>
+              <div class="col_5">$265.00</div>
+              <div class="col_6">$680.00</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bshop_section clearfix close">
+        <div class="inner_wrapper">
+          <div class="open_section">
+            <img src="assets/images/arrow_close_black.png" alt="">
+            <div class="section_title">
+              Body Shop
+            </div>
+          </div>
+
+          <div class="bshop_title">
+            <div class="items-left close_section">
+              <img src="assets/images/arrow_open.png" alt="arrow_open">
+              <div class="title">
+                Body Shop
+              </div>
+              <div class="btn-addServices">
+                Add service
+              </div>
+            </div>
+            <div class="items-right">
+              <a href="#">Print <img src="assets/images/print.png" alt=""></a>
+            </div>
+          </div>
+          <div class="bshop_table">
+            <div class="table_title clearfix">
+              <div class="title col_1">
+                Accept
+              </div>
+              <div class="title col_2">
+                Services
+              </div>
+              <div class="title col_3">
+                Labor hours
+              </div>
+              <div class="title col_4">
+                Labor
+              </div>
+              <div class="title col_5">
+                Parts
+              </div>
+              <div class="title col_6">
+                Total
+              </div>
+              <div class="title col_7">
+                &nbsp;
+              </div>
+            </div>
+            <div class="table_content ">
+              <div class="row_1 clearfix">
+                <div class="col_1"><img src="assets/images/hand_up.png" alt=""></div>
+                <div class="col_2">
+                  <span>Rear Brakes</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_3">
+                  <span>1.5</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_4">
+                  <span>$100.00</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_5">
+                  <span>$0.00</span>
+                  <img src="assets/images/part_grey.png">
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_6">$100.00</div>
+                <div class="col_7">
+                  <div class="action_btn">
+                    <div class="comment">
+                      <img src="assets/images/bulb.png" alt="">
+                    </div>
+                    <div class="trash">
+                      <img src="assets/images/trash.png" alt="">
+                    </div>
+                  </div>
+                  <div class="status">
+                    <span>Not completed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="total clearfix">
+              <div class="col12">
+                Body shop total
+              </div>
+              <div class="col_3">7.0</div>
+              <div class="col_4">$640.00</div>
+              <div class="col_5">$265.00</div>
+              <div class="col_6">$680.00</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Detail section start -->
+      <div class="detail_section clearfix close">
+        <div class="inner_wrapper">
+          <div class="open_section">
+            <img src="assets/images/arrow_close_black.png" alt="">
+            <div class="section_title">
+              Detail
+            </div>
+          </div>
+
+          <div class="detail_title">
+            <div class="items-left close_section">
+              <img src="assets/images/arrow_open.png" alt="arrow_open">
+              <div class="title">
+                Detail
+              </div>
+              <div class="btn-addServices">
+                Add service
+              </div>
+            </div>
+            <div class="items-right">
+              <a href="#">Print <img src="assets/images/print.png" alt=""></a>
+            </div>
+          </div>
+          <div class="detail_table">
+            <div class="table_title clearfix">
+              <div class="title col_1">
+                Accept
+              </div>
+              <div class="title col_2">
+                Services
+              </div>
+              <div class="title col_3">
+                Labor hours
+              </div>
+              <div class="title col_4">
+                Labor
+              </div>
+              <div class="title col_5">
+                Parts
+              </div>
+              <div class="title col_6">
+                Total
+              </div>
+              <div class="title col_7">
+                &nbsp;
+              </div>
+            </div>
+            <div class="table_content ">
+              <div class="row_1 clearfix">
+                <div class="col_1"><img src="assets/images/hand_up.png" alt=""></div>
+                <div class="col_2">
+                  <span>Rear Brakes</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_3">
+                  <span>1.5</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_4">
+                  <span>$100.00</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_5">
+                  <span>$0.00</span>
+                  <img src="assets/images/part_grey.png">
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_6">$100.00</div>
+                <div class="col_7">
+                  <div class="action_btn">
+                    <div class="comment">
+                      <img src="assets/images/bulb.png" alt="">
+                    </div>
+                    <div class="trash">
+                      <img src="assets/images/trash.png" alt="">
+                    </div>
+                  </div>
+                  <div class="status">
+                    <span>Not completed</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row_2 clearfix">
+                <div class="col_1"><img src="assets/images/hand_up.png" alt=""></div>
+                <div class="col_2">
+                  <span>Front Brakes</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_3">
+                  <span>1.0</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_4">
+                  <span>$100.00</span>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_5">
+                  <span>$0.00</span>
+                  <img src="assets/images/part_grey.png">
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+                <div class="col_6">$100.00</div>
+                <div class="col_7">
+                  <div class="action_btn">
+                    <div class="comment">
+                      <img src="assets/images/bulb.png" alt="">
+                    </div>
+                    <div class="trash">
+                      <img src="assets/images/trash.png" alt="">
+                    </div>
+                  </div>
+                  <div class="status">
+                    <span>Not completed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="total clearfix">
+              <div class="col12">
+                Detail total
+              </div>
+              <div class="col_3">7.0</div>
+              <div class="col_4">$640.00</div>
+              <div class="col_5">$265.00</div>
+              <div class="col_6">$680.00</div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--  Detail section close -->
+      <div class="total_section clearfix">
+        <div class="inner_wrapper">
+          <div class="col12">Totals</div>
+          <div class="col_3">
+            <div>Hours</div>
+            7.00
+          </div>
+          <div class="col_4">
+            <div>Labor</div>
+            $640.00
+          </div>
+          <div class="col_5">
+            <div>Parts</div>
+            $265.00
+          </div>
+          <div class="col_6">
+            <div>Total</div>
+            $680.00
+          </div>
+          <div class="col_7">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal_bg"></div>
+  <div class="modal_image">
+    <div class="clearfix">
+      <img src="assets/images/close_button.png" alt="" class="close">
+    </div>
+    <div class="modal_content clearfix">
+      <div class="prev">
+        <img src="assets/images/arrow_left.png" alt="">
+      </div>
+      <div class="next">
+        <img src="assets/images/arrow_right.png" alt="">
+      </div>
+      <div class="main_image">
+        <img src="#" alt="">
+      </div>
+      <div class="comment">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal_service">
+    <div class="modal_header">
+      <div class="search_service">
+        <input type="text" name="s" value="" placeholder="Service search">
+        <button type="submit" name="button"><img src="assets/images/search-btn.png" alt=""></button>
+      </div>
+      <div class="add_service">
+        <img src="assets/images/plus.png" alt="">
+        <span>Add services</span>
+      </div>
+      <div class="clearfix">
+        <img src="assets/images/close_button.png" alt="" class="close">
+      </div>
+    </div>
+    <div class="modal_content">
+      <div class="row clearfix">
+        <div class="col-1">
+          <div class="title">
+            <img src="assets/images/arrow_close_black.png" alt="" class="closed">
+            <img src="assets/images/arrow_open_black.png" alt="" class="opened">
+            <span>Preffered Package</span>
+          </div>
+          <table>
+            <thead>
+              <th>&nbsp;</th>
+              <th class="col-3">Service</th>
+              <th class="col-6">Labor hours</th>
+              <th class="col-6">Labor rate</th>
+              <th class="col-6">Parts price</th>
+              <th class="col-6">Desctiption</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>A/C Service</td>
+                <td><input type="text" name="" value="1.0"></td>
+                <td><input type="text" name="" value="$100.00"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col-1">
+          <div class="title">
+            <img src="assets/images/arrow_close_black.png" alt="" class="closed">
+            <img src="assets/images/arrow_open_black.png" alt="" class="opened">
+            <span>Interior Repair</span>
+          </div>
+          <table>
+            <thead>
+              <th>&nbsp;</th>
+              <th class="col-3">Service</th>
+              <th class="col-6">Labor hours</th>
+              <th class="col-6">Labor rate</th>
+              <th class="col-6">Parts price</th>
+              <th class="col-6">Desctiption</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>A/C Service</td>
+                <td><input type="text" name="" value="1.0"></td>
+                <td><input type="text" name="" value="$100.00"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row clearfix selected">
+        <div class="col-1">
+          <div class="title">
+            <img src="assets/images/arrow_close_black.png" alt="" class="closed">
+            <img src="assets/images/arrow_open_black.png" alt="" class="opened">
+            <span>Mechanical</span>
+          </div>
+          <table>
+            <thead>
+              <th>&nbsp;</th>
+              <th class="col-3">Service</th>
+              <th class="col-6">Labor hours</th>
+              <th class="col-6">Labor rate</th>
+              <th class="col-6">Parts price</th>
+              <th class="col-6">Desctiption</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>A/C Service</td>
+                <td><input type="text" name="" value="1.0"></td>
+                <td><input type="text" name="" value="$100.00"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+
+              <tr class="checked">
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="" checked>
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>Alignment</td>
+                <td><input type="text" name="" value="0.8"></td>
+                <td><input type="text" name="" value="$56.25"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>Emissions</td>
+                <td><input type="text" name="" value="0.0"></td>
+                <td><input type="text" name="" value="$100.00"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+              <tr class="checked">
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="" checked>
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>Front Brakes</td>
+                <td><input type="text" name="" value="1.0"></td>
+                <td><input type="text" name="" value="$105.00"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>LOFR</td>
+                <td><input type="text" name="" value="0.2"></td>
+                <td><input type="text" name="" value="$18.75"></td>
+                <td><input type="text" name="" value="$20.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>Radiator Flush</td>
+                <td><input type="text" name="" value="1.0"></td>
+                <td><input type="text" name="" value="$100.00"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>Rear Brakes</td>
+                <td><input type="text" name="" value="1.5"></td>
+                <td><input type="text" name="" value="$100.00"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>Transmission Servise</td>
+                <td><input type="text" name="" value="0.0"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col-1">
+          <div class="title">
+            <img src="assets/images/arrow_close_black.png" alt="" class="closed">
+            <img src="assets/images/arrow_open_black.png" alt="" class="opened">
+            <span>PDR</span>
+          </div>
+          <table>
+            <thead>
+              <th>&nbsp;</th>
+              <th class="col-3">Service</th>
+              <th class="col-6">Labor hours</th>
+              <th class="col-6">Labor rate</th>
+              <th class="col-6">Parts price</th>
+              <th class="col-6">Desctiption</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>A/C Service</td>
+                <td><input type="text" name="" value="1.0"></td>
+                <td><input type="text" name="" value="$100.00"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col-1">
+          <div class="title">
+            <img src="assets/images/arrow_close_black.png" alt="" class="closed">
+            <img src="assets/images/arrow_open_black.png" alt="" class="opened">
+            <span>Body Shop</span>
+          </div>
+          <table>
+            <thead>
+              <th>&nbsp;</th>
+              <th class="col-3">Service</th>
+              <th class="col-6">Labor hours</th>
+              <th class="col-6">Labor rate</th>
+              <th class="col-6">Parts price</th>
+              <th class="col-6">Desctiption</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>A/C Service</td>
+                <td><input type="text" name="" value="1.0"></td>
+                <td><input type="text" name="" value="$100.00"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col-1">
+          <div class="title">
+            <img src="assets/images/arrow_close_black.png" alt="" class="closed">
+            <img src="assets/images/arrow_open_black.png" alt="" class="opened">
+            <span>Detail</span>
+          </div>
+          <table>
+            <thead>
+              <th>&nbsp;</th>
+              <th class="col-3">Service</th>
+              <th class="col-6">Labor hours</th>
+              <th class="col-6">Labor rate</th>
+              <th class="col-6">Parts price</th>
+              <th class="col-6">Desctiption</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>A/C Service</td>
+                <td><input type="text" name="" value="1.0"></td>
+                <td><input type="text" name="" value="$100.00"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col-1">
+          <div class="title">
+            <img src="assets/images/arrow_close_black.png" alt="" class="closed">
+            <img src="assets/images/arrow_open_black.png" alt="" class="opened">
+            <span>Full Set of Photos</span>
+          </div>
+          <table>
+            <thead>
+              <th>&nbsp;</th>
+              <th class="col-3">Service</th>
+              <th class="col-6">Labor hours</th>
+              <th class="col-6">Labor rate</th>
+              <th class="col-6">Parts price</th>
+              <th class="col-6">Desctiption</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="custom_checkbox">
+                    <input type="checkbox" name="" value="">
+                    <span class="checkmark"></span>
+                  </div>
+                </td>
+                <td>A/C Service</td>
+                <td><input type="text" name="" value="1.0"></td>
+                <td><input type="text" name="" value="$100.00"></td>
+                <td><input type="text" name="" value="$0.00"></td>
+                <td><a href="#">Add note</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

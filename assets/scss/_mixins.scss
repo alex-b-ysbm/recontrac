@@ -1,0 +1,28 @@
+/*Mixins*/
+
+@mixin media-to($media) {
+    @media only screen and (max-width: $media) {
+        @content;
+    }
+}
+
+@mixin media-from($media) {
+    @media only screen and (min-width: $media) {
+        @content;
+    }
+}
+
+@mixin placeholder($size:14px, $color:rgba(85,85,85,0.64)) {
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		font-size: $size;
+	  	color: $color;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  color: $color;
+	  font-size: $size;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	  color: $color;
+	  font-size: $size;
+	}
+}
