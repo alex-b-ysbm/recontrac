@@ -242,13 +242,13 @@ header {
   padding: 20px 25px;
   position: relative; }
   .info_section .info_box {
-    background: #2470a3;
-    padding: 20px 25px; }
+    background: linear-gradient(to top, #2d5e91, #497dab);
+    padding: 20px 25px;
+    border-bottom: 5px solid #273f63; }
     .info_section .info_box:hover {
-      background: #4584b5;
+      background: linear-gradient(to top, #3974a8, #5692be);
       cursor: pointer;
-      border-bottom: 5px solid #2470a3;
-      padding-bottom: 15px; }
+      border-bottom: 5px solid #273f63; }
     .info_section .info_box > ul {
       list-style-type: none;
       margin: 0;
@@ -365,7 +365,7 @@ header {
     display: block;
     float: left;
     width: 19%;
-    background: #d77f17;
+    background: linear-gradient(to top, #d46700, #e19800);
     font-size: 15px;
     padding: 5px 25px;
     text-align: center;
@@ -1099,7 +1099,7 @@ header {
         .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn,
         .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn {
           float: left;
-          width: 33%; }
+          width: 35%; }
           .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn div,
           .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn div,
           .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn div,
@@ -1133,7 +1133,6 @@ header {
             .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div img {
               cursor: pointer;
               float: none;
-              padding: 6px;
               width: 100%; }
         .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .status,
         .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .status,
@@ -1144,7 +1143,7 @@ header {
         .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .status,
         .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .status,
         .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .status {
-          width: 66%;
+          width: 64%;
           margin-left: 1%;
           background: linear-gradient(to top, #d46700, #e19800);
           border-bottom: 2px solid #a81000;
@@ -1342,7 +1341,22 @@ header {
       text-align: center; }
   .total_section .confirm {
     background: linear-gradient(to top, #245596, #3274af);
-    padding: 10px; }
+    height: 33px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #032355; }
+    .total_section .confirm .icon {
+      width: 50px;
+      border-right: 1px solid #304f7c;
+      padding: 9px 18px;
+      height: 100%;
+      display: inline-block; }
+    .total_section .confirm .text {
+      width: calc(100% - 55px);
+      display: inline-block;
+      margin: 0;
+      padding: 0 10px;
+      font-weight: bold;
+      color: #ffffff; }
 
 .bshop_section.close .bshop_title,
 .bshop_section.close .bshop_table,

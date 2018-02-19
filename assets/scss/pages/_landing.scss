@@ -199,13 +199,14 @@ header{
   padding: 20px 25px;
   position: relative;
   .info_box{
-    background: $bg_light_blue;
+    background: $light_blue_gradient;
     padding: 20px 25px;
+    border-bottom: 5px solid $border_dark_blue_color;
     &:hover{
       background: $info_hover;
       cursor: pointer;
-      border-bottom: 5px solid $bg_light_blue;
-      padding-bottom: 15px;
+      border-bottom: 5px solid $border_dark_blue_color;
+      // padding-bottom: 25px;
     }
     >ul{
       list-style-type: none;
@@ -351,7 +352,7 @@ header{
     display: block;
     float: left;
     width:19%;
-    background: $bg_orange;
+    background: $orange_gradient;
     font-size: 15px;
     padding: 5px 25px;
     text-align: center;
@@ -1010,7 +1011,7 @@ header{
             }
             .action_btn{
               float: left;
-              width: 33%;
+              width: 35%;
               div{
                 float: left;
                 width: 49%;
@@ -1021,13 +1022,13 @@ header{
                 img{
                   cursor: pointer;
                   float: none;
-                  padding: 6px;
+                  // padding: 6px;
                   width: 100%;
                 }
               }
             }
             .status{
-              width: 66%;
+              width: 64%;
               margin-left: 1%;
               background: $orange_gradient;
               border-bottom: 2px solid $border_red_color;
@@ -1144,7 +1145,24 @@ header{
   }
   .confirm{
     background: $blue_gradient;
-    padding: 10px;
+    height: 33px;
+    text-transform: uppercase;
+    border-bottom: 2px solid $border_blue_color;
+    .icon{
+      width: 50px;
+      border-right: 1px solid $bg_blue;
+      padding: 9px 18px;
+      height: 100%;
+      display: inline-block;
+    }
+    .text{
+      width: calc(100% - 55px);
+      display: inline-block;
+      margin: 0;
+      padding: 0 10px;
+      font-weight: bold;
+      color: $white_color;
+    }
   }
 }
 
