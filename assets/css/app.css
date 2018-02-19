@@ -1002,7 +1002,7 @@ header {
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
-          border: 2px solid #63b111;
+          border: 2px solid #cccccc;
           margin-right: 5px; }
           .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox input,
           .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input,
@@ -1041,7 +1041,7 @@ header {
               .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
               .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after {
                 display: block;
-                border-color: #438300; }
+                border-color: #63b111; }
           .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
           .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
           .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
