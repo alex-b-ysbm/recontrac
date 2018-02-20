@@ -23,10 +23,6 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
 body {
   line-height: 1; }
 
@@ -57,7 +53,7 @@ body {
   font-size: 1.125rem;
   line-height: 1em; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
   header nav.menu {
     display: none; }
   header nav.mobile-menu {
@@ -97,7 +93,8 @@ body {
       padding: 5px 25px; }
       .step_section .step.selected {
         width: 50%;
-        margin-right: 10%; }
+        margin-right: 10%;
+        color: #ffffff; }
       .step_section .step.selected.item_2:before {
         content: "";
         position: absolute;
@@ -119,30 +116,99 @@ body {
         float: left;
         margin-right: 20px; }
 
-  .main_content .col_2 {
-    width: 50%;
-    float: left;
-    padding: 18px 10px;
-    font-size: 14px;
-    line-height: 15px !important; }
-    .main_content .col_2 span {
-      width: 100% !important; }
-  .main_content .col_7 {
-    width: 50%;
-    float: left;
-    padding: 0 10px;
-    font-size: 14px;
-    line-height: 15px !important; }
-    .main_content .col_7 span {
-      width: 100% !important; }
+  .mechanical_section_wrapper {
+    padding: 0 15px;
+    margin-top: 30px; }
+    .mechanical_section_wrapper .mechanical_section_mobile {
+      display: block; }
+      .mechanical_section_wrapper .mechanical_section_mobile .mech_title {
+        padding: 10px;
+        min-height: auto;
+        font-weight: bold; }
+      .mechanical_section_wrapper .mechanical_section_mobile.open .mech_title {
+        background: #386da0; }
+      .mechanical_section_wrapper .mechanical_section_mobile.open .open_section {
+        display: none; }
+      .mechanical_section_wrapper .mechanical_section_mobile.open .close_section {
+        display: block; }
+        .mechanical_section_wrapper .mechanical_section_mobile.open .close_section img {
+          float: left;
+          padding-top: 4px;
+          margin-right: 15px; }
+        .mechanical_section_wrapper .mechanical_section_mobile.open .close_section .title {
+          float: left;
+          color: #ffffff; }
+      .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table {
+        display: block;
+        background: #f2f2f2;
+        padding: 5px 10px; }
+        .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .button_area {
+          width: 100%;
+          margin-bottom: 10px; }
+          .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .button_area .btn-action {
+            padding: 10px 20px;
+            background: linear-gradient(to top, #656565, #989898);
+            border-bottom: 2px solid #484848;
+            float: left;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            width: 49%;
+            margin-right: 1%;
+            text-align: center; }
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .button_area .btn-action .icon {
+              line-height: 8px;
+              display: inline-block;
+              vertical-align: top; }
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .button_area .btn-action span {
+              margin-left: 5px;
+              text-transform: uppercase;
+              display: inline-block; }
+          .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .button_area .btn-addServices {
+            padding: 10px 20px;
+            background: linear-gradient(to top, #00a213, #65de2e);
+            border-bottom: 2px solid #007c0a;
+            float: left;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            width: 49%;
+            margin-left: 1%;
+            text-align: center; }
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .button_area .btn-addServices .icon {
+              color: transparent;
+              line-height: 8px;
+              display: inline-block;
+              vertical-align: top; }
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .button_area .btn-addServices span {
+              margin-left: 5px;
+              text-transform: uppercase;
+              display: inline-block; }
+      .mechanical_section_wrapper .mechanical_section_mobile.close .mech_title {
+        background: #ffffff; }
+      .mechanical_section_wrapper .mechanical_section_mobile.close .open_section {
+        display: block; }
+        .mechanical_section_wrapper .mechanical_section_mobile.close .open_section img {
+          float: left;
+          margin-right: 10px; }
+        .mechanical_section_wrapper .mechanical_section_mobile.close .open_section .section_title {
+          float: left; }
+      .mechanical_section_wrapper .mechanical_section_mobile.close .close_section {
+        display: none; }
+      .mechanical_section_wrapper .mechanical_section_mobile.close .mech_table {
+        display: none; }
 
   .hide-xs {
     display: none; } }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .hide-sm {
+    display: none; } }
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .hide-ms {
+    display: none; }
+
   header .logo {
     width: 70%; }
-  header nav.mobile-menu {
-    display: none; }
   header nav.right {
     width: 20%; }
 
@@ -158,7 +224,8 @@ body {
       padding: 5px 25px; }
       .step_section .step.selected {
         width: 25%;
-        margin-right: 2%; }
+        margin-right: 2%;
+        color: #ffffff; }
       .step_section .step.selected.item_2:before {
         content: "";
         position: absolute;
@@ -182,6 +249,990 @@ body {
       .step_section .step .step_title {
         padding-top: 5px; }
 
+  .main_content {
+    position: relative; }
+    .main_content .col_1 {
+      width: 7%;
+      float: left;
+      padding: 20px 10px; }
+    .main_content .col_3 {
+      width: 12%;
+      float: left;
+      padding: 20px 10px; }
+    .main_content .col_4 {
+      width: 15%;
+      float: left;
+      padding: 20px 10px; }
+    .main_content .col_5 {
+      width: 15%;
+      float: left;
+      padding: 20px 10px; }
+    .main_content .col_6 {
+      width: 8%;
+      float: left;
+      padding: 20px 10px; }
+    .main_content .sidebar_popup .action {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: #f2f2f2;
+      color: #000000;
+      width: 300px;
+      z-index: 10; }
+      .main_content .sidebar_popup .action li {
+        cursor: pointer;
+        border-bottom: 1px solid #888890;
+        padding: 15px; }
+        .main_content .sidebar_popup .action li:hover {
+          color: #63b111; }
+          .main_content .sidebar_popup .action li:hover li {
+            color: #000000; }
+            .main_content .sidebar_popup .action li:hover li:hover {
+              color: #63b111; }
+      .main_content .sidebar_popup .action .has-child-menu {
+        position: relative; }
+        .main_content .sidebar_popup .action .has-child-menu:hover {
+          background: #ffffff; }
+          .main_content .sidebar_popup .action .has-child-menu:hover .subsubmenu {
+            display: block;
+            position: absolute;
+            left: 100%;
+            width: 200px;
+            background: #ffffff;
+            top: 0; }
+    .main_content .sidebar_popup .note {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: #f2f2f2;
+      color: #000000;
+      width: 500px;
+      z-index: 10; }
+      .main_content .sidebar_popup .note .close_button {
+        float: right;
+        cursor: pointer; }
+      .main_content .sidebar_popup .note .chat_section {
+        padding: 0 30px;
+        max-height: 250px;
+        overflow-y: scroll; }
+        .main_content .sidebar_popup .note .chat_section .message {
+          margin-bottom: 30px;
+          width: 100%; }
+          .main_content .sidebar_popup .note .chat_section .message.question .info {
+            text-align: right; }
+          .main_content .sidebar_popup .note .chat_section .message.question .bulb {
+            padding: 15px;
+            margin-bottom: 15px;
+            position: relative; }
+            .main_content .sidebar_popup .note .chat_section .message.question .bulb:after {
+              content: "";
+              position: absolute;
+              bottom: -15px;
+              right: 40px;
+              border: 15px solid transparent;
+              border-right-color: #ffffff;
+              z-index: -1; }
+          .main_content .sidebar_popup .note .chat_section .message.answer .info {
+            text-align: left; }
+          .main_content .sidebar_popup .note .chat_section .message.answer .bulb {
+            padding: 15px;
+            margin-bottom: 15px;
+            position: relative; }
+            .main_content .sidebar_popup .note .chat_section .message.answer .bulb:after {
+              content: "";
+              position: absolute;
+              bottom: -15px;
+              left: 40px;
+              border: 15px solid transparent;
+              border-left-color: #ffffff;
+              z-index: -1; }
+          .main_content .sidebar_popup .note .chat_section .message .info {
+            font-size: 12px; }
+            .main_content .sidebar_popup .note .chat_section .message .info strong {
+              font-weight: bold; }
+          .main_content .sidebar_popup .note .chat_section .message .bulb {
+            background: #ffffff; }
+            .main_content .sidebar_popup .note .chat_section .message .bulb span {
+              font-style: italic; }
+      .main_content .sidebar_popup .note .question_section {
+        padding: 25px;
+        margin-bottom: 80px; }
+        .main_content .sidebar_popup .note .question_section textarea {
+          width: 100%;
+          resize: none;
+          height: 150px;
+          border: none;
+          color: #000000;
+          margin-bottom: 30px;
+          padding: 15px; }
+          .main_content .sidebar_popup .note .question_section textarea:focus {
+            outline-width: 0; }
+            .main_content .sidebar_popup .note .question_section textarea:focus::-webkit-input-placeholder {
+              /* Chrome/Opera/Safari */
+              font-size: 16px;
+              color: transparent; }
+            .main_content .sidebar_popup .note .question_section textarea:focus::-moz-placeholder {
+              /* Firefox 19+ */
+              color: transparent;
+              font-size: 16px; }
+            .main_content .sidebar_popup .note .question_section textarea:focus:-ms-input-placeholder {
+              /* IE 10+ */
+              color: transparent;
+              font-size: 16px; }
+        .main_content .sidebar_popup .note .question_section .btn-print {
+          border: none;
+          background: #9ede74;
+          padding: 10px 0;
+          width: 45%;
+          margin-right: 5%;
+          text-align: center;
+          color: #000000;
+          font-size: 16px;
+          float: left;
+          text-transform: uppercase; }
+        .main_content .sidebar_popup .note .question_section .btn-add {
+          border: none;
+          background: #63b111;
+          padding: 10px 0;
+          width: 45%;
+          margin-left: 5%;
+          text-align: center;
+          color: #ffffff;
+          font-size: 16px;
+          float: left;
+          text-transform: uppercase; }
+      .main_content .sidebar_popup .note hr {
+        margin-bottom: 30px; }
+    .main_content .sidebar_popup .photo {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: #f2f2f2;
+      color: #000000;
+      width: 500px;
+      z-index: 10; }
+      .main_content .sidebar_popup .photo .close_button {
+        float: right;
+        cursor: pointer; }
+      .main_content .sidebar_popup .photo .photo_section {
+        padding: 0 50px; }
+      .main_content .sidebar_popup .photo .photos {
+        position: relative;
+        max-width: 45%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        height: 160px;
+        width: 100%;
+        text-align: center;
+        float: left;
+        cursor: pointer;
+        padding: 0;
+        overflow: hidden; }
+        .main_content .sidebar_popup .photo .photos .notes {
+          text-align: right; }
+        .main_content .sidebar_popup .photo .photos .car_images {
+          width: 100%;
+          height: auto; }
+        .main_content .sidebar_popup .photo .photos input {
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          border: none;
+          background: transparent;
+          width: 120px;
+          padding: 5px; }
+        .main_content .sidebar_popup .photo .photos .bulb {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          width: 15px;
+          height: 15px; }
+        .main_content .sidebar_popup .photo .photos:hover .zoom {
+          display: block;
+          position: absolute;
+          top: calc(50% - 48px /2);
+          left: calc(50% - 45px /2); }
+      .main_content .sidebar_popup .photo .pagination {
+        padding: 0 60px;
+        margin-bottom: 30px; }
+        .main_content .sidebar_popup .photo .pagination .prev {
+          float: left;
+          cursor: pointer; }
+        .main_content .sidebar_popup .photo .pagination .next {
+          float: right;
+          cursor: pointer; }
+        .main_content .sidebar_popup .photo .pagination .pages {
+          float: left;
+          width: 75%;
+          text-align: center;
+          height: 45px;
+          padding: 12px 0; }
+          .main_content .sidebar_popup .photo .pagination .pages ul {
+            text-align: center; }
+            .main_content .sidebar_popup .photo .pagination .pages ul li {
+              border-radius: 50%;
+              background: #cccccc;
+              width: 10px;
+              height: 10px;
+              display: inline-block;
+              cursor: pointer; }
+              .main_content .sidebar_popup .photo .pagination .pages ul li.current {
+                background: #63b111; }
+      .main_content .sidebar_popup .photo .button_section {
+        padding: 30px;
+        text-align: center; }
+        .main_content .sidebar_popup .photo .button_section button {
+          background: #63b111;
+          padding: 15px;
+          text-transform: uppercase;
+          color: #ffffff;
+          border: none;
+          font-size: 18px;
+          font-weight: bold;
+          cursor: pointer; }
+    .main_content .sidebar_popup .inspection {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: #f2f2f2;
+      color: #000000;
+      width: 100%;
+      z-index: 10; }
+      .main_content .sidebar_popup .inspection .close {
+        float: right;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        background: linear-gradient(to top, #00a213, #65de2e); }
+        .main_content .sidebar_popup .inspection .close img {
+          width: 15px;
+          height: 15px;
+          margin: 10px; }
+      .main_content .sidebar_popup .inspection .inspection_header {
+        background: #438300;
+        color: #ffffff;
+        padding: 15px; }
+        .main_content .sidebar_popup .inspection .inspection_header span {
+          font-size: 14px; }
+          .main_content .sidebar_popup .inspection .inspection_header span:nth-child(2n) {
+            font-weight: bold; }
+      .main_content .sidebar_popup .inspection .inspection_body {
+        padding: 15px; }
+        .main_content .sidebar_popup .inspection .inspection_body .lists {
+          color: #ffffff; }
+          .main_content .sidebar_popup .inspection .inspection_body .lists .header {
+            background: #386da0;
+            padding: 5px;
+            cursor: pointer; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .header img {
+              margin-right: 10px; }
+          .main_content .sidebar_popup .inspection .inspection_body .lists.closed .body {
+            display: none; }
+          .main_content .sidebar_popup .inspection .inspection_body .lists .body {
+            background: #ffffff;
+            width: 100%; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items {
+              padding: 0 5px;
+              width: 100%;
+              border-bottom: 1px solid #cccccc;
+              color: #000000; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items:last-child {
+                border: none; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area,
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area,
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area,
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .removing_area {
+                float: left;
+                padding: 5px;
+                height: 50px; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area,
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area,
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area {
+                border-right: 1px solid #cccccc; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area {
+                width: 17%; }
+                .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area .comm {
+                  float: right;
+                  font-size: 12px;
+                  font-weight: bold;
+                  padding: 8px; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area {
+                width: 40%; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area {
+                width: 39%;
+                padding: 0; }
+                .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .stat {
+                  margin: 10px 2.8px;
+                  width: 30px;
+                  height: 30px;
+                  float: left;
+                  padding: 4px 0;
+                  text-align: center; }
+                  .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .stat span {
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: #ffffff; }
+                .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .red {
+                  background: #dd4545; }
+                .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .yellow {
+                  background: #c5be00; }
+                .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .green {
+                  background: #519c00; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .removing_area {
+                width: 4%; }
+      .main_content .sidebar_popup .inspection .inspection_footer {
+        padding: 15px; }
+        .main_content .sidebar_popup .inspection .inspection_footer .legend {
+          float: left;
+          width: 75%; }
+          .main_content .sidebar_popup .inspection .inspection_footer .legend div div {
+            font-size: 12px;
+            display: inline-block;
+            vertical-align: top; }
+        .main_content .sidebar_popup .inspection .inspection_footer .button_area {
+          float: left;
+          width: 25%;
+          text-align: center; }
+          .main_content .sidebar_popup .inspection .inspection_footer .button_area .button {
+            width: 70%;
+            float: right;
+            background: #438300;
+            padding: 10px 5px;
+            margin-top: -10px;
+            font-size: 12px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer; }
+            .main_content .sidebar_popup .inspection .inspection_footer .button_area .button img {
+              margin-right: 5px; }
+    .main_content .sidebar {
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 200px;
+      left: -210px;
+      z-index: 1; }
+      .main_content .sidebar .btn {
+        display: inline-block;
+        text-transform: uppercase;
+        background: #63b111;
+        padding: 10px 15px;
+        float: left;
+        border-right: 2px solid #438300;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+        position: relative; }
+        .main_content .sidebar .btn:last-child {
+          border: none; }
+        .main_content .sidebar .btn.active {
+          background: #9ede74; }
+    .main_content .mechanical_section_wrapper,
+    .main_content .bshop_section.open,
+    .main_content .detail_section.open {
+      padding: 25px 25px 0 25px;
+      background: #ffffff;
+      margin-top: 30px; }
+      .main_content .mechanical_section_wrapper .mech_title,
+      .main_content .mechanical_section_wrapper .bshop_title,
+      .main_content .mechanical_section_wrapper .detail_title,
+      .main_content .bshop_section.open .mech_title,
+      .main_content .bshop_section.open .bshop_title,
+      .main_content .bshop_section.open .detail_title,
+      .main_content .detail_section.open .mech_title,
+      .main_content .detail_section.open .bshop_title,
+      .main_content .detail_section.open .detail_title {
+        background: #386da0;
+        padding: 15px 20px;
+        min-height: 65px; }
+        .main_content .mechanical_section_wrapper .mech_title .items-left,
+        .main_content .mechanical_section_wrapper .bshop_title .items-left,
+        .main_content .mechanical_section_wrapper .detail_title .items-left,
+        .main_content .bshop_section.open .mech_title .items-left,
+        .main_content .bshop_section.open .bshop_title .items-left,
+        .main_content .bshop_section.open .detail_title .items-left,
+        .main_content .detail_section.open .mech_title .items-left,
+        .main_content .detail_section.open .bshop_title .items-left,
+        .main_content .detail_section.open .detail_title .items-left {
+          float: left;
+          color: #ffffff; }
+          .main_content .mechanical_section_wrapper .mech_title .items-left img,
+          .main_content .mechanical_section_wrapper .bshop_title .items-left img,
+          .main_content .mechanical_section_wrapper .detail_title .items-left img,
+          .main_content .bshop_section.open .mech_title .items-left img,
+          .main_content .bshop_section.open .bshop_title .items-left img,
+          .main_content .bshop_section.open .detail_title .items-left img,
+          .main_content .detail_section.open .mech_title .items-left img,
+          .main_content .detail_section.open .bshop_title .items-left img,
+          .main_content .detail_section.open .detail_title .items-left img {
+            float: left;
+            padding: 13px 0; }
+          .main_content .mechanical_section_wrapper .mech_title .items-left .title,
+          .main_content .mechanical_section_wrapper .bshop_title .items-left .title,
+          .main_content .mechanical_section_wrapper .detail_title .items-left .title,
+          .main_content .bshop_section.open .mech_title .items-left .title,
+          .main_content .bshop_section.open .bshop_title .items-left .title,
+          .main_content .bshop_section.open .detail_title .items-left .title,
+          .main_content .detail_section.open .mech_title .items-left .title,
+          .main_content .detail_section.open .bshop_title .items-left .title,
+          .main_content .detail_section.open .detail_title .items-left .title {
+            float: left;
+            margin-left: 10px;
+            padding: 8px 0;
+            font-size: 24px;
+            font-weight: bold; }
+          .main_content .mechanical_section_wrapper .mech_title .items-left .btn-addServices,
+          .main_content .mechanical_section_wrapper .bshop_title .items-left .btn-addServices,
+          .main_content .mechanical_section_wrapper .detail_title .items-left .btn-addServices,
+          .main_content .bshop_section.open .mech_title .items-left .btn-addServices,
+          .main_content .bshop_section.open .bshop_title .items-left .btn-addServices,
+          .main_content .bshop_section.open .detail_title .items-left .btn-addServices,
+          .main_content .detail_section.open .mech_title .items-left .btn-addServices,
+          .main_content .detail_section.open .bshop_title .items-left .btn-addServices,
+          .main_content .detail_section.open .detail_title .items-left .btn-addServices {
+            background: linear-gradient(to top, #00a213, #65de2e);
+            float: left;
+            margin-left: 50px;
+            padding: 8px 15px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase; }
+        .main_content .mechanical_section_wrapper .mech_title .items-right,
+        .main_content .mechanical_section_wrapper .bshop_title .items-right,
+        .main_content .mechanical_section_wrapper .detail_title .items-right,
+        .main_content .bshop_section.open .mech_title .items-right,
+        .main_content .bshop_section.open .bshop_title .items-right,
+        .main_content .bshop_section.open .detail_title .items-right,
+        .main_content .detail_section.open .mech_title .items-right,
+        .main_content .detail_section.open .bshop_title .items-right,
+        .main_content .detail_section.open .detail_title .items-right {
+          float: right; }
+          .main_content .mechanical_section_wrapper .mech_title .items-right a,
+          .main_content .mechanical_section_wrapper .bshop_title .items-right a,
+          .main_content .mechanical_section_wrapper .detail_title .items-right a,
+          .main_content .bshop_section.open .mech_title .items-right a,
+          .main_content .bshop_section.open .bshop_title .items-right a,
+          .main_content .bshop_section.open .detail_title .items-right a,
+          .main_content .detail_section.open .mech_title .items-right a,
+          .main_content .detail_section.open .bshop_title .items-right a,
+          .main_content .detail_section.open .detail_title .items-right a {
+            color: #ffffff;
+            font-size: 12px; }
+            .main_content .mechanical_section_wrapper .mech_title .items-right a img,
+            .main_content .mechanical_section_wrapper .bshop_title .items-right a img,
+            .main_content .mechanical_section_wrapper .detail_title .items-right a img,
+            .main_content .bshop_section.open .mech_title .items-right a img,
+            .main_content .bshop_section.open .bshop_title .items-right a img,
+            .main_content .bshop_section.open .detail_title .items-right a img,
+            .main_content .detail_section.open .mech_title .items-right a img,
+            .main_content .detail_section.open .bshop_title .items-right a img,
+            .main_content .detail_section.open .detail_title .items-right a img {
+              padding: 0 5px;
+              vertical-align: middle; }
+      .main_content .mechanical_section_wrapper .mech_table .table_title,
+      .main_content .mechanical_section_wrapper .bshop_table .table_title,
+      .main_content .mechanical_section_wrapper .detail_table .table_title,
+      .main_content .bshop_section.open .mech_table .table_title,
+      .main_content .bshop_section.open .bshop_table .table_title,
+      .main_content .bshop_section.open .detail_table .table_title,
+      .main_content .detail_section.open .mech_table .table_title,
+      .main_content .detail_section.open .bshop_table .table_title,
+      .main_content .detail_section.open .detail_table .table_title {
+        background: #304f7c;
+        width: 100%; }
+        .main_content .mechanical_section_wrapper .mech_table .table_title .title,
+        .main_content .mechanical_section_wrapper .bshop_table .table_title .title,
+        .main_content .mechanical_section_wrapper .detail_table .table_title .title,
+        .main_content .bshop_section.open .mech_table .table_title .title,
+        .main_content .bshop_section.open .bshop_table .table_title .title,
+        .main_content .bshop_section.open .detail_table .table_title .title,
+        .main_content .detail_section.open .mech_table .table_title .title,
+        .main_content .detail_section.open .bshop_table .table_title .title,
+        .main_content .detail_section.open .detail_table .table_title .title {
+          position: relative;
+          min-height: 1px;
+          padding: 20px 5px;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 14px;
+          color: #ffffff;
+          float: left;
+          border-right: 1px solid #2470a3; }
+          .main_content .mechanical_section_wrapper .mech_table .table_title .title:last-child,
+          .main_content .mechanical_section_wrapper .bshop_table .table_title .title:last-child,
+          .main_content .mechanical_section_wrapper .detail_table .table_title .title:last-child,
+          .main_content .bshop_section.open .mech_table .table_title .title:last-child,
+          .main_content .bshop_section.open .bshop_table .table_title .title:last-child,
+          .main_content .bshop_section.open .detail_table .table_title .title:last-child,
+          .main_content .detail_section.open .mech_table .table_title .title:last-child,
+          .main_content .detail_section.open .bshop_table .table_title .title:last-child,
+          .main_content .detail_section.open .detail_table .table_title .title:last-child {
+            border: 0; }
+      .main_content .mechanical_section_wrapper .mech_table .table_content > div,
+      .main_content .mechanical_section_wrapper .bshop_table .table_content > div,
+      .main_content .mechanical_section_wrapper .detail_table .table_content > div,
+      .main_content .bshop_section.open .mech_table .table_content > div,
+      .main_content .bshop_section.open .bshop_table .table_content > div,
+      .main_content .bshop_section.open .detail_table .table_content > div,
+      .main_content .detail_section.open .mech_table .table_content > div,
+      .main_content .detail_section.open .bshop_table .table_content > div,
+      .main_content .detail_section.open .detail_table .table_content > div {
+        border-left: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div:last-child,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div:last-child,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div:last-child,
+        .main_content .bshop_section.open .mech_table .table_content > div:last-child,
+        .main_content .bshop_section.open .bshop_table .table_content > div:last-child,
+        .main_content .bshop_section.open .detail_table .table_content > div:last-child,
+        .main_content .detail_section.open .mech_table .table_content > div:last-child,
+        .main_content .detail_section.open .bshop_table .table_content > div:last-child,
+        .main_content .detail_section.open .detail_table .table_content > div:last-child {
+          border-bottom: 2px solid #000000; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div.down,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div.down,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div.down,
+        .main_content .bshop_section.open .mech_table .table_content > div.down,
+        .main_content .bshop_section.open .bshop_table .table_content > div.down,
+        .main_content .bshop_section.open .detail_table .table_content > div.down,
+        .main_content .detail_section.open .mech_table .table_content > div.down,
+        .main_content .detail_section.open .bshop_table .table_content > div.down,
+        .main_content .detail_section.open .detail_table .table_content > div.down {
+          background-color: #ececec; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_1 img,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_1 img,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_1 img,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_1 img,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_1 img,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_1 img,
+        .main_content .detail_section.open .mech_table .table_content > div .col_1 img,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_1 img,
+        .main_content .detail_section.open .detail_table .table_content > div .col_1 img {
+          float: none !important;
+          margin: 0 auto;
+          cursor: pointer; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"],
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"],
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"],
+        .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"],
+        .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"],
+        .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"],
+        .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"],
+        .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"],
+        .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] {
+          border-right: 1px solid #cccccc; }
+          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] > span,
+          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] > span,
+          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] > span,
+          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] > span,
+          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] > span,
+          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] > span,
+          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] > span,
+          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] > span,
+          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] > span {
+            float: left;
+            width: 50%; }
+          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] div,
+          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] img,
+          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] div,
+          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] img,
+          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] div,
+          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] img,
+          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] div,
+          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] img,
+          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] div,
+          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] img,
+          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] div,
+          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] img,
+          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] div,
+          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] img,
+          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] div,
+          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] img,
+          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] div,
+          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] img {
+            float: right;
+            padding: 0; }
+          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin-right: 5px; }
+            .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+              z-index: 1;
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              height: 100%; }
+              .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark {
+                border-color: #63b111; }
+                .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after {
+                  display: block;
+                  border-color: #63b111; }
+            .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 30px;
+              width: 30px;
+              background-color: #ffffff;
+              border: 2px solid #cccccc; }
+              .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+                left: 10px;
+                top: 6px;
+                width: 5px;
+                height: 10px;
+                border: solid #63b111;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
+          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn {
+            float: left;
+            width: 35%; }
+            .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div {
+              float: left;
+              width: 49%;
+              height: 30px; }
+              .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div:first-child {
+                margin-right: 2%; }
+              .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div img {
+                cursor: pointer;
+                float: none;
+                width: 100%; }
+          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .status,
+          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .status,
+          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .status,
+          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .status,
+          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .status,
+          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .status,
+          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .status,
+          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .status,
+          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .status {
+            width: 64%;
+            margin-left: 1%;
+            background: linear-gradient(to top, #d46700, #e19800);
+            border-bottom: 2px solid #a81000;
+            padding: 0;
+            font-size: 14px;
+            font-weight: bold;
+            color: #ffffff;
+            height: 30px;
+            text-align: center;
+            cursor: pointer; }
+            .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .status.hidden {
+              display: none; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_1,
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_1,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_1,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_6,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_1,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_6,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_1,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_6,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_1,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_6,
+        .main_content .detail_section.open .mech_table .table_content > div .col_1,
+        .main_content .detail_section.open .mech_table .table_content > div .col_6,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_1,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_6,
+        .main_content .detail_section.open .detail_table .table_content > div .col_1,
+        .main_content .detail_section.open .detail_table .table_content > div .col_6 {
+          text-align: center; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_2,
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_3,
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_4,
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_5,
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_7,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_2,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_3,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_4,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_5,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_7,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_2,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_3,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_4,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_5,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_7,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_2,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_3,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_4,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_5,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_6,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_7,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_2,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_3,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_4,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_5,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_6,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_7,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_2,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_3,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_4,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_5,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_6,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_7,
+        .main_content .detail_section.open .mech_table .table_content > div .col_2,
+        .main_content .detail_section.open .mech_table .table_content > div .col_3,
+        .main_content .detail_section.open .mech_table .table_content > div .col_4,
+        .main_content .detail_section.open .mech_table .table_content > div .col_5,
+        .main_content .detail_section.open .mech_table .table_content > div .col_6,
+        .main_content .detail_section.open .mech_table .table_content > div .col_7,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_2,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_3,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_4,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_5,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_6,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_7,
+        .main_content .detail_section.open .detail_table .table_content > div .col_2,
+        .main_content .detail_section.open .detail_table .table_content > div .col_3,
+        .main_content .detail_section.open .detail_table .table_content > div .col_4,
+        .main_content .detail_section.open .detail_table .table_content > div .col_5,
+        .main_content .detail_section.open .detail_table .table_content > div .col_6,
+        .main_content .detail_section.open .detail_table .table_content > div .col_7 {
+          line-height: 29px; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_6,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_6,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_6,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_6,
+        .main_content .detail_section.open .mech_table .table_content > div .col_6,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_6,
+        .main_content .detail_section.open .detail_table .table_content > div .col_6 {
+          background: #a6a6a6;
+          color: #ffffff; }
+      .main_content .mechanical_section_wrapper .mech_table .total,
+      .main_content .mechanical_section_wrapper .bshop_table .total,
+      .main_content .mechanical_section_wrapper .detail_table .total,
+      .main_content .bshop_section.open .mech_table .total,
+      .main_content .bshop_section.open .bshop_table .total,
+      .main_content .bshop_section.open .detail_table .total,
+      .main_content .detail_section.open .mech_table .total,
+      .main_content .detail_section.open .bshop_table .total,
+      .main_content .detail_section.open .detail_table .total {
+        font-weight: bold;
+        margin: 0 1px 0 2px; }
+        .main_content .mechanical_section_wrapper .mech_table .total .col12,
+        .main_content .mechanical_section_wrapper .bshop_table .total .col12,
+        .main_content .mechanical_section_wrapper .detail_table .total .col12,
+        .main_content .bshop_section.open .mech_table .total .col12,
+        .main_content .bshop_section.open .bshop_table .total .col12,
+        .main_content .bshop_section.open .detail_table .total .col12,
+        .main_content .detail_section.open .mech_table .total .col12,
+        .main_content .detail_section.open .bshop_table .total .col12,
+        .main_content .detail_section.open .detail_table .total .col12 {
+          width: 32%;
+          float: left;
+          padding: 20px 5px; }
+        .main_content .mechanical_section_wrapper .mech_table .total .col_6,
+        .main_content .mechanical_section_wrapper .bshop_table .total .col_6,
+        .main_content .mechanical_section_wrapper .detail_table .total .col_6,
+        .main_content .bshop_section.open .mech_table .total .col_6,
+        .main_content .bshop_section.open .bshop_table .total .col_6,
+        .main_content .bshop_section.open .detail_table .total .col_6,
+        .main_content .detail_section.open .mech_table .total .col_6,
+        .main_content .detail_section.open .bshop_table .total .col_6,
+        .main_content .detail_section.open .detail_table .total .col_6 {
+          background: #a6a6a6;
+          color: #ffffff;
+          text-align: center; }
+        .main_content .mechanical_section_wrapper .mech_table .total div,
+        .main_content .mechanical_section_wrapper .bshop_table .total div,
+        .main_content .mechanical_section_wrapper .detail_table .total div,
+        .main_content .bshop_section.open .mech_table .total div,
+        .main_content .bshop_section.open .bshop_table .total div,
+        .main_content .bshop_section.open .detail_table .total div,
+        .main_content .detail_section.open .mech_table .total div,
+        .main_content .detail_section.open .bshop_table .total div,
+        .main_content .detail_section.open .detail_table .total div {
+          border-right: 1px solid #cccccc; }
+
+  .bshop_section .inner_wrapper img,
+  .bshop_section .inner_wrapper .section_title {
+    float: left;
+    padding-right: 10px; }
+
+  .detail_section .inner_wrapper img,
+  .detail_section .inner_wrapper .section_title {
+    float: left;
+    padding-right: 10px; }
+
+  .bshop_section,
+  .detail_section {
+    padding: 20px 25px;
+    background: #ffffff;
+    margin-top: 30px; }
+
+  .total_section {
+    background: #ffffff;
+    margin-top: 30px;
+    padding: 0 25px; }
+    .total_section .inner_wrapper {
+      margin: 0 1px 0 2px; }
+      .total_section .inner_wrapper > div {
+        padding: 20px 5px;
+        float: left;
+        border-right: 1px solid #cccccc; }
+        .total_section .inner_wrapper > div:last-child {
+          border-right: none; }
+        .total_section .inner_wrapper > div div {
+          width: 100%;
+          font-size: 12px; }
+      .total_section .inner_wrapper .col12 {
+        width: 32%;
+        float: left;
+        padding: 29px 15px; }
+      .total_section .inner_wrapper .col_6 {
+        background: #a6a6a6;
+        color: #ffffff;
+        text-align: center; }
+    .total_section .confirm {
+      background: linear-gradient(to top, #245596, #3274af);
+      height: 33px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #032355; }
+      .total_section .confirm .icon {
+        width: 50px;
+        border-right: 1px solid #304f7c;
+        padding: 9px 18px;
+        height: 100%;
+        display: inline-block; }
+      .total_section .confirm .text {
+        width: calc(100% - 55px);
+        display: inline-block;
+        margin: 0;
+        padding: 0 10px;
+        font-weight: bold;
+        color: #ffffff; }
+
+  .bshop_section.close .bshop_title,
+  .bshop_section.close .bshop_table,
+  .bshop_section.close .detail_title,
+  .bshop_section.close .detail_table,
+  .detail_section.close .bshop_title,
+  .detail_section.close .bshop_table,
+  .detail_section.close .detail_title,
+  .detail_section.close .detail_table {
+    display: none; }
+  .bshop_section.open .inner_wrapper > div > img,
+  .detail_section.open .inner_wrapper > div > img {
+    display: none; }
+  .bshop_section.open .section_title,
+  .detail_section.open .section_title {
+    display: none; }
+
+  .btn-action,
+  .btn-insp,
+  .btn-photo,
+  .btn-note {
+    cursor: pointer; }
+
   .main_content .col_2 {
     width: 25%;
     float: left;
@@ -190,6 +1241,1044 @@ body {
     width: 18%;
     float: left;
     padding: 20px 10px; } }
+@media only screen and (min-width: 1200px) {
+  header .logo {
+    width: 70%; }
+  header nav.right {
+    width: 20%; }
+
+  .info_box {
+    padding: 20px 25px; }
+
+  .step_section {
+    margin-top: 60px;
+    height: 60px; }
+    .step_section .step {
+      width: 27%;
+      font-size: 15px;
+      padding: 5px 25px; }
+      .step_section .step.selected {
+        width: 25%;
+        margin-right: 2%;
+        color: #ffffff; }
+      .step_section .step.selected.item_2:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -21px;
+        border: 21px solid #63b111;
+        z-index: 1;
+        border-left-color: transparent; }
+      .step_section .step.selected.item_2:after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: -42px;
+        border: 21px solid #ffffff;
+        z-index: 1;
+        border-left-color: #63b111;
+        border-right-color: #ffffff; }
+      .step_section .step .step_icon {
+        float: left;
+        margin-right: 20px; }
+      .step_section .step .step_title {
+        padding-top: 5px; }
+
+  .main_content {
+    position: relative; }
+    .main_content .col_1 {
+      width: 7%;
+      float: left;
+      padding: 20px 10px; }
+    .main_content .col_3 {
+      width: 12%;
+      float: left;
+      padding: 20px 10px; }
+    .main_content .col_4 {
+      width: 15%;
+      float: left;
+      padding: 20px 10px; }
+    .main_content .col_5 {
+      width: 15%;
+      float: left;
+      padding: 20px 10px; }
+    .main_content .col_6 {
+      width: 8%;
+      float: left;
+      padding: 20px 10px; }
+    .main_content .sidebar_popup .action {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: #f2f2f2;
+      color: #000000;
+      width: 300px;
+      z-index: 10; }
+      .main_content .sidebar_popup .action li {
+        cursor: pointer;
+        border-bottom: 1px solid #888890;
+        padding: 15px; }
+        .main_content .sidebar_popup .action li:hover {
+          color: #63b111; }
+          .main_content .sidebar_popup .action li:hover li {
+            color: #000000; }
+            .main_content .sidebar_popup .action li:hover li:hover {
+              color: #63b111; }
+      .main_content .sidebar_popup .action .has-child-menu {
+        position: relative; }
+        .main_content .sidebar_popup .action .has-child-menu:hover {
+          background: #ffffff; }
+          .main_content .sidebar_popup .action .has-child-menu:hover .subsubmenu {
+            display: block;
+            position: absolute;
+            left: 100%;
+            width: 200px;
+            background: #ffffff;
+            top: 0; }
+    .main_content .sidebar_popup .note {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: #f2f2f2;
+      color: #000000;
+      width: 500px;
+      z-index: 10; }
+      .main_content .sidebar_popup .note .close_button {
+        float: right;
+        cursor: pointer; }
+      .main_content .sidebar_popup .note .chat_section {
+        padding: 0 30px;
+        max-height: 250px;
+        overflow-y: scroll; }
+        .main_content .sidebar_popup .note .chat_section .message {
+          margin-bottom: 30px;
+          width: 100%; }
+          .main_content .sidebar_popup .note .chat_section .message.question .info {
+            text-align: right; }
+          .main_content .sidebar_popup .note .chat_section .message.question .bulb {
+            padding: 15px;
+            margin-bottom: 15px;
+            position: relative; }
+            .main_content .sidebar_popup .note .chat_section .message.question .bulb:after {
+              content: "";
+              position: absolute;
+              bottom: -15px;
+              right: 40px;
+              border: 15px solid transparent;
+              border-right-color: #ffffff;
+              z-index: -1; }
+          .main_content .sidebar_popup .note .chat_section .message.answer .info {
+            text-align: left; }
+          .main_content .sidebar_popup .note .chat_section .message.answer .bulb {
+            padding: 15px;
+            margin-bottom: 15px;
+            position: relative; }
+            .main_content .sidebar_popup .note .chat_section .message.answer .bulb:after {
+              content: "";
+              position: absolute;
+              bottom: -15px;
+              left: 40px;
+              border: 15px solid transparent;
+              border-left-color: #ffffff;
+              z-index: -1; }
+          .main_content .sidebar_popup .note .chat_section .message .info {
+            font-size: 12px; }
+            .main_content .sidebar_popup .note .chat_section .message .info strong {
+              font-weight: bold; }
+          .main_content .sidebar_popup .note .chat_section .message .bulb {
+            background: #ffffff; }
+            .main_content .sidebar_popup .note .chat_section .message .bulb span {
+              font-style: italic; }
+      .main_content .sidebar_popup .note .question_section {
+        padding: 25px;
+        margin-bottom: 80px; }
+        .main_content .sidebar_popup .note .question_section textarea {
+          width: 100%;
+          resize: none;
+          height: 150px;
+          border: none;
+          color: #000000;
+          margin-bottom: 30px;
+          padding: 15px; }
+          .main_content .sidebar_popup .note .question_section textarea:focus {
+            outline-width: 0; }
+            .main_content .sidebar_popup .note .question_section textarea:focus::-webkit-input-placeholder {
+              /* Chrome/Opera/Safari */
+              font-size: 16px;
+              color: transparent; }
+            .main_content .sidebar_popup .note .question_section textarea:focus::-moz-placeholder {
+              /* Firefox 19+ */
+              color: transparent;
+              font-size: 16px; }
+            .main_content .sidebar_popup .note .question_section textarea:focus:-ms-input-placeholder {
+              /* IE 10+ */
+              color: transparent;
+              font-size: 16px; }
+        .main_content .sidebar_popup .note .question_section .btn-print {
+          border: none;
+          background: #9ede74;
+          padding: 10px 0;
+          width: 45%;
+          margin-right: 5%;
+          text-align: center;
+          color: #000000;
+          font-size: 16px;
+          float: left;
+          text-transform: uppercase; }
+        .main_content .sidebar_popup .note .question_section .btn-add {
+          border: none;
+          background: #63b111;
+          padding: 10px 0;
+          width: 45%;
+          margin-left: 5%;
+          text-align: center;
+          color: #ffffff;
+          font-size: 16px;
+          float: left;
+          text-transform: uppercase; }
+      .main_content .sidebar_popup .note hr {
+        margin-bottom: 30px; }
+    .main_content .sidebar_popup .photo {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: #f2f2f2;
+      color: #000000;
+      width: 500px;
+      z-index: 10; }
+      .main_content .sidebar_popup .photo .close_button {
+        float: right;
+        cursor: pointer; }
+      .main_content .sidebar_popup .photo .photo_section {
+        padding: 0 50px; }
+      .main_content .sidebar_popup .photo .photos {
+        position: relative;
+        max-width: 45%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        height: 160px;
+        width: 100%;
+        text-align: center;
+        float: left;
+        cursor: pointer;
+        padding: 0;
+        overflow: hidden; }
+        .main_content .sidebar_popup .photo .photos .notes {
+          text-align: right; }
+        .main_content .sidebar_popup .photo .photos .car_images {
+          width: 100%;
+          height: auto; }
+        .main_content .sidebar_popup .photo .photos input {
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          border: none;
+          background: transparent;
+          width: 120px;
+          padding: 5px; }
+        .main_content .sidebar_popup .photo .photos .bulb {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          width: 15px;
+          height: 15px; }
+        .main_content .sidebar_popup .photo .photos:hover .zoom {
+          display: block;
+          position: absolute;
+          top: calc(50% - 48px /2);
+          left: calc(50% - 45px /2); }
+      .main_content .sidebar_popup .photo .pagination {
+        padding: 0 60px;
+        margin-bottom: 30px; }
+        .main_content .sidebar_popup .photo .pagination .prev {
+          float: left;
+          cursor: pointer; }
+        .main_content .sidebar_popup .photo .pagination .next {
+          float: right;
+          cursor: pointer; }
+        .main_content .sidebar_popup .photo .pagination .pages {
+          float: left;
+          width: 75%;
+          text-align: center;
+          height: 45px;
+          padding: 12px 0; }
+          .main_content .sidebar_popup .photo .pagination .pages ul {
+            text-align: center; }
+            .main_content .sidebar_popup .photo .pagination .pages ul li {
+              border-radius: 50%;
+              background: #cccccc;
+              width: 10px;
+              height: 10px;
+              display: inline-block;
+              cursor: pointer; }
+              .main_content .sidebar_popup .photo .pagination .pages ul li.current {
+                background: #63b111; }
+      .main_content .sidebar_popup .photo .button_section {
+        padding: 30px;
+        text-align: center; }
+        .main_content .sidebar_popup .photo .button_section button {
+          background: #63b111;
+          padding: 15px;
+          text-transform: uppercase;
+          color: #ffffff;
+          border: none;
+          font-size: 18px;
+          font-weight: bold;
+          cursor: pointer; }
+    .main_content .sidebar_popup .inspection {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background: #f2f2f2;
+      color: #000000;
+      width: 100%;
+      z-index: 10; }
+      .main_content .sidebar_popup .inspection .close {
+        float: right;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        background: linear-gradient(to top, #00a213, #65de2e); }
+        .main_content .sidebar_popup .inspection .close img {
+          width: 15px;
+          height: 15px;
+          margin: 10px; }
+      .main_content .sidebar_popup .inspection .inspection_header {
+        background: #438300;
+        color: #ffffff;
+        padding: 15px; }
+        .main_content .sidebar_popup .inspection .inspection_header span {
+          font-size: 14px; }
+          .main_content .sidebar_popup .inspection .inspection_header span:nth-child(2n) {
+            font-weight: bold; }
+      .main_content .sidebar_popup .inspection .inspection_body {
+        padding: 15px; }
+        .main_content .sidebar_popup .inspection .inspection_body .lists {
+          color: #ffffff; }
+          .main_content .sidebar_popup .inspection .inspection_body .lists .header {
+            background: #386da0;
+            padding: 5px;
+            cursor: pointer; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .header img {
+              margin-right: 10px; }
+          .main_content .sidebar_popup .inspection .inspection_body .lists.closed .body {
+            display: none; }
+          .main_content .sidebar_popup .inspection .inspection_body .lists .body {
+            background: #ffffff;
+            width: 100%; }
+            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items {
+              padding: 0 5px;
+              width: 100%;
+              border-bottom: 1px solid #cccccc;
+              color: #000000; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items:last-child {
+                border: none; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area,
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area,
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area,
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .removing_area {
+                float: left;
+                padding: 5px;
+                height: 50px; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area,
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area,
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area {
+                border-right: 1px solid #cccccc; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area {
+                width: 17%; }
+                .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area .comm {
+                  float: right;
+                  font-size: 12px;
+                  font-weight: bold;
+                  padding: 8px; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area {
+                width: 40%; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area {
+                width: 39%;
+                padding: 0; }
+                .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .stat {
+                  margin: 10px 2.8px;
+                  width: 30px;
+                  height: 30px;
+                  float: left;
+                  padding: 4px 0;
+                  text-align: center; }
+                  .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .stat span {
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: #ffffff; }
+                .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .red {
+                  background: #dd4545; }
+                .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .yellow {
+                  background: #c5be00; }
+                .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .green {
+                  background: #519c00; }
+              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .removing_area {
+                width: 4%; }
+      .main_content .sidebar_popup .inspection .inspection_footer {
+        padding: 15px; }
+        .main_content .sidebar_popup .inspection .inspection_footer .legend {
+          float: left;
+          width: 75%; }
+          .main_content .sidebar_popup .inspection .inspection_footer .legend div div {
+            font-size: 12px;
+            display: inline-block;
+            vertical-align: top; }
+        .main_content .sidebar_popup .inspection .inspection_footer .button_area {
+          float: left;
+          width: 25%;
+          text-align: center; }
+          .main_content .sidebar_popup .inspection .inspection_footer .button_area .button {
+            width: 70%;
+            float: right;
+            background: #438300;
+            padding: 10px 5px;
+            margin-top: -10px;
+            font-size: 12px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer; }
+            .main_content .sidebar_popup .inspection .inspection_footer .button_area .button img {
+              margin-right: 5px; }
+    .main_content .sidebar {
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 200px;
+      left: -210px;
+      z-index: 1; }
+      .main_content .sidebar .btn {
+        display: inline-block;
+        text-transform: uppercase;
+        background: #63b111;
+        padding: 10px 15px;
+        float: left;
+        border-right: 2px solid #438300;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+        position: relative; }
+        .main_content .sidebar .btn:last-child {
+          border: none; }
+        .main_content .sidebar .btn.active {
+          background: #9ede74; }
+    .main_content .mechanical_section_wrapper,
+    .main_content .bshop_section.open,
+    .main_content .detail_section.open {
+      padding: 25px 25px 0 25px;
+      background: #ffffff;
+      margin-top: 30px; }
+      .main_content .mechanical_section_wrapper .mech_title,
+      .main_content .mechanical_section_wrapper .bshop_title,
+      .main_content .mechanical_section_wrapper .detail_title,
+      .main_content .bshop_section.open .mech_title,
+      .main_content .bshop_section.open .bshop_title,
+      .main_content .bshop_section.open .detail_title,
+      .main_content .detail_section.open .mech_title,
+      .main_content .detail_section.open .bshop_title,
+      .main_content .detail_section.open .detail_title {
+        background: #386da0;
+        padding: 15px 20px;
+        min-height: 65px; }
+        .main_content .mechanical_section_wrapper .mech_title .items-left,
+        .main_content .mechanical_section_wrapper .bshop_title .items-left,
+        .main_content .mechanical_section_wrapper .detail_title .items-left,
+        .main_content .bshop_section.open .mech_title .items-left,
+        .main_content .bshop_section.open .bshop_title .items-left,
+        .main_content .bshop_section.open .detail_title .items-left,
+        .main_content .detail_section.open .mech_title .items-left,
+        .main_content .detail_section.open .bshop_title .items-left,
+        .main_content .detail_section.open .detail_title .items-left {
+          float: left;
+          color: #ffffff; }
+          .main_content .mechanical_section_wrapper .mech_title .items-left img,
+          .main_content .mechanical_section_wrapper .bshop_title .items-left img,
+          .main_content .mechanical_section_wrapper .detail_title .items-left img,
+          .main_content .bshop_section.open .mech_title .items-left img,
+          .main_content .bshop_section.open .bshop_title .items-left img,
+          .main_content .bshop_section.open .detail_title .items-left img,
+          .main_content .detail_section.open .mech_title .items-left img,
+          .main_content .detail_section.open .bshop_title .items-left img,
+          .main_content .detail_section.open .detail_title .items-left img {
+            float: left;
+            padding: 13px 0; }
+          .main_content .mechanical_section_wrapper .mech_title .items-left .title,
+          .main_content .mechanical_section_wrapper .bshop_title .items-left .title,
+          .main_content .mechanical_section_wrapper .detail_title .items-left .title,
+          .main_content .bshop_section.open .mech_title .items-left .title,
+          .main_content .bshop_section.open .bshop_title .items-left .title,
+          .main_content .bshop_section.open .detail_title .items-left .title,
+          .main_content .detail_section.open .mech_title .items-left .title,
+          .main_content .detail_section.open .bshop_title .items-left .title,
+          .main_content .detail_section.open .detail_title .items-left .title {
+            float: left;
+            margin-left: 10px;
+            padding: 8px 0;
+            font-size: 24px;
+            font-weight: bold; }
+          .main_content .mechanical_section_wrapper .mech_title .items-left .btn-addServices,
+          .main_content .mechanical_section_wrapper .bshop_title .items-left .btn-addServices,
+          .main_content .mechanical_section_wrapper .detail_title .items-left .btn-addServices,
+          .main_content .bshop_section.open .mech_title .items-left .btn-addServices,
+          .main_content .bshop_section.open .bshop_title .items-left .btn-addServices,
+          .main_content .bshop_section.open .detail_title .items-left .btn-addServices,
+          .main_content .detail_section.open .mech_title .items-left .btn-addServices,
+          .main_content .detail_section.open .bshop_title .items-left .btn-addServices,
+          .main_content .detail_section.open .detail_title .items-left .btn-addServices {
+            background: linear-gradient(to top, #00a213, #65de2e);
+            float: left;
+            margin-left: 50px;
+            padding: 8px 15px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase; }
+        .main_content .mechanical_section_wrapper .mech_title .items-right,
+        .main_content .mechanical_section_wrapper .bshop_title .items-right,
+        .main_content .mechanical_section_wrapper .detail_title .items-right,
+        .main_content .bshop_section.open .mech_title .items-right,
+        .main_content .bshop_section.open .bshop_title .items-right,
+        .main_content .bshop_section.open .detail_title .items-right,
+        .main_content .detail_section.open .mech_title .items-right,
+        .main_content .detail_section.open .bshop_title .items-right,
+        .main_content .detail_section.open .detail_title .items-right {
+          float: right; }
+          .main_content .mechanical_section_wrapper .mech_title .items-right a,
+          .main_content .mechanical_section_wrapper .bshop_title .items-right a,
+          .main_content .mechanical_section_wrapper .detail_title .items-right a,
+          .main_content .bshop_section.open .mech_title .items-right a,
+          .main_content .bshop_section.open .bshop_title .items-right a,
+          .main_content .bshop_section.open .detail_title .items-right a,
+          .main_content .detail_section.open .mech_title .items-right a,
+          .main_content .detail_section.open .bshop_title .items-right a,
+          .main_content .detail_section.open .detail_title .items-right a {
+            color: #ffffff;
+            font-size: 12px; }
+            .main_content .mechanical_section_wrapper .mech_title .items-right a img,
+            .main_content .mechanical_section_wrapper .bshop_title .items-right a img,
+            .main_content .mechanical_section_wrapper .detail_title .items-right a img,
+            .main_content .bshop_section.open .mech_title .items-right a img,
+            .main_content .bshop_section.open .bshop_title .items-right a img,
+            .main_content .bshop_section.open .detail_title .items-right a img,
+            .main_content .detail_section.open .mech_title .items-right a img,
+            .main_content .detail_section.open .bshop_title .items-right a img,
+            .main_content .detail_section.open .detail_title .items-right a img {
+              padding: 0 5px;
+              vertical-align: middle; }
+      .main_content .mechanical_section_wrapper .mech_table .table_title,
+      .main_content .mechanical_section_wrapper .bshop_table .table_title,
+      .main_content .mechanical_section_wrapper .detail_table .table_title,
+      .main_content .bshop_section.open .mech_table .table_title,
+      .main_content .bshop_section.open .bshop_table .table_title,
+      .main_content .bshop_section.open .detail_table .table_title,
+      .main_content .detail_section.open .mech_table .table_title,
+      .main_content .detail_section.open .bshop_table .table_title,
+      .main_content .detail_section.open .detail_table .table_title {
+        background: #304f7c;
+        width: 100%; }
+        .main_content .mechanical_section_wrapper .mech_table .table_title .title,
+        .main_content .mechanical_section_wrapper .bshop_table .table_title .title,
+        .main_content .mechanical_section_wrapper .detail_table .table_title .title,
+        .main_content .bshop_section.open .mech_table .table_title .title,
+        .main_content .bshop_section.open .bshop_table .table_title .title,
+        .main_content .bshop_section.open .detail_table .table_title .title,
+        .main_content .detail_section.open .mech_table .table_title .title,
+        .main_content .detail_section.open .bshop_table .table_title .title,
+        .main_content .detail_section.open .detail_table .table_title .title {
+          position: relative;
+          min-height: 1px;
+          padding: 20px 5px;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 14px;
+          color: #ffffff;
+          float: left;
+          border-right: 1px solid #2470a3; }
+          .main_content .mechanical_section_wrapper .mech_table .table_title .title:last-child,
+          .main_content .mechanical_section_wrapper .bshop_table .table_title .title:last-child,
+          .main_content .mechanical_section_wrapper .detail_table .table_title .title:last-child,
+          .main_content .bshop_section.open .mech_table .table_title .title:last-child,
+          .main_content .bshop_section.open .bshop_table .table_title .title:last-child,
+          .main_content .bshop_section.open .detail_table .table_title .title:last-child,
+          .main_content .detail_section.open .mech_table .table_title .title:last-child,
+          .main_content .detail_section.open .bshop_table .table_title .title:last-child,
+          .main_content .detail_section.open .detail_table .table_title .title:last-child {
+            border: 0; }
+      .main_content .mechanical_section_wrapper .mech_table .table_content > div,
+      .main_content .mechanical_section_wrapper .bshop_table .table_content > div,
+      .main_content .mechanical_section_wrapper .detail_table .table_content > div,
+      .main_content .bshop_section.open .mech_table .table_content > div,
+      .main_content .bshop_section.open .bshop_table .table_content > div,
+      .main_content .bshop_section.open .detail_table .table_content > div,
+      .main_content .detail_section.open .mech_table .table_content > div,
+      .main_content .detail_section.open .bshop_table .table_content > div,
+      .main_content .detail_section.open .detail_table .table_content > div {
+        border-left: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div:last-child,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div:last-child,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div:last-child,
+        .main_content .bshop_section.open .mech_table .table_content > div:last-child,
+        .main_content .bshop_section.open .bshop_table .table_content > div:last-child,
+        .main_content .bshop_section.open .detail_table .table_content > div:last-child,
+        .main_content .detail_section.open .mech_table .table_content > div:last-child,
+        .main_content .detail_section.open .bshop_table .table_content > div:last-child,
+        .main_content .detail_section.open .detail_table .table_content > div:last-child {
+          border-bottom: 2px solid #000000; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div.down,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div.down,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div.down,
+        .main_content .bshop_section.open .mech_table .table_content > div.down,
+        .main_content .bshop_section.open .bshop_table .table_content > div.down,
+        .main_content .bshop_section.open .detail_table .table_content > div.down,
+        .main_content .detail_section.open .mech_table .table_content > div.down,
+        .main_content .detail_section.open .bshop_table .table_content > div.down,
+        .main_content .detail_section.open .detail_table .table_content > div.down {
+          background-color: #ececec; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_1 img,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_1 img,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_1 img,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_1 img,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_1 img,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_1 img,
+        .main_content .detail_section.open .mech_table .table_content > div .col_1 img,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_1 img,
+        .main_content .detail_section.open .detail_table .table_content > div .col_1 img {
+          float: none !important;
+          margin: 0 auto;
+          cursor: pointer; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"],
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"],
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"],
+        .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"],
+        .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"],
+        .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"],
+        .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"],
+        .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"],
+        .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] {
+          border-right: 1px solid #cccccc; }
+          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] > span,
+          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] > span,
+          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] > span,
+          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] > span,
+          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] > span,
+          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] > span,
+          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] > span,
+          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] > span,
+          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] > span {
+            float: left;
+            width: 50%; }
+          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] div,
+          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] img,
+          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] div,
+          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] img,
+          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] div,
+          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] img,
+          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] div,
+          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] img,
+          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] div,
+          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] img,
+          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] div,
+          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] img,
+          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] div,
+          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] img,
+          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] div,
+          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] img,
+          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] div,
+          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] img {
+            float: right;
+            padding: 0; }
+          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox,
+          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin-right: 5px; }
+            .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input,
+            .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+              z-index: 1;
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              height: 100%; }
+              .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
+              .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark {
+                border-color: #63b111; }
+                .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
+                .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after {
+                  display: block;
+                  border-color: #63b111; }
+            .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
+            .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 30px;
+              width: 30px;
+              background-color: #ffffff;
+              border: 2px solid #cccccc; }
+              .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
+              .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+                left: 10px;
+                top: 6px;
+                width: 5px;
+                height: 10px;
+                border: solid #63b111;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
+          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn,
+          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn {
+            float: left;
+            width: 35%; }
+            .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div,
+            .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div {
+              float: left;
+              width: 49%;
+              height: 30px; }
+              .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div:first-child,
+              .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div:first-child {
+                margin-right: 2%; }
+              .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div img,
+              .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div img {
+                cursor: pointer;
+                float: none;
+                width: 100%; }
+          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .status,
+          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .status,
+          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .status,
+          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .status,
+          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .status,
+          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .status,
+          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .status,
+          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .status,
+          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .status {
+            width: 64%;
+            margin-left: 1%;
+            background: linear-gradient(to top, #d46700, #e19800);
+            border-bottom: 2px solid #a81000;
+            padding: 0;
+            font-size: 14px;
+            font-weight: bold;
+            color: #ffffff;
+            height: 30px;
+            text-align: center;
+            cursor: pointer; }
+            .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .status.hidden,
+            .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .status.hidden {
+              display: none; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_1,
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_1,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_1,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_6,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_1,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_6,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_1,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_6,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_1,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_6,
+        .main_content .detail_section.open .mech_table .table_content > div .col_1,
+        .main_content .detail_section.open .mech_table .table_content > div .col_6,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_1,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_6,
+        .main_content .detail_section.open .detail_table .table_content > div .col_1,
+        .main_content .detail_section.open .detail_table .table_content > div .col_6 {
+          text-align: center; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_2,
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_3,
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_4,
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_5,
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_7,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_2,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_3,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_4,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_5,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_7,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_2,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_3,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_4,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_5,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_7,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_2,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_3,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_4,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_5,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_6,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_7,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_2,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_3,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_4,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_5,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_6,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_7,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_2,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_3,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_4,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_5,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_6,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_7,
+        .main_content .detail_section.open .mech_table .table_content > div .col_2,
+        .main_content .detail_section.open .mech_table .table_content > div .col_3,
+        .main_content .detail_section.open .mech_table .table_content > div .col_4,
+        .main_content .detail_section.open .mech_table .table_content > div .col_5,
+        .main_content .detail_section.open .mech_table .table_content > div .col_6,
+        .main_content .detail_section.open .mech_table .table_content > div .col_7,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_2,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_3,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_4,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_5,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_6,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_7,
+        .main_content .detail_section.open .detail_table .table_content > div .col_2,
+        .main_content .detail_section.open .detail_table .table_content > div .col_3,
+        .main_content .detail_section.open .detail_table .table_content > div .col_4,
+        .main_content .detail_section.open .detail_table .table_content > div .col_5,
+        .main_content .detail_section.open .detail_table .table_content > div .col_6,
+        .main_content .detail_section.open .detail_table .table_content > div .col_7 {
+          line-height: 29px; }
+        .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_6,
+        .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_6,
+        .main_content .bshop_section.open .mech_table .table_content > div .col_6,
+        .main_content .bshop_section.open .bshop_table .table_content > div .col_6,
+        .main_content .bshop_section.open .detail_table .table_content > div .col_6,
+        .main_content .detail_section.open .mech_table .table_content > div .col_6,
+        .main_content .detail_section.open .bshop_table .table_content > div .col_6,
+        .main_content .detail_section.open .detail_table .table_content > div .col_6 {
+          background: #a6a6a6;
+          color: #ffffff; }
+      .main_content .mechanical_section_wrapper .mech_table .total,
+      .main_content .mechanical_section_wrapper .bshop_table .total,
+      .main_content .mechanical_section_wrapper .detail_table .total,
+      .main_content .bshop_section.open .mech_table .total,
+      .main_content .bshop_section.open .bshop_table .total,
+      .main_content .bshop_section.open .detail_table .total,
+      .main_content .detail_section.open .mech_table .total,
+      .main_content .detail_section.open .bshop_table .total,
+      .main_content .detail_section.open .detail_table .total {
+        font-weight: bold;
+        margin: 0 1px 0 2px; }
+        .main_content .mechanical_section_wrapper .mech_table .total .col12,
+        .main_content .mechanical_section_wrapper .bshop_table .total .col12,
+        .main_content .mechanical_section_wrapper .detail_table .total .col12,
+        .main_content .bshop_section.open .mech_table .total .col12,
+        .main_content .bshop_section.open .bshop_table .total .col12,
+        .main_content .bshop_section.open .detail_table .total .col12,
+        .main_content .detail_section.open .mech_table .total .col12,
+        .main_content .detail_section.open .bshop_table .total .col12,
+        .main_content .detail_section.open .detail_table .total .col12 {
+          width: 32%;
+          float: left;
+          padding: 20px 5px; }
+        .main_content .mechanical_section_wrapper .mech_table .total .col_6,
+        .main_content .mechanical_section_wrapper .bshop_table .total .col_6,
+        .main_content .mechanical_section_wrapper .detail_table .total .col_6,
+        .main_content .bshop_section.open .mech_table .total .col_6,
+        .main_content .bshop_section.open .bshop_table .total .col_6,
+        .main_content .bshop_section.open .detail_table .total .col_6,
+        .main_content .detail_section.open .mech_table .total .col_6,
+        .main_content .detail_section.open .bshop_table .total .col_6,
+        .main_content .detail_section.open .detail_table .total .col_6 {
+          background: #a6a6a6;
+          color: #ffffff;
+          text-align: center; }
+        .main_content .mechanical_section_wrapper .mech_table .total div,
+        .main_content .mechanical_section_wrapper .bshop_table .total div,
+        .main_content .mechanical_section_wrapper .detail_table .total div,
+        .main_content .bshop_section.open .mech_table .total div,
+        .main_content .bshop_section.open .bshop_table .total div,
+        .main_content .bshop_section.open .detail_table .total div,
+        .main_content .detail_section.open .mech_table .total div,
+        .main_content .detail_section.open .bshop_table .total div,
+        .main_content .detail_section.open .detail_table .total div {
+          border-right: 1px solid #cccccc; }
+
+  .bshop_section .inner_wrapper img,
+  .bshop_section .inner_wrapper .section_title {
+    float: left;
+    padding-right: 10px; }
+
+  .detail_section .inner_wrapper img,
+  .detail_section .inner_wrapper .section_title {
+    float: left;
+    padding-right: 10px; }
+
+  .bshop_section,
+  .detail_section {
+    padding: 20px 25px;
+    background: #ffffff;
+    margin-top: 30px; }
+
+  .total_section {
+    background: #ffffff;
+    margin-top: 30px;
+    padding: 0 25px; }
+    .total_section .inner_wrapper {
+      margin: 0 1px 0 2px; }
+      .total_section .inner_wrapper > div {
+        padding: 20px 5px;
+        float: left;
+        border-right: 1px solid #cccccc; }
+        .total_section .inner_wrapper > div:last-child {
+          border-right: none; }
+        .total_section .inner_wrapper > div div {
+          width: 100%;
+          font-size: 12px; }
+      .total_section .inner_wrapper .col12 {
+        width: 32%;
+        float: left;
+        padding: 29px 15px; }
+      .total_section .inner_wrapper .col_6 {
+        background: #a6a6a6;
+        color: #ffffff;
+        text-align: center; }
+    .total_section .confirm {
+      background: linear-gradient(to top, #245596, #3274af);
+      height: 33px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #032355; }
+      .total_section .confirm .icon {
+        width: 50px;
+        border-right: 1px solid #304f7c;
+        padding: 9px 18px;
+        height: 100%;
+        display: inline-block; }
+      .total_section .confirm .text {
+        width: calc(100% - 55px);
+        display: inline-block;
+        margin: 0;
+        padding: 0 10px;
+        font-weight: bold;
+        color: #ffffff; }
+
+  .bshop_section.close .bshop_title,
+  .bshop_section.close .bshop_table,
+  .bshop_section.close .detail_title,
+  .bshop_section.close .detail_table,
+  .detail_section.close .bshop_title,
+  .detail_section.close .bshop_table,
+  .detail_section.close .detail_title,
+  .detail_section.close .detail_table {
+    display: none; }
+  .bshop_section.open .inner_wrapper > div > img,
+  .detail_section.open .inner_wrapper > div > img {
+    display: none; }
+  .bshop_section.open .section_title,
+  .detail_section.open .section_title {
+    display: none; }
+
+  .btn-action,
+  .btn-insp,
+  .btn-photo,
+  .btn-note {
+    cursor: pointer; }
+
+  .main_content .col_2 {
+    width: 25%;
+    float: left;
+    padding: 20px 10px; }
+  .main_content .col_7 {
+    width: 18%;
+    float: left;
+    padding: 20px 10px; }
+
+  .hide-lg {
+    display: none; } }
 header {
   width: 100%;
   background: #696969;
@@ -476,997 +2565,6 @@ header {
     line-height: 32px;
     text-decoration: none;
     color: #ffffff; }
-
-.main_content {
-  position: relative; }
-  .main_content .col_1 {
-    width: 7%;
-    float: left;
-    padding: 20px 10px; }
-  .main_content .col_3 {
-    width: 12%;
-    float: left;
-    padding: 20px 10px; }
-  .main_content .col_4 {
-    width: 15%;
-    float: left;
-    padding: 20px 10px; }
-  .main_content .col_5 {
-    width: 15%;
-    float: left;
-    padding: 20px 10px; }
-  .main_content .col_6 {
-    width: 8%;
-    float: left;
-    padding: 20px 10px; }
-  .main_content .sidebar_popup .action {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background: #f2f2f2;
-    color: #000000;
-    width: 300px;
-    z-index: 10; }
-    .main_content .sidebar_popup .action li {
-      cursor: pointer;
-      border-bottom: 1px solid #888890;
-      padding: 15px; }
-      .main_content .sidebar_popup .action li:hover {
-        color: #63b111; }
-        .main_content .sidebar_popup .action li:hover li {
-          color: #000000; }
-          .main_content .sidebar_popup .action li:hover li:hover {
-            color: #63b111; }
-    .main_content .sidebar_popup .action .has-child-menu {
-      position: relative; }
-      .main_content .sidebar_popup .action .has-child-menu:hover {
-        background: #ffffff; }
-        .main_content .sidebar_popup .action .has-child-menu:hover .subsubmenu {
-          display: block;
-          position: absolute;
-          left: 100%;
-          width: 200px;
-          background: #ffffff;
-          top: 0; }
-  .main_content .sidebar_popup .note {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background: #f2f2f2;
-    color: #000000;
-    width: 500px;
-    z-index: 10; }
-    .main_content .sidebar_popup .note .close_button {
-      float: right;
-      cursor: pointer; }
-    .main_content .sidebar_popup .note .chat_section {
-      padding: 0 30px;
-      max-height: 250px;
-      overflow-y: scroll; }
-      .main_content .sidebar_popup .note .chat_section .message {
-        margin-bottom: 30px;
-        width: 100%; }
-        .main_content .sidebar_popup .note .chat_section .message.question .info {
-          text-align: right; }
-        .main_content .sidebar_popup .note .chat_section .message.question .bulb {
-          padding: 15px;
-          margin-bottom: 15px;
-          position: relative; }
-          .main_content .sidebar_popup .note .chat_section .message.question .bulb:after {
-            content: "";
-            position: absolute;
-            bottom: -15px;
-            right: 40px;
-            border: 15px solid transparent;
-            border-right-color: #ffffff;
-            z-index: -1; }
-        .main_content .sidebar_popup .note .chat_section .message.answer .info {
-          text-align: left; }
-        .main_content .sidebar_popup .note .chat_section .message.answer .bulb {
-          padding: 15px;
-          margin-bottom: 15px;
-          position: relative; }
-          .main_content .sidebar_popup .note .chat_section .message.answer .bulb:after {
-            content: "";
-            position: absolute;
-            bottom: -15px;
-            left: 40px;
-            border: 15px solid transparent;
-            border-left-color: #ffffff;
-            z-index: -1; }
-        .main_content .sidebar_popup .note .chat_section .message .info {
-          font-size: 12px; }
-          .main_content .sidebar_popup .note .chat_section .message .info strong {
-            font-weight: bold; }
-        .main_content .sidebar_popup .note .chat_section .message .bulb {
-          background: #ffffff; }
-          .main_content .sidebar_popup .note .chat_section .message .bulb span {
-            font-style: italic; }
-    .main_content .sidebar_popup .note .question_section {
-      padding: 25px;
-      margin-bottom: 80px; }
-      .main_content .sidebar_popup .note .question_section textarea {
-        width: 100%;
-        resize: none;
-        height: 150px;
-        border: none;
-        color: #000000;
-        margin-bottom: 30px;
-        padding: 15px; }
-        .main_content .sidebar_popup .note .question_section textarea:focus {
-          outline-width: 0; }
-          .main_content .sidebar_popup .note .question_section textarea:focus::-webkit-input-placeholder {
-            /* Chrome/Opera/Safari */
-            font-size: 16px;
-            color: transparent; }
-          .main_content .sidebar_popup .note .question_section textarea:focus::-moz-placeholder {
-            /* Firefox 19+ */
-            color: transparent;
-            font-size: 16px; }
-          .main_content .sidebar_popup .note .question_section textarea:focus:-ms-input-placeholder {
-            /* IE 10+ */
-            color: transparent;
-            font-size: 16px; }
-      .main_content .sidebar_popup .note .question_section .btn-print {
-        border: none;
-        background: #9ede74;
-        padding: 10px 0;
-        width: 45%;
-        margin-right: 5%;
-        text-align: center;
-        color: #000000;
-        font-size: 16px;
-        float: left;
-        text-transform: uppercase; }
-      .main_content .sidebar_popup .note .question_section .btn-add {
-        border: none;
-        background: #63b111;
-        padding: 10px 0;
-        width: 45%;
-        margin-left: 5%;
-        text-align: center;
-        color: #ffffff;
-        font-size: 16px;
-        float: left;
-        text-transform: uppercase; }
-    .main_content .sidebar_popup .note hr {
-      margin-bottom: 30px; }
-  .main_content .sidebar_popup .photo {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background: #f2f2f2;
-    color: #000000;
-    width: 500px;
-    z-index: 10; }
-    .main_content .sidebar_popup .photo .close_button {
-      float: right;
-      cursor: pointer; }
-    .main_content .sidebar_popup .photo .photo_section {
-      padding: 0 50px; }
-    .main_content .sidebar_popup .photo .photos {
-      position: relative;
-      max-width: 45%;
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-bottom: 20px;
-      height: 160px;
-      width: 100%;
-      text-align: center;
-      float: left;
-      cursor: pointer;
-      padding: 0;
-      overflow: hidden; }
-      .main_content .sidebar_popup .photo .photos .notes {
-        text-align: right; }
-      .main_content .sidebar_popup .photo .photos .car_images {
-        width: 100%;
-        height: auto; }
-      .main_content .sidebar_popup .photo .photos input {
-        position: absolute;
-        top: 10px;
-        left: 20px;
-        border: none;
-        background: transparent;
-        width: 120px;
-        padding: 5px; }
-      .main_content .sidebar_popup .photo .photos .bulb {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        width: 15px;
-        height: 15px; }
-      .main_content .sidebar_popup .photo .photos:hover .zoom {
-        display: block;
-        position: absolute;
-        top: calc(50% - 48px /2);
-        left: calc(50% - 45px /2); }
-    .main_content .sidebar_popup .photo .pagination {
-      padding: 0 60px;
-      margin-bottom: 30px; }
-      .main_content .sidebar_popup .photo .pagination .prev {
-        float: left;
-        cursor: pointer; }
-      .main_content .sidebar_popup .photo .pagination .next {
-        float: right;
-        cursor: pointer; }
-      .main_content .sidebar_popup .photo .pagination .pages {
-        float: left;
-        width: 75%;
-        text-align: center;
-        height: 45px;
-        padding: 12px 0; }
-        .main_content .sidebar_popup .photo .pagination .pages ul {
-          text-align: center; }
-          .main_content .sidebar_popup .photo .pagination .pages ul li {
-            border-radius: 50%;
-            background: #cccccc;
-            width: 10px;
-            height: 10px;
-            display: inline-block;
-            cursor: pointer; }
-            .main_content .sidebar_popup .photo .pagination .pages ul li.current {
-              background: #63b111; }
-    .main_content .sidebar_popup .photo .button_section {
-      padding: 30px;
-      text-align: center; }
-      .main_content .sidebar_popup .photo .button_section button {
-        background: #63b111;
-        padding: 15px;
-        text-transform: uppercase;
-        color: #ffffff;
-        border: none;
-        font-size: 18px;
-        font-weight: bold;
-        cursor: pointer; }
-  .main_content .sidebar_popup .inspection {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background: #f2f2f2;
-    color: #000000;
-    width: 100%;
-    z-index: 10; }
-    .main_content .sidebar_popup .inspection .close {
-      float: right;
-      cursor: pointer;
-      border-radius: 50%;
-      width: 35px;
-      height: 35px;
-      background: linear-gradient(to top, #00a213, #65de2e); }
-      .main_content .sidebar_popup .inspection .close img {
-        width: 15px;
-        height: 15px;
-        margin: 10px; }
-    .main_content .sidebar_popup .inspection .inspection_header {
-      background: #438300;
-      color: #ffffff;
-      padding: 15px; }
-      .main_content .sidebar_popup .inspection .inspection_header span {
-        font-size: 14px; }
-        .main_content .sidebar_popup .inspection .inspection_header span:nth-child(2n) {
-          font-weight: bold; }
-    .main_content .sidebar_popup .inspection .inspection_body {
-      padding: 15px; }
-      .main_content .sidebar_popup .inspection .inspection_body .lists {
-        color: #ffffff; }
-        .main_content .sidebar_popup .inspection .inspection_body .lists .header {
-          background: #386da0;
-          padding: 5px;
-          cursor: pointer; }
-          .main_content .sidebar_popup .inspection .inspection_body .lists .header img {
-            margin-right: 10px; }
-        .main_content .sidebar_popup .inspection .inspection_body .lists.closed .body {
-          display: none; }
-        .main_content .sidebar_popup .inspection .inspection_body .lists .body {
-          background: #ffffff;
-          width: 100%; }
-          .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items {
-            padding: 0 5px;
-            width: 100%;
-            border-bottom: 1px solid #cccccc;
-            color: #000000; }
-            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items:last-child {
-              border: none; }
-            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area,
-            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area,
-            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area,
-            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .removing_area {
-              float: left;
-              padding: 5px;
-              height: 50px; }
-            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area,
-            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area,
-            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area {
-              border-right: 1px solid #cccccc; }
-            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area {
-              width: 17%; }
-              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .info_area .comm {
-                float: right;
-                font-size: 12px;
-                font-weight: bold;
-                padding: 8px; }
-            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .title_area {
-              width: 40%; }
-            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area {
-              width: 39%;
-              padding: 0; }
-              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .stat {
-                margin: 10px 2.8px;
-                width: 30px;
-                height: 30px;
-                float: left;
-                padding: 4px 0;
-                text-align: center; }
-                .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .stat span {
-                  font-size: 12px;
-                  font-weight: bold;
-                  color: #ffffff; }
-              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .red {
-                background: #dd4545; }
-              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .yellow {
-                background: #c5be00; }
-              .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .status_area .green {
-                background: #519c00; }
-            .main_content .sidebar_popup .inspection .inspection_body .lists .body .row_items .removing_area {
-              width: 4%; }
-    .main_content .sidebar_popup .inspection .inspection_footer {
-      padding: 15px; }
-      .main_content .sidebar_popup .inspection .inspection_footer .legend {
-        float: left;
-        width: 75%; }
-        .main_content .sidebar_popup .inspection .inspection_footer .legend div div {
-          font-size: 12px;
-          display: inline-block;
-          vertical-align: top; }
-      .main_content .sidebar_popup .inspection .inspection_footer .button_area {
-        float: left;
-        width: 25%;
-        text-align: center; }
-        .main_content .sidebar_popup .inspection .inspection_footer .button_area .button {
-          width: 70%;
-          float: right;
-          background: #438300;
-          padding: 10px 5px;
-          margin-top: -10px;
-          font-size: 12px;
-          color: #ffffff;
-          text-transform: uppercase;
-          font-weight: bold;
-          cursor: pointer; }
-          .main_content .sidebar_popup .inspection .inspection_footer .button_area .button img {
-            margin-right: 5px; }
-  .main_content .sidebar {
-    transform: rotate(-90deg);
-    position: absolute;
-    top: 200px;
-    left: -210px;
-    z-index: 1; }
-    .main_content .sidebar .btn {
-      display: inline-block;
-      text-transform: uppercase;
-      background: #63b111;
-      padding: 10px 15px;
-      float: left;
-      border-right: 2px solid #438300;
-      color: #ffffff;
-      font-size: 14px;
-      font-weight: bold;
-      position: relative; }
-      .main_content .sidebar .btn:last-child {
-        border: none; }
-      .main_content .sidebar .btn.active {
-        background: #9ede74; }
-  .main_content .mechanical_section_wrapper,
-  .main_content .bshop_section.open,
-  .main_content .detail_section.open {
-    padding: 25px 25px 0 25px;
-    background: #ffffff;
-    margin-top: 30px; }
-    .main_content .mechanical_section_wrapper .mech_title,
-    .main_content .mechanical_section_wrapper .bshop_title,
-    .main_content .mechanical_section_wrapper .detail_title,
-    .main_content .bshop_section.open .mech_title,
-    .main_content .bshop_section.open .bshop_title,
-    .main_content .bshop_section.open .detail_title,
-    .main_content .detail_section.open .mech_title,
-    .main_content .detail_section.open .bshop_title,
-    .main_content .detail_section.open .detail_title {
-      background: #386da0;
-      padding: 15px 20px;
-      min-height: 65px; }
-      .main_content .mechanical_section_wrapper .mech_title .items-left,
-      .main_content .mechanical_section_wrapper .bshop_title .items-left,
-      .main_content .mechanical_section_wrapper .detail_title .items-left,
-      .main_content .bshop_section.open .mech_title .items-left,
-      .main_content .bshop_section.open .bshop_title .items-left,
-      .main_content .bshop_section.open .detail_title .items-left,
-      .main_content .detail_section.open .mech_title .items-left,
-      .main_content .detail_section.open .bshop_title .items-left,
-      .main_content .detail_section.open .detail_title .items-left {
-        float: left;
-        color: #ffffff; }
-        .main_content .mechanical_section_wrapper .mech_title .items-left img,
-        .main_content .mechanical_section_wrapper .bshop_title .items-left img,
-        .main_content .mechanical_section_wrapper .detail_title .items-left img,
-        .main_content .bshop_section.open .mech_title .items-left img,
-        .main_content .bshop_section.open .bshop_title .items-left img,
-        .main_content .bshop_section.open .detail_title .items-left img,
-        .main_content .detail_section.open .mech_title .items-left img,
-        .main_content .detail_section.open .bshop_title .items-left img,
-        .main_content .detail_section.open .detail_title .items-left img {
-          float: left;
-          padding: 13px 0; }
-        .main_content .mechanical_section_wrapper .mech_title .items-left .title,
-        .main_content .mechanical_section_wrapper .bshop_title .items-left .title,
-        .main_content .mechanical_section_wrapper .detail_title .items-left .title,
-        .main_content .bshop_section.open .mech_title .items-left .title,
-        .main_content .bshop_section.open .bshop_title .items-left .title,
-        .main_content .bshop_section.open .detail_title .items-left .title,
-        .main_content .detail_section.open .mech_title .items-left .title,
-        .main_content .detail_section.open .bshop_title .items-left .title,
-        .main_content .detail_section.open .detail_title .items-left .title {
-          float: left;
-          margin-left: 10px;
-          padding: 8px 0;
-          font-size: 24px;
-          font-weight: bold; }
-        .main_content .mechanical_section_wrapper .mech_title .items-left .btn-addServices,
-        .main_content .mechanical_section_wrapper .bshop_title .items-left .btn-addServices,
-        .main_content .mechanical_section_wrapper .detail_title .items-left .btn-addServices,
-        .main_content .bshop_section.open .mech_title .items-left .btn-addServices,
-        .main_content .bshop_section.open .bshop_title .items-left .btn-addServices,
-        .main_content .bshop_section.open .detail_title .items-left .btn-addServices,
-        .main_content .detail_section.open .mech_title .items-left .btn-addServices,
-        .main_content .detail_section.open .bshop_title .items-left .btn-addServices,
-        .main_content .detail_section.open .detail_title .items-left .btn-addServices {
-          background: linear-gradient(to top, #00a213, #65de2e);
-          float: left;
-          margin-left: 50px;
-          padding: 8px 15px;
-          font-size: 12px;
-          font-weight: bold;
-          text-transform: uppercase; }
-      .main_content .mechanical_section_wrapper .mech_title .items-right,
-      .main_content .mechanical_section_wrapper .bshop_title .items-right,
-      .main_content .mechanical_section_wrapper .detail_title .items-right,
-      .main_content .bshop_section.open .mech_title .items-right,
-      .main_content .bshop_section.open .bshop_title .items-right,
-      .main_content .bshop_section.open .detail_title .items-right,
-      .main_content .detail_section.open .mech_title .items-right,
-      .main_content .detail_section.open .bshop_title .items-right,
-      .main_content .detail_section.open .detail_title .items-right {
-        float: right; }
-        .main_content .mechanical_section_wrapper .mech_title .items-right a,
-        .main_content .mechanical_section_wrapper .bshop_title .items-right a,
-        .main_content .mechanical_section_wrapper .detail_title .items-right a,
-        .main_content .bshop_section.open .mech_title .items-right a,
-        .main_content .bshop_section.open .bshop_title .items-right a,
-        .main_content .bshop_section.open .detail_title .items-right a,
-        .main_content .detail_section.open .mech_title .items-right a,
-        .main_content .detail_section.open .bshop_title .items-right a,
-        .main_content .detail_section.open .detail_title .items-right a {
-          color: #ffffff;
-          font-size: 12px; }
-          .main_content .mechanical_section_wrapper .mech_title .items-right a img,
-          .main_content .mechanical_section_wrapper .bshop_title .items-right a img,
-          .main_content .mechanical_section_wrapper .detail_title .items-right a img,
-          .main_content .bshop_section.open .mech_title .items-right a img,
-          .main_content .bshop_section.open .bshop_title .items-right a img,
-          .main_content .bshop_section.open .detail_title .items-right a img,
-          .main_content .detail_section.open .mech_title .items-right a img,
-          .main_content .detail_section.open .bshop_title .items-right a img,
-          .main_content .detail_section.open .detail_title .items-right a img {
-            padding: 0 5px;
-            vertical-align: middle; }
-    .main_content .mechanical_section_wrapper .mech_table .table_title,
-    .main_content .mechanical_section_wrapper .bshop_table .table_title,
-    .main_content .mechanical_section_wrapper .detail_table .table_title,
-    .main_content .bshop_section.open .mech_table .table_title,
-    .main_content .bshop_section.open .bshop_table .table_title,
-    .main_content .bshop_section.open .detail_table .table_title,
-    .main_content .detail_section.open .mech_table .table_title,
-    .main_content .detail_section.open .bshop_table .table_title,
-    .main_content .detail_section.open .detail_table .table_title {
-      background: #304f7c;
-      width: 100%; }
-      .main_content .mechanical_section_wrapper .mech_table .table_title .title,
-      .main_content .mechanical_section_wrapper .bshop_table .table_title .title,
-      .main_content .mechanical_section_wrapper .detail_table .table_title .title,
-      .main_content .bshop_section.open .mech_table .table_title .title,
-      .main_content .bshop_section.open .bshop_table .table_title .title,
-      .main_content .bshop_section.open .detail_table .table_title .title,
-      .main_content .detail_section.open .mech_table .table_title .title,
-      .main_content .detail_section.open .bshop_table .table_title .title,
-      .main_content .detail_section.open .detail_table .table_title .title {
-        position: relative;
-        min-height: 1px;
-        padding: 20px 5px;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 14px;
-        color: #ffffff;
-        float: left;
-        border-right: 1px solid #2470a3; }
-        .main_content .mechanical_section_wrapper .mech_table .table_title .title:last-child,
-        .main_content .mechanical_section_wrapper .bshop_table .table_title .title:last-child,
-        .main_content .mechanical_section_wrapper .detail_table .table_title .title:last-child,
-        .main_content .bshop_section.open .mech_table .table_title .title:last-child,
-        .main_content .bshop_section.open .bshop_table .table_title .title:last-child,
-        .main_content .bshop_section.open .detail_table .table_title .title:last-child,
-        .main_content .detail_section.open .mech_table .table_title .title:last-child,
-        .main_content .detail_section.open .bshop_table .table_title .title:last-child,
-        .main_content .detail_section.open .detail_table .table_title .title:last-child {
-          border: 0; }
-    .main_content .mechanical_section_wrapper .mech_table .table_content > div,
-    .main_content .mechanical_section_wrapper .bshop_table .table_content > div,
-    .main_content .mechanical_section_wrapper .detail_table .table_content > div,
-    .main_content .bshop_section.open .mech_table .table_content > div,
-    .main_content .bshop_section.open .bshop_table .table_content > div,
-    .main_content .bshop_section.open .detail_table .table_content > div,
-    .main_content .detail_section.open .mech_table .table_content > div,
-    .main_content .detail_section.open .bshop_table .table_content > div,
-    .main_content .detail_section.open .detail_table .table_content > div {
-      border-left: 1px solid #cccccc;
-      border-bottom: 1px solid #cccccc; }
-      .main_content .mechanical_section_wrapper .mech_table .table_content > div:last-child,
-      .main_content .mechanical_section_wrapper .bshop_table .table_content > div:last-child,
-      .main_content .mechanical_section_wrapper .detail_table .table_content > div:last-child,
-      .main_content .bshop_section.open .mech_table .table_content > div:last-child,
-      .main_content .bshop_section.open .bshop_table .table_content > div:last-child,
-      .main_content .bshop_section.open .detail_table .table_content > div:last-child,
-      .main_content .detail_section.open .mech_table .table_content > div:last-child,
-      .main_content .detail_section.open .bshop_table .table_content > div:last-child,
-      .main_content .detail_section.open .detail_table .table_content > div:last-child {
-        border-bottom: 2px solid #000000; }
-      .main_content .mechanical_section_wrapper .mech_table .table_content > div.down,
-      .main_content .mechanical_section_wrapper .bshop_table .table_content > div.down,
-      .main_content .mechanical_section_wrapper .detail_table .table_content > div.down,
-      .main_content .bshop_section.open .mech_table .table_content > div.down,
-      .main_content .bshop_section.open .bshop_table .table_content > div.down,
-      .main_content .bshop_section.open .detail_table .table_content > div.down,
-      .main_content .detail_section.open .mech_table .table_content > div.down,
-      .main_content .detail_section.open .bshop_table .table_content > div.down,
-      .main_content .detail_section.open .detail_table .table_content > div.down {
-        background-color: #ececec; }
-      .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_1 img,
-      .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_1 img,
-      .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_1 img,
-      .main_content .bshop_section.open .mech_table .table_content > div .col_1 img,
-      .main_content .bshop_section.open .bshop_table .table_content > div .col_1 img,
-      .main_content .bshop_section.open .detail_table .table_content > div .col_1 img,
-      .main_content .detail_section.open .mech_table .table_content > div .col_1 img,
-      .main_content .detail_section.open .bshop_table .table_content > div .col_1 img,
-      .main_content .detail_section.open .detail_table .table_content > div .col_1 img {
-        float: none !important;
-        margin: 0 auto;
-        cursor: pointer; }
-      .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"],
-      .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"],
-      .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"],
-      .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"],
-      .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"],
-      .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"],
-      .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"],
-      .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"],
-      .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] {
-        border-right: 1px solid #cccccc; }
-        .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] > span,
-        .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] > span,
-        .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] > span,
-        .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] > span,
-        .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] > span,
-        .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] > span,
-        .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] > span,
-        .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] > span,
-        .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] > span {
-          float: left;
-          width: 50%; }
-        .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] div,
-        .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] img,
-        .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] div,
-        .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] img,
-        .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] div,
-        .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] img,
-        .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] div,
-        .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] img,
-        .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] div,
-        .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] img,
-        .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] div,
-        .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] img,
-        .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] div,
-        .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] img,
-        .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] div,
-        .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] img,
-        .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] div,
-        .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] img {
-          float: right;
-          padding: 0; }
-        .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox,
-        .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox,
-        .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox,
-        .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox,
-        .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox,
-        .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox,
-        .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox,
-        .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox,
-        .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox {
-          width: 30px;
-          height: 30px;
-          position: relative;
-          cursor: pointer;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-          margin-right: 5px; }
-          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox input,
-          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input,
-          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox input,
-          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input,
-          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input,
-          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input,
-          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input,
-          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input,
-          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input {
-            position: absolute;
-            opacity: 0;
-            cursor: pointer;
-            z-index: 1;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%; }
-            .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
-            .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
-            .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
-            .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
-            .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
-            .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
-            .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
-            .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark,
-            .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark {
-              border-color: #63b111; }
-              .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
-              .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
-              .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
-              .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
-              .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
-              .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
-              .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
-              .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after,
-              .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox input:checked ~ .checkmark:after {
-                display: block;
-                border-color: #63b111; }
-          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
-          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
-          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
-          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
-          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
-          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
-          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
-          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark,
-          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 30px;
-            width: 30px;
-            background-color: #ffffff;
-            border: 2px solid #cccccc; }
-            .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
-            .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
-            .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
-            .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
-            .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
-            .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
-            .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
-            .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after,
-            .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .custom_checkbox .checkmark:after {
-              content: "";
-              position: absolute;
-              display: none;
-              left: 10px;
-              top: 6px;
-              width: 5px;
-              height: 10px;
-              border: solid #63b111;
-              border-width: 0 3px 3px 0;
-              -webkit-transform: rotate(45deg);
-              -ms-transform: rotate(45deg);
-              transform: rotate(45deg); }
-        .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn,
-        .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn,
-        .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn,
-        .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .action_btn,
-        .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn,
-        .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .action_btn,
-        .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .action_btn,
-        .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn,
-        .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn {
-          float: left;
-          width: 35%; }
-          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn div,
-          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn div,
-          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn div,
-          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div,
-          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div,
-          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div,
-          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div,
-          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div,
-          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div {
-            float: left;
-            width: 49%;
-            height: 30px; }
-            .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn div:first-child,
-            .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn div:first-child,
-            .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn div:first-child,
-            .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div:first-child,
-            .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div:first-child,
-            .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div:first-child,
-            .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div:first-child,
-            .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div:first-child,
-            .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div:first-child {
-              margin-right: 2%; }
-            .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .action_btn div img,
-            .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .action_btn div img,
-            .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .action_btn div img,
-            .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div img,
-            .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div img,
-            .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div img,
-            .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .action_btn div img,
-            .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .action_btn div img,
-            .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .action_btn div img {
-              cursor: pointer;
-              float: none;
-              width: 100%; }
-        .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .status,
-        .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .status,
-        .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .status,
-        .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .status,
-        .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .status,
-        .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .status,
-        .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .status,
-        .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .status,
-        .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .status {
-          width: 64%;
-          margin-left: 1%;
-          background: linear-gradient(to top, #d46700, #e19800);
-          border-bottom: 2px solid #a81000;
-          padding: 0;
-          font-size: 14px;
-          font-weight: bold;
-          color: #ffffff;
-          height: 30px;
-          text-align: center;
-          cursor: pointer; }
-          .main_content .mechanical_section_wrapper .mech_table .table_content > div div[class^="col_"] .status.hidden,
-          .main_content .mechanical_section_wrapper .bshop_table .table_content > div div[class^="col_"] .status.hidden,
-          .main_content .mechanical_section_wrapper .detail_table .table_content > div div[class^="col_"] .status.hidden,
-          .main_content .bshop_section.open .mech_table .table_content > div div[class^="col_"] .status.hidden,
-          .main_content .bshop_section.open .bshop_table .table_content > div div[class^="col_"] .status.hidden,
-          .main_content .bshop_section.open .detail_table .table_content > div div[class^="col_"] .status.hidden,
-          .main_content .detail_section.open .mech_table .table_content > div div[class^="col_"] .status.hidden,
-          .main_content .detail_section.open .bshop_table .table_content > div div[class^="col_"] .status.hidden,
-          .main_content .detail_section.open .detail_table .table_content > div div[class^="col_"] .status.hidden {
-            display: none; }
-      .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_1,
-      .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_6,
-      .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_1,
-      .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_6,
-      .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_1,
-      .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_6,
-      .main_content .bshop_section.open .mech_table .table_content > div .col_1,
-      .main_content .bshop_section.open .mech_table .table_content > div .col_6,
-      .main_content .bshop_section.open .bshop_table .table_content > div .col_1,
-      .main_content .bshop_section.open .bshop_table .table_content > div .col_6,
-      .main_content .bshop_section.open .detail_table .table_content > div .col_1,
-      .main_content .bshop_section.open .detail_table .table_content > div .col_6,
-      .main_content .detail_section.open .mech_table .table_content > div .col_1,
-      .main_content .detail_section.open .mech_table .table_content > div .col_6,
-      .main_content .detail_section.open .bshop_table .table_content > div .col_1,
-      .main_content .detail_section.open .bshop_table .table_content > div .col_6,
-      .main_content .detail_section.open .detail_table .table_content > div .col_1,
-      .main_content .detail_section.open .detail_table .table_content > div .col_6 {
-        text-align: center; }
-      .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_2,
-      .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_3,
-      .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_4,
-      .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_5,
-      .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_6,
-      .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_7,
-      .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_2,
-      .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_3,
-      .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_4,
-      .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_5,
-      .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_6,
-      .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_7,
-      .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_2,
-      .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_3,
-      .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_4,
-      .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_5,
-      .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_6,
-      .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_7,
-      .main_content .bshop_section.open .mech_table .table_content > div .col_2,
-      .main_content .bshop_section.open .mech_table .table_content > div .col_3,
-      .main_content .bshop_section.open .mech_table .table_content > div .col_4,
-      .main_content .bshop_section.open .mech_table .table_content > div .col_5,
-      .main_content .bshop_section.open .mech_table .table_content > div .col_6,
-      .main_content .bshop_section.open .mech_table .table_content > div .col_7,
-      .main_content .bshop_section.open .bshop_table .table_content > div .col_2,
-      .main_content .bshop_section.open .bshop_table .table_content > div .col_3,
-      .main_content .bshop_section.open .bshop_table .table_content > div .col_4,
-      .main_content .bshop_section.open .bshop_table .table_content > div .col_5,
-      .main_content .bshop_section.open .bshop_table .table_content > div .col_6,
-      .main_content .bshop_section.open .bshop_table .table_content > div .col_7,
-      .main_content .bshop_section.open .detail_table .table_content > div .col_2,
-      .main_content .bshop_section.open .detail_table .table_content > div .col_3,
-      .main_content .bshop_section.open .detail_table .table_content > div .col_4,
-      .main_content .bshop_section.open .detail_table .table_content > div .col_5,
-      .main_content .bshop_section.open .detail_table .table_content > div .col_6,
-      .main_content .bshop_section.open .detail_table .table_content > div .col_7,
-      .main_content .detail_section.open .mech_table .table_content > div .col_2,
-      .main_content .detail_section.open .mech_table .table_content > div .col_3,
-      .main_content .detail_section.open .mech_table .table_content > div .col_4,
-      .main_content .detail_section.open .mech_table .table_content > div .col_5,
-      .main_content .detail_section.open .mech_table .table_content > div .col_6,
-      .main_content .detail_section.open .mech_table .table_content > div .col_7,
-      .main_content .detail_section.open .bshop_table .table_content > div .col_2,
-      .main_content .detail_section.open .bshop_table .table_content > div .col_3,
-      .main_content .detail_section.open .bshop_table .table_content > div .col_4,
-      .main_content .detail_section.open .bshop_table .table_content > div .col_5,
-      .main_content .detail_section.open .bshop_table .table_content > div .col_6,
-      .main_content .detail_section.open .bshop_table .table_content > div .col_7,
-      .main_content .detail_section.open .detail_table .table_content > div .col_2,
-      .main_content .detail_section.open .detail_table .table_content > div .col_3,
-      .main_content .detail_section.open .detail_table .table_content > div .col_4,
-      .main_content .detail_section.open .detail_table .table_content > div .col_5,
-      .main_content .detail_section.open .detail_table .table_content > div .col_6,
-      .main_content .detail_section.open .detail_table .table_content > div .col_7 {
-        line-height: 29px; }
-      .main_content .mechanical_section_wrapper .mech_table .table_content > div .col_6,
-      .main_content .mechanical_section_wrapper .bshop_table .table_content > div .col_6,
-      .main_content .mechanical_section_wrapper .detail_table .table_content > div .col_6,
-      .main_content .bshop_section.open .mech_table .table_content > div .col_6,
-      .main_content .bshop_section.open .bshop_table .table_content > div .col_6,
-      .main_content .bshop_section.open .detail_table .table_content > div .col_6,
-      .main_content .detail_section.open .mech_table .table_content > div .col_6,
-      .main_content .detail_section.open .bshop_table .table_content > div .col_6,
-      .main_content .detail_section.open .detail_table .table_content > div .col_6 {
-        background: #a6a6a6;
-        color: #ffffff; }
-    .main_content .mechanical_section_wrapper .mech_table .total,
-    .main_content .mechanical_section_wrapper .bshop_table .total,
-    .main_content .mechanical_section_wrapper .detail_table .total,
-    .main_content .bshop_section.open .mech_table .total,
-    .main_content .bshop_section.open .bshop_table .total,
-    .main_content .bshop_section.open .detail_table .total,
-    .main_content .detail_section.open .mech_table .total,
-    .main_content .detail_section.open .bshop_table .total,
-    .main_content .detail_section.open .detail_table .total {
-      font-weight: bold;
-      margin: 0 1px 0 2px; }
-      .main_content .mechanical_section_wrapper .mech_table .total .col12,
-      .main_content .mechanical_section_wrapper .bshop_table .total .col12,
-      .main_content .mechanical_section_wrapper .detail_table .total .col12,
-      .main_content .bshop_section.open .mech_table .total .col12,
-      .main_content .bshop_section.open .bshop_table .total .col12,
-      .main_content .bshop_section.open .detail_table .total .col12,
-      .main_content .detail_section.open .mech_table .total .col12,
-      .main_content .detail_section.open .bshop_table .total .col12,
-      .main_content .detail_section.open .detail_table .total .col12 {
-        width: 32%;
-        float: left;
-        padding: 20px 5px; }
-      .main_content .mechanical_section_wrapper .mech_table .total .col_6,
-      .main_content .mechanical_section_wrapper .bshop_table .total .col_6,
-      .main_content .mechanical_section_wrapper .detail_table .total .col_6,
-      .main_content .bshop_section.open .mech_table .total .col_6,
-      .main_content .bshop_section.open .bshop_table .total .col_6,
-      .main_content .bshop_section.open .detail_table .total .col_6,
-      .main_content .detail_section.open .mech_table .total .col_6,
-      .main_content .detail_section.open .bshop_table .total .col_6,
-      .main_content .detail_section.open .detail_table .total .col_6 {
-        background: #a6a6a6;
-        color: #ffffff;
-        text-align: center; }
-      .main_content .mechanical_section_wrapper .mech_table .total div,
-      .main_content .mechanical_section_wrapper .bshop_table .total div,
-      .main_content .mechanical_section_wrapper .detail_table .total div,
-      .main_content .bshop_section.open .mech_table .total div,
-      .main_content .bshop_section.open .bshop_table .total div,
-      .main_content .bshop_section.open .detail_table .total div,
-      .main_content .detail_section.open .mech_table .total div,
-      .main_content .detail_section.open .bshop_table .total div,
-      .main_content .detail_section.open .detail_table .total div {
-        border-right: 1px solid #cccccc; }
-
-.bshop_section .inner_wrapper img,
-.bshop_section .inner_wrapper .section_title {
-  float: left;
-  padding-right: 10px; }
-
-.detail_section .inner_wrapper img,
-.detail_section .inner_wrapper .section_title {
-  float: left;
-  padding-right: 10px; }
-
-.bshop_section,
-.detail_section {
-  padding: 20px 25px;
-  background: #ffffff;
-  margin-top: 30px; }
-
-.total_section {
-  background: #ffffff;
-  margin-top: 30px;
-  padding: 0 25px; }
-  .total_section .inner_wrapper {
-    margin: 0 1px 0 2px; }
-    .total_section .inner_wrapper > div {
-      padding: 20px 5px;
-      float: left;
-      border-right: 1px solid #cccccc; }
-      .total_section .inner_wrapper > div:last-child {
-        border-right: none; }
-      .total_section .inner_wrapper > div div {
-        width: 100%;
-        font-size: 12px; }
-    .total_section .inner_wrapper .col12 {
-      width: 32%;
-      float: left;
-      padding: 29px 15px; }
-    .total_section .inner_wrapper .col_6 {
-      background: #a6a6a6;
-      color: #ffffff;
-      text-align: center; }
-  .total_section .confirm {
-    background: linear-gradient(to top, #245596, #3274af);
-    height: 33px;
-    text-transform: uppercase;
-    border-bottom: 2px solid #032355; }
-    .total_section .confirm .icon {
-      width: 50px;
-      border-right: 1px solid #304f7c;
-      padding: 9px 18px;
-      height: 100%;
-      display: inline-block; }
-    .total_section .confirm .text {
-      width: calc(100% - 55px);
-      display: inline-block;
-      margin: 0;
-      padding: 0 10px;
-      font-weight: bold;
-      color: #ffffff; }
-
-.bshop_section.close .bshop_title,
-.bshop_section.close .bshop_table,
-.bshop_section.close .detail_title,
-.bshop_section.close .detail_table,
-.detail_section.close .bshop_title,
-.detail_section.close .bshop_table,
-.detail_section.close .detail_title,
-.detail_section.close .detail_table {
-  display: none; }
-.bshop_section.open .inner_wrapper > div > img,
-.detail_section.open .inner_wrapper > div > img {
-  display: none; }
-.bshop_section.open .section_title,
-.detail_section.open .section_title {
-  display: none; }
-
-.clearfix {
-  zoom: 1; }
-  .clearfix:after {
-    display: block;
-    content: "";
-    clear: both; }
-
-.btn-action,
-.btn-insp,
-.btn-photo,
-.btn-note {
-  cursor: pointer; }
 
 .align-right {
   float: right; }
@@ -1767,5 +2865,12 @@ header {
             top: calc(50% - 5px / 2);
             width: 5px;
             height: 5px; }
+
+.clearfix {
+  zoom: 1; }
+  .clearfix:after {
+    display: block;
+    content: "";
+    clear: both; }
 
 /*# sourceMappingURL=app.css.map */
