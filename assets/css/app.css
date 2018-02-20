@@ -109,15 +109,88 @@ body {
   .step_title:before {
     display: none; }
 
-  .info_box {
-    padding: 10px 15px; }
-    .info_box ul li {
-      width: 39%;
-      float: left !important;
-      margin-right: 10% !important;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap; }
+  .info_section {
+    background: #304f7c;
+    padding: 20px 25px;
+    position: relative; }
+    .info_section .info_box {
+      background: linear-gradient(to top, #2d5e91, #497dab);
+      border-bottom: 5px solid #273f63;
+      padding: 10px 15px; }
+      .info_section .info_box:hover {
+        background: linear-gradient(to top, #3974a8, #5692be);
+        cursor: pointer;
+        border-bottom: 5px solid #273f63; }
+      .info_section .info_box > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; }
+        .info_section .info_box > ul li {
+          width: 39%;
+          float: left;
+          font-size: 0.748rem;
+          margin-right: 10%;
+          color: #ffffff;
+          font-weight: bold;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+          .info_section .info_box > ul li:last-child {
+            margin-right: 0; }
+    .info_section .subsection {
+      width: 100%;
+      height: auto;
+      z-index: 10;
+      background: #f2f2f2;
+      padding: 30px 0px; }
+      .info_section .subsection .col-3 {
+        width: 100% !important; }
+      .info_section .subsection label {
+        width: 40%;
+        float: left; }
+      .info_section .subsection input,
+      .info_section .subsection select {
+        width: 60%;
+        float: left; }
+      .info_section .subsection hr {
+        margin-top: 30px; }
+      .info_section .subsection .col-1 {
+        margin-bottom: 5px;
+        padding: 0; }
+        .info_section .subsection .col-1 input,
+        .info_section .subsection .col-1 select {
+          padding: 10px 15px;
+          background: #ffffff;
+          border: none; }
+        .info_section .subsection .col-1 label {
+          font-size: 14px;
+          padding: 5px 0;
+          font-weight: normal; }
+      .info_section .subsection .buttons {
+        text-align: center;
+        margin-top: 30px;
+        padding: 0 15px; }
+        .info_section .subsection .buttons .cancel {
+          background: transparent;
+          color: #000000;
+          padding: 15px;
+          border: 2px solid #cccccc;
+          text-transform: uppercase;
+          width: 40%;
+          margin-right: 3%; }
+          .info_section .subsection .buttons .cancel img {
+            display: none; }
+        .info_section .subsection .buttons .update {
+          background: linear-gradient(to top, #00a213, #65de2e);
+          color: #ffffff;
+          padding: 15px;
+          border: none;
+          border-bottom: 2px solid #007c0a;
+          text-transform: uppercase;
+          width: 55%; }
+          .info_section .subsection .buttons .update img {
+            display: none; }
 
   .step_section {
     margin: 0; }
@@ -173,7 +246,10 @@ body {
           margin-right: 15px; }
         .mechanical_section_wrapper .mechanical_section_mobile.open .close_section .title {
           float: left;
-          color: #ffffff; }
+          color: #ffffff;
+          width: 90%; }
+          .mechanical_section_wrapper .mechanical_section_mobile.open .close_section .title .price {
+            float: right; }
       .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table {
         display: block;
         background: #f2f2f2;
@@ -254,27 +330,27 @@ body {
           .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .col_2 {
             width: 12.5%;
             text-align: center;
-            padding: 9px 0;
+            padding: 10px 0;
             position: relative; }
             .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .col_2:after {
               content: "";
               position: absolute;
-              top: -5px;
+              top: 0;
               right: 0;
-              bottom: -5px;
+              bottom: 0;
               width: 1px;
               background: #cccccc; }
           .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .col_3 {
             width: 12.5%;
             text-align: center;
-            padding: 9px 0;
+            padding: 10px 0;
             position: relative; }
             .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .col_3:after {
               content: "";
               position: absolute;
-              top: -5px;
+              top: 0;
               right: 0;
-              bottom: -5px;
+              bottom: 0;
               width: 1px;
               background: #cccccc; }
           .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .col_4 {
@@ -284,6 +360,95 @@ body {
             padding: 5px;
             background: linear-gradient(to top, #d46700, #e19800);
             color: #ffffff; }
+          .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info {
+            border-top: 2px solid #cccccc;
+            clear: both; }
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .labor,
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .parts {
+              border-bottom: 1px solid #cccccc;
+              width: 50%;
+              padding: 10px;
+              float: left; }
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .labor .input_title,
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .parts .input_title {
+                width: 100%;
+                color: #63b111;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: normal;
+                float: left; }
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .labor .price,
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .parts .price {
+                width: 100%;
+                color: #000000;
+                font-size: 14px;
+                font-weight: normal; }
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .labor input,
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .parts input {
+                height: 30px;
+                width: 100%; }
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .laborh,
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .totals {
+              border-right: 1px solid #cccccc;
+              border-bottom: 1px solid #cccccc;
+              width: 50%;
+              padding: 10px;
+              float: left; }
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .laborh .input_title,
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .totals .input_title {
+                width: 100%;
+                color: #63b111;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: normal;
+                float: left; }
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .laborh .price,
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .totals .price {
+                width: 100%;
+                color: #000000;
+                font-size: 14px;
+                font-weight: normal; }
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .laborh input,
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .totals input {
+                height: 30px;
+                width: 100%; }
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .parts > div,
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .totals > div {
+              float: left; }
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .parts img,
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .totals img {
+              float: right; }
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .totals img {
+              border: 2px solid #519c00;
+              padding: 5px;
+              width: 29px; }
+            .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .button_area {
+              clear: both;
+              padding: 10px; }
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .button_area .close {
+                width: 49%;
+                margin-right: 1%;
+                background: #ececec;
+                padding: 10px 0;
+                text-align: center;
+                float: left;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold; }
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .button_area .edit,
+              .mechanical_section_wrapper .mechanical_section_mobile.open .mech_table .main_area .rows .row_info .button_area .save {
+                width: 49%;
+                margin-left: 1%;
+                background: linear-gradient(to top, #2d5e91, #497dab);
+                padding: 10px 0;
+                text-align: center;
+                float: left;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold; }
       .mechanical_section_wrapper .mechanical_section_mobile.close .mech_title {
         background: #ffffff; }
       .mechanical_section_wrapper .mechanical_section_mobile.close .open_section {
@@ -292,7 +457,10 @@ body {
           float: left;
           margin-right: 10px; }
         .mechanical_section_wrapper .mechanical_section_mobile.close .open_section .section_title {
-          float: left; }
+          float: left;
+          width: 90%; }
+          .mechanical_section_wrapper .mechanical_section_mobile.close .open_section .section_title .price {
+            float: right; }
       .mechanical_section_wrapper .mechanical_section_mobile.close .close_section {
         display: none; }
       .mechanical_section_wrapper .mechanical_section_mobile.close .mech_table {
@@ -319,7 +487,10 @@ body {
           margin-right: 15px; }
         .bshop_section_mobile .bshop_section_wrapper.open .close_section .title {
           float: left;
-          color: #ffffff; }
+          color: #ffffff;
+          width: 90%; }
+          .bshop_section_mobile .bshop_section_wrapper.open .close_section .title .price {
+            float: right; }
       .bshop_section_mobile .bshop_section_wrapper.open .bshop_table {
         display: block;
         background: #f2f2f2;
@@ -430,6 +601,95 @@ body {
             padding: 5px;
             background: linear-gradient(to top, #d46700, #e19800);
             color: #ffffff; }
+          .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info {
+            border-top: 2px solid #cccccc;
+            clear: both; }
+            .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .labor,
+            .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .parts {
+              border-bottom: 1px solid #cccccc;
+              width: 50%;
+              padding: 10px;
+              float: left; }
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .labor .input_title,
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .parts .input_title {
+                width: 100%;
+                color: #63b111;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: normal;
+                float: left; }
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .labor .price,
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .parts .price {
+                width: 100%;
+                color: #000000;
+                font-size: 14px;
+                font-weight: normal; }
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .labor input,
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .parts input {
+                height: 30px;
+                width: 100%; }
+            .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .laborh,
+            .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .totals {
+              border-right: 1px solid #cccccc;
+              border-bottom: 1px solid #cccccc;
+              width: 50%;
+              padding: 10px;
+              float: left; }
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .laborh .input_title,
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .totals .input_title {
+                width: 100%;
+                color: #63b111;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: normal;
+                float: left; }
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .laborh .price,
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .totals .price {
+                width: 100%;
+                color: #000000;
+                font-size: 14px;
+                font-weight: normal; }
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .laborh input,
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .totals input {
+                height: 30px;
+                width: 100%; }
+            .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .parts > div,
+            .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .totals > div {
+              float: left; }
+            .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .parts img,
+            .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .totals img {
+              float: right; }
+            .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .totals img {
+              border: 2px solid #519c00;
+              padding: 5px;
+              width: 29px; }
+            .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .button_area {
+              clear: both;
+              padding: 10px; }
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .button_area .close {
+                width: 49%;
+                margin-right: 1%;
+                background: #ececec;
+                padding: 10px 0;
+                text-align: center;
+                float: left;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold; }
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .button_area .edit,
+              .bshop_section_mobile .bshop_section_wrapper.open .bshop_table .main_area .rows .row_info .button_area .save {
+                width: 49%;
+                margin-left: 1%;
+                background: linear-gradient(to top, #2d5e91, #497dab);
+                padding: 10px 0;
+                text-align: center;
+                float: left;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold; }
       .bshop_section_mobile .bshop_section_wrapper.close .bshop_title {
         background: #ffffff; }
       .bshop_section_mobile .bshop_section_wrapper.close .open_section {
@@ -438,7 +698,10 @@ body {
           float: left;
           margin-right: 10px; }
         .bshop_section_mobile .bshop_section_wrapper.close .open_section .section_title {
-          float: left; }
+          float: left;
+          width: 90%; }
+          .bshop_section_mobile .bshop_section_wrapper.close .open_section .section_title .price {
+            float: right; }
       .bshop_section_mobile .bshop_section_wrapper.close .close_section {
         display: none; }
       .bshop_section_mobile .bshop_section_wrapper.close .bshop_table {
@@ -465,7 +728,10 @@ body {
           margin-right: 15px; }
         .detail_section_mobile .detail_section_wrapper.open .close_section .title {
           float: left;
-          color: #ffffff; }
+          color: #ffffff;
+          width: 90%; }
+          .detail_section_mobile .detail_section_wrapper.open .close_section .title .price {
+            float: right; }
       .detail_section_mobile .detail_section_wrapper.open .detail_table {
         display: block;
         background: #f2f2f2;
@@ -576,6 +842,95 @@ body {
             padding: 5px;
             background: linear-gradient(to top, #d46700, #e19800);
             color: #ffffff; }
+          .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info {
+            border-top: 2px solid #cccccc;
+            clear: both; }
+            .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .labor,
+            .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .parts {
+              border-bottom: 1px solid #cccccc;
+              width: 50%;
+              padding: 10px;
+              float: left; }
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .labor .input_title,
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .parts .input_title {
+                width: 100%;
+                color: #63b111;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: normal;
+                float: left; }
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .labor .price,
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .parts .price {
+                width: 100%;
+                color: #000000;
+                font-size: 14px;
+                font-weight: normal; }
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .labor input,
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .parts input {
+                height: 30px;
+                width: 100%; }
+            .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .laborh,
+            .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .totals {
+              border-right: 1px solid #cccccc;
+              border-bottom: 1px solid #cccccc;
+              width: 50%;
+              padding: 10px;
+              float: left; }
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .laborh .input_title,
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .totals .input_title {
+                width: 100%;
+                color: #63b111;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: normal;
+                float: left; }
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .laborh .price,
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .totals .price {
+                width: 100%;
+                color: #000000;
+                font-size: 14px;
+                font-weight: normal; }
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .laborh input,
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .totals input {
+                height: 30px;
+                width: 100%; }
+            .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .parts > div,
+            .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .totals > div {
+              float: left; }
+            .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .parts img,
+            .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .totals img {
+              float: right; }
+            .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .totals img {
+              border: 2px solid #519c00;
+              padding: 5px;
+              width: 29px; }
+            .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .button_area {
+              clear: both;
+              padding: 10px; }
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .button_area .close {
+                width: 49%;
+                margin-right: 1%;
+                background: #ececec;
+                padding: 10px 0;
+                text-align: center;
+                float: left;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold; }
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .button_area .edit,
+              .detail_section_mobile .detail_section_wrapper.open .detail_table .main_area .rows .row_info .button_area .save {
+                width: 49%;
+                margin-left: 1%;
+                background: linear-gradient(to top, #2d5e91, #497dab);
+                padding: 10px 0;
+                text-align: center;
+                float: left;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold; }
       .detail_section_mobile .detail_section_wrapper.close .detail_title {
         background: #ffffff; }
       .detail_section_mobile .detail_section_wrapper.close .open_section {
@@ -584,7 +939,10 @@ body {
           float: left;
           margin-right: 10px; }
         .detail_section_mobile .detail_section_wrapper.close .open_section .section_title {
-          float: left; }
+          float: left;
+          width: 90%; }
+          .detail_section_mobile .detail_section_wrapper.close .open_section .section_title .price {
+            float: right; }
       .detail_section_mobile .detail_section_wrapper.close .close_section {
         display: none; }
       .detail_section_mobile .detail_section_wrapper.close .detail_table {
@@ -612,7 +970,10 @@ body {
           margin-right: 15px; }
         .total_section_mobile .total_section_wrapper.open .close_section .title {
           float: left;
-          color: #ffffff; }
+          color: #ffffff;
+          width: 90%; }
+          .total_section_mobile .total_section_wrapper.open .close_section .title .price {
+            float: right; }
       .total_section_mobile .total_section_wrapper.open .total_table {
         display: block;
         background: #f2f2f2;
@@ -685,7 +1046,10 @@ body {
           float: left;
           margin-right: 10px; }
         .total_section_mobile .total_section_wrapper.close .open_section .section_title {
-          float: left; }
+          float: left;
+          width: 90%; }
+          .total_section_mobile .total_section_wrapper.close .open_section .section_title .price {
+            float: right; }
       .total_section_mobile .total_section_wrapper.close .close_section {
         display: none; }
       .total_section_mobile .total_section_wrapper.close .total_table {
@@ -765,6 +1129,79 @@ body {
 
   .info_box {
     padding: 20px 25px; }
+
+  .info_section {
+    background: #304f7c;
+    padding: 20px 25px;
+    position: relative; }
+    .info_section .info_box {
+      background: linear-gradient(to top, #2d5e91, #497dab);
+      border-bottom: 5px solid #273f63; }
+      .info_section .info_box:hover {
+        background: linear-gradient(to top, #3974a8, #5692be);
+        cursor: pointer;
+        border-bottom: 5px solid #273f63; }
+      .info_section .info_box > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; }
+        .info_section .info_box > ul li {
+          float: left;
+          font-size: 0.748rem;
+          margin-right: 50px;
+          color: #ffffff;
+          font-weight: bold; }
+          .info_section .info_box > ul li:last-child {
+            margin-right: 0; }
+    .info_section .subsection {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: 10;
+      background: #f2f2f2;
+      padding: 30px   0px; }
+      .info_section .subsection label {
+        width: 40%;
+        float: left; }
+      .info_section .subsection input,
+      .info_section .subsection select {
+        width: 60%;
+        float: left; }
+      .info_section .subsection hr {
+        margin-top: 30px; }
+      .info_section .subsection .col-1 {
+        margin-bottom: 5px;
+        padding: 0 25px; }
+        .info_section .subsection .col-1 input,
+        .info_section .subsection .col-1 select {
+          padding: 10px 15px;
+          background: #ffffff;
+          border: none; }
+        .info_section .subsection .col-1 label {
+          font-size: 14px;
+          padding: 5px 0;
+          font-weight: bold; }
+      .info_section .subsection .buttons {
+        text-align: center;
+        margin-top: 30px; }
+        .info_section .subsection .buttons .cancel {
+          background: #cccccc;
+          color: #000000;
+          padding: 15px;
+          border: none;
+          margin-right: 10px; }
+          .info_section .subsection .buttons .cancel img {
+            margin-right: 5px; }
+        .info_section .subsection .buttons .update {
+          background: #63b111;
+          color: #ffffff;
+          padding: 15px;
+          border: none; }
+          .info_section .subsection .buttons .update img {
+            margin-right: 5px; }
 
   .step_section {
     margin-top: 60px;
@@ -1839,6 +2276,79 @@ body {
 
   .info_box {
     padding: 20px 25px; }
+
+  .info_section {
+    background: #304f7c;
+    padding: 20px 25px;
+    position: relative; }
+    .info_section .info_box {
+      background: linear-gradient(to top, #2d5e91, #497dab);
+      border-bottom: 5px solid #273f63; }
+      .info_section .info_box:hover {
+        background: linear-gradient(to top, #3974a8, #5692be);
+        cursor: pointer;
+        border-bottom: 5px solid #273f63; }
+      .info_section .info_box > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; }
+        .info_section .info_box > ul li {
+          float: left;
+          font-size: 0.748rem;
+          margin-right: 50px;
+          color: #ffffff;
+          font-weight: bold; }
+          .info_section .info_box > ul li:last-child {
+            margin-right: 0; }
+    .info_section .subsection {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: 10;
+      background: #f2f2f2;
+      padding: 30px   0px; }
+      .info_section .subsection label {
+        width: 40%;
+        float: left; }
+      .info_section .subsection input,
+      .info_section .subsection select {
+        width: 60%;
+        float: left; }
+      .info_section .subsection hr {
+        margin-top: 30px; }
+      .info_section .subsection .col-1 {
+        margin-bottom: 5px;
+        padding: 0 25px; }
+        .info_section .subsection .col-1 input,
+        .info_section .subsection .col-1 select {
+          padding: 10px 15px;
+          background: #ffffff;
+          border: none; }
+        .info_section .subsection .col-1 label {
+          font-size: 14px;
+          padding: 5px 0;
+          font-weight: bold; }
+      .info_section .subsection .buttons {
+        text-align: center;
+        margin-top: 30px; }
+        .info_section .subsection .buttons .cancel {
+          background: #cccccc;
+          color: #000000;
+          padding: 15px;
+          border: none;
+          margin-right: 10px; }
+          .info_section .subsection .buttons .cancel img {
+            margin-right: 5px; }
+        .info_section .subsection .buttons .update {
+          background: #63b111;
+          color: #ffffff;
+          padding: 15px;
+          border: none; }
+          .info_section .subsection .buttons .update img {
+            margin-right: 5px; }
 
   .step_section {
     margin-top: 60px;
@@ -3052,79 +3562,6 @@ header {
     margin-left: -15px;
     margin-right: -15px;
     clear: both; } }
-.info_section {
-  background: #304f7c;
-  padding: 20px 25px;
-  position: relative; }
-  .info_section .info_box {
-    background: linear-gradient(to top, #2d5e91, #497dab);
-    border-bottom: 5px solid #273f63; }
-    .info_section .info_box:hover {
-      background: linear-gradient(to top, #3974a8, #5692be);
-      cursor: pointer;
-      border-bottom: 5px solid #273f63; }
-    .info_section .info_box > ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden; }
-      .info_section .info_box > ul li {
-        float: left;
-        font-size: 0.748rem;
-        margin-right: 50px;
-        color: #ffffff;
-        font-weight: bold; }
-        .info_section .info_box > ul li:last-child {
-          margin-right: 0; }
-  .info_section .subsection {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 10;
-    background: #f2f2f2;
-    padding: 30px   0px; }
-    .info_section .subsection label {
-      width: 40%;
-      float: left; }
-    .info_section .subsection input,
-    .info_section .subsection select {
-      width: 60%;
-      float: left; }
-    .info_section .subsection hr {
-      margin-top: 30px; }
-    .info_section .subsection .col-1 {
-      margin-bottom: 5px;
-      padding: 0 25px; }
-      .info_section .subsection .col-1 input,
-      .info_section .subsection .col-1 select {
-        padding: 10px 15px;
-        background: #ffffff;
-        border: none; }
-      .info_section .subsection .col-1 label {
-        font-size: 14px;
-        padding: 5px 0;
-        font-weight: bold; }
-    .info_section .subsection .buttons {
-      text-align: center;
-      margin-top: 30px; }
-      .info_section .subsection .buttons .cancel {
-        background: #cccccc;
-        color: #000000;
-        padding: 15px;
-        border: none;
-        margin-right: 10px; }
-        .info_section .subsection .buttons .cancel img {
-          margin-right: 5px; }
-      .info_section .subsection .buttons .update {
-        background: #63b111;
-        color: #ffffff;
-        padding: 15px;
-        border: none; }
-        .info_section .subsection .buttons .update img {
-          margin-right: 5px; }
-
 .step_section .step {
   float: left;
   background: #ffffff;

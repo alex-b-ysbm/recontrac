@@ -132,4 +132,38 @@ $(document).ready(function(){
     // $(".rate")[0].src = $(".rate")[0].src.replace('hand_up', 'hand_down')
   })
   $('.note_count').text('('+ $('.sidebar_popup .note .message').length +')');
+  $('.rows .title').click(function(){
+    $('.row_info').slideUp();
+    $(this).closest('.rows').find('.row_info').slideDown();
+  })
+  $('.row_info .edit').click(function(){
+    var info_box = $(this).closest('.row_info');
+    info_box.find('.laborh div').hide();
+    info_box.find('.laborh input').show();
+    info_box.find('.labor div').hide();
+    info_box.find('.labor input').show();
+    info_box.find('.parts div').hide();
+    info_box.find('.parts img').hide();
+    info_box.find('.parts input').show();
+    $(this).hide();
+    $(this).parent().find('.save').show();
+  })
+  $('.row_info .save').click(function(){
+    var info_box = $(this).closest('.row_info');
+    info_box.find('.laborh input').hide();
+    info_box.find('.laborh .price').text(info_box.find('.laborh input').val())
+    info_box.find('.laborh div').show();
+    info_box.find('.labor input').hide();
+    info_box.find('.labor .price').text(info_box.find('.labor input').val())
+    info_box.find('.labor div').show();
+    info_box.find('.parts input').hide();
+    info_box.find('.parts .price').text(info_box.find('.parts input').val())
+    info_box.find('.parts div').show();
+    info_box.find('.parts img').show();
+    $(this).hide();
+    $(this).parent().find('.edit').show();
+  })
+  $('.row_info .close').click(function(){
+    $(this).closest('.row_info').slideUp();
+  })
 })
