@@ -227,4 +227,8 @@ $(document).ready(function(){
     $('.modal_service_mob .item_'+$(this).val()).addClass('selected');
     $('.modal_service_mob .item_'+$(this).val()).slideDown();
   })
+  $('.modal_service_mob .close').click(function(){
+    $('.modal_bg').hide()
+    $('.modal_service_mob').hide();
+  })
 })
