@@ -1119,7 +1119,7 @@
         margin-right: 20px;
       }
       .step_title{
-        padding-top: 5px;
+        padding-top: 8px;
       }
     }
   }
@@ -2161,13 +2161,13 @@ header{
     }
     >ul{
       list-style-type: none;
-      margin: 0;
+      margin: auto;
       padding: 0;
       overflow: hidden;
       li{
         float: left;
         font-size: 0.748rem;
-        margin-right: 50px;
+        margin-right: 4%;
         color: $white_color;
         font-weight: bold;
         &:last-child{
@@ -2271,8 +2271,10 @@ header{
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    box-sizing: border-box;
+    border-bottom: 2px solid $border_red_color;
     a{
-      line-height: 32px;
+      line-height: 31.5px;
       text-decoration: none;
       color: $white_color;
     }
