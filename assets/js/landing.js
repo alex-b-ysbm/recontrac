@@ -131,4 +131,5 @@ $(document).ready(function(){
     $(this).closest('.clearfix').toggleClass('down');
     // $(".rate")[0].src = $(".rate")[0].src.replace('hand_up', 'hand_down')
   })
+  $('.note_count').text('('+ $('.sidebar_popup .note .message').length +')');
 })
